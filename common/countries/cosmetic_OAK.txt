@@ -1,0 +1,24 @@
+ETH_ITA = {
+    color = rgb { 55 124 52 }
+    color_ui = rgb { 55 124 52 }
+}
+
+POL_reichskommissariat = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+
+CZE_reichskommissariat = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+
+SPA_civil_war = {
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
+}
+
+ITA_SALO = {
+	color = rgb { 68 96 69 }
+	color_ui = rgb { 68 96 69 }
+}

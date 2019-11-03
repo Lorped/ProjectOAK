@@ -1,5 +1,0 @@
-
-
-graphical_culture = asian_european_gfx
-
-color = { 48  132  132 } #color = { 9  171  190 }
