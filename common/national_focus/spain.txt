@@ -623,7 +623,6 @@ focus_tree = {
 		id = SPR_Mot
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = SPR_Equipment }
-		bypass = { has_tech = motorised_infantry }
 		x = 6
 		y = 2
 		cost = 5
@@ -635,9 +634,12 @@ focus_tree = {
 		army_experience = 5
 			add_tech_bonus = {
 				name = SPR_Mot
-				bonus = 0.3
+				bonus = 1.0
 				uses = 1
-				technology = motorised_infantry
+				technology = axis_tech_armored_cars2
+				technology = axis_tech_armored_cars3
+				technology = axis_tech_armored_cars4
+				technology = axis_tech_armored_cars5
 			}
 		}
 	}
@@ -646,6 +648,7 @@ focus_tree = {
 		id = SPR_Mech
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = SPR_Mot }
+		bypass = { has_tech = axis_mechanised_infantry }
 		x = 6
 		y = 3
 		cost = 5
@@ -656,9 +659,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_Mot
-				bonus = 0.3
+				bonus = 0.5
 				uses = 1
-				technology = motorised_infantry
+				category = cat_mechanized_equipment
 			}
 		}
 	}
