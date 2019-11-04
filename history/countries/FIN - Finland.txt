@@ -14,7 +14,7 @@ add_ideas = {
 	limited_conscription
 }
 
-set_stability = 0.75 
+set_stability = 0.65 
 set_war_support = 0.7
 
 set_technology = { #player 

@@ -9,7 +9,8 @@ focus_tree = {
 			tag = FIN
 		}
 	}
-	
+	continuous_focus_position = { x = 50 y = 1000 }
+
 	default = no
 
 	focus = {
@@ -120,7 +121,7 @@ focus_tree = {
 	}
 
     
-focus = {
+	focus = {
 		id = FIN_prepare_for_winter
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = FIN_stockpile_rations }
@@ -391,7 +392,7 @@ focus = {
 	}
     
     
-    	focus = {
+    focus = {
 		id = FIN_nokia
 		icon = GFX_focus_research
 		prerequisite = { focus = FIN_develop_the_war_machine}
@@ -441,28 +442,9 @@ focus = {
 		completion_reward = {
 		add_research_slot = 1
 		}
-	}
+	}   
     
-    	focus = {
-		id = FIN_secret_weapons
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = FIN_military_necessity }
-		x = 4
-		y = 6
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 1
-				uses = 2
-				category = electronics
-				category = nuclear
-				category = rocketry
-			}
-		}
-        }
-    
-    	focus = {
+    focus = {
 		id = FIN_expand_the_mines
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = FIN_invest_in_the_private_sector }
@@ -764,12 +746,459 @@ focus = {
 			}
 		}
 	}
+    focus = {
+		id = FIN_the_lotta_svard
+		icon = GFX_goal_generic_special_forces
+        prerequisite = { focus = FIN_civilian_kitchens }
+		x = 5
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		available = {	111 = {	is_owned_by = FIN }	}
+
+
+		completion_reward = { 
+        
+        add_ideas = FRA_national_mobilization_focus
+
+			111 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FIN_defend_finland
+		icon = GFX_goal_generic_defence
+		x = 11
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = FIN_tuli_isku
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = FIN_defend_finland }
+		x = 8
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
+		}
+	}
     
+    
+    focus = {
+		id = FIN_further_artillery_support
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = FIN_tuli_isku }
+		x = 8
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 1
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_foreign_planes
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = FIN_defend_finland }
+		x = 14
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+    
+    
+    focus = {
+		id = FIN_defend_the_skies
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = FIN_foreign_planes }
+		x = 14
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_upgrade
+				bonus = 1
+				uses = 1
+			    category = air_upgrade
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+			    category = light_fighter
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_foreign_tanks
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = FIN_defend_finland }
+		x = 12
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+		}
+	}
+    
+    
+    focus = {
+		id = FIN_forest_tanks
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = { focus = FIN_foreign_tanks }
+		x = 12
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_light_armor
+			}
+		}
+	}
+	
+	focus = {
+		id = FIN_baltic_security
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = FIN_defend_finland }
+		x = 10
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				category = naval_doctrine
+				uses = 2
+				bonus = 1.0
+			}
+		}
+	}
+    
+    
+    focus = {
+		id = FIN_baltic_hunters
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = FIN_baltic_security }
+		x = 10
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = ss_tech
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				add_tech_bonus = {
+					bonus = 1.0
+					uses = 2
+					category = naval_mines
+				}
+			}
+		}
+	}
+	focus = {
+		id = FIN_foreign_aid
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = FIN_defend_finland }
+		x = 11
+		y = 3
+		cost = 0.8
+		bypass = {
+			146 = {	is_owned_by = SOV }	
+		}	
+		
+		available = {
+			has_war_with = SOV
+		}	
+		
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = FIN_pander_axis
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = FIN_foreign_aid }
+		x = 8
+		y = 4
+		cost = 0.8
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = pandered
+			}
+			add_opinion_modifier = {
+				target = ITA
+				modifier = pandered
+			}
+		}
+	}
+	focus = {
+		id = FIN_pander_italy
+		icon = GFX_focus_generic_italy_first
+		prerequisite = { focus = FIN_pander_axis }
+		mutually_exclusive = { focus = FIN_pander_germany }
+		x = 9
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_bonus
+				Bonus = 1.0
+				uses = 1
+				category = mountaineers_tech
+			}
+		}
+	}
+	focus = {
+		id = FIN_rifles_and_planes
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = FIN_pander_italy }
+		x = 9
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1  amount = 2000 producer = ITA }
+			add_equipment_to_stockpile = { type = fighter_equipment_1936  amount = 400 producer = ITA }
+		}
+	}
+	focus = {
+		id = FIN_pander_germany
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = FIN_pander_axis }
+		mutually_exclusive = { focus = FIN_pander_italy }
+		x = 7
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}	
+		completion_reward = {
+			add_tech_bonus = {
+				Bonus = 1.0
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	focus = {
+		id = FIN_german_knowledge
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = FIN_pander_germany }
+		x = 7
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}	
+		completion_reward = {
+			add_tech_bonus = {
+				Bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+			add_tech_bonus = {
+				name = GER_trade_interdiction
+				bonus = 1.5
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+			add_tech_bonus = {
+				Bonus = 0.75
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FIN_pander_allies
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = FIN_foreign_aid }
+		x = 14
+		y = 4
+		cost = 0.8
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = pandered
+			}
+			add_opinion_modifier = {
+				target = FRA
+				modifier = pandered
+			}
+		}
+	}
+	focus = {
+		id = FIN_pander_france
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = FIN_pander_allies }
+		mutually_exclusive = { focus = FIN_pander_uk }
+		x = 15
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
+			add_tech_bonus = {
+				Bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = FIN_french_aid
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = FIN_pander_france }
+		x = 15
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1  amount = 1000 producer = FRA }
+			add_equipment_to_stockpile = { type = special_equipment_1  amount = 500 producer = FRA }
+		}
+	}
+	focus = {
+		id = FIN_pander_uk
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = FIN_pander_allies }
+		mutually_exclusive = { focus = FIN_pander_france }
+		x = 13
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}	
+		completion_reward = {
+			add_tech_bonus = {
+				Bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = FIN_british_aid
+		icon = GFX_focus_eng_motion_of_no_confidence
+		prerequisite = { focus = FIN_pander_uk }
+		x = 13
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 0
+		}	
+		completion_reward = {
+			add_tech_bonus = {
+				Bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}
+			add_tech_bonus = {
+				Bonus = 1.0
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	focus = {
+		id = FIN_hungarian_volunteers
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = FIN_foreign_aid }
+		x = 10
+		y = 4
+		cost = 1.5
+			
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
+			add_manpower = 10000
+		}
+	}
+	focus = {
+		id = FIN_scandinavian_volunteers
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = FIN_foreign_aid }
+		x = 12
+		y = 4
+		cost = 1.5
+			
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
+			country_event = { id = finland.2 }
+		}
+	}
     focus = {
 		id = FIN_abandoned
 		icon = GFX_focus_hol_war_on_pacifism
-		x = 10
-		y = 0
+		prerequisite = { focus = FIN_foreign_aid }
+		x = 11
+		y = 6
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -777,10 +1206,10 @@ focus = {
 		available = {	146 = {	is_owned_by = SOV }	}
 
 		completion_reward = { 
-        add_political_power = 150
-           add_popularity = {
-            ideology = fascism
-            popularity = 0.25
+			add_political_power = 150
+            add_popularity = {
+				ideology = fascism
+				popularity = 0.25
            }
 		}
 	}
@@ -788,8 +1217,8 @@ focus = {
 		id = FIN_prepare_for_revenge
 		icon = GFX_focus_generic_strike_at_democracy1
 		 prerequisite = { focus = FIN_abandoned }
-		x = 9
-		y = 1
+		x = 10
+		y = 7
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -803,8 +1232,8 @@ focus = {
 		id = FIN_militarisation
 		icon = GFX_goal_continuous_non_factory_construct
 		 prerequisite = { focus = FIN_prepare_for_revenge }
-		x = 9
-		y = 2
+		x = 10
+		y = 8
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -831,8 +1260,8 @@ focus = {
 		id = FIN_german_factories
 		icon = GFX_focus_generic_industry_3
 		 prerequisite = { focus = FIN_german_advisors }
-		x = 13
-		y = 2
+		x = 14
+		y = 8
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -885,8 +1314,8 @@ focus = {
 		icon = GFX_idea_german_advisors
 		 prerequisite = { focus = FIN_militarisation }
 		 prerequisite = { focus = FIN_lessons_of_winter }
-		x = 10
-		y = 3
+		x = 11
+		y = 9
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -908,8 +1337,8 @@ focus = {
 		id = FIN_young_wolfes
 		icon = GFX_goal_generic_wolf_pack
 		 prerequisite = { focus = FIN_masters_of_winter }
-		x = 7
-		y = 3
+		x = 8
+		y = 9
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -937,8 +1366,8 @@ focus = {
 		id = FIN_masters_of_winter
 		icon = GFX_idea_sisu
 		 prerequisite = { focus = FIN_prepare_for_revenge }
-		x = 7
-		y = 2
+		x = 8
+		y = 8
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -962,8 +1391,8 @@ focus = {
 		id = FIN_lessons_of_winter
 		icon = GFX_focus_generic_provoke_border_clashes
 		 prerequisite = { focus = FIN_german_advisors }
-		x = 11
-		y = 2
+		x = 12
+		y = 8
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -981,8 +1410,8 @@ focus = {
 		id = FIN_german_advisors
 		icon = GFX_idea_general_staff
 		 prerequisite = { focus = FIN_abandoned }
-		x = 11
-		y = 1
+		x = 12
+		y = 7
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -996,8 +1425,8 @@ focus = {
 		id = FIN_sturmgeschutz
 		icon = GFX_goal_generic_army_artillery
 		 prerequisite = { focus = FIN_german_factories }
-		x = 12
-		y = 3
+		x = 13
+		y = 9
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -1017,8 +1446,8 @@ focus = {
 		id = FIN_panzerfaust
 		icon = GFX_focus_chi_army_reform
 		 prerequisite = { focus = FIN_german_factories }
-		x = 14
-		y = 3
+		x = 15
+		y = 9
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -1039,8 +1468,8 @@ focus = {
 		prerequisite = { focus = FIN_sturmgeschutz }
 		prerequisite = { focus = FIN_young_wolfes }
 		prerequisite = { focus = FIN_panzerfaust }
-		x = 10
-		y = 4
+		x = 11
+		y = 10
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -1053,904 +1482,52 @@ focus = {
 		will_lead_to_war_with = SOV
 
 		completion_reward = { 
+			add_ideas = continuation_war_idea
 			country_event = { id = finland.26 }
 		}
-	}
-   
+	}  	
+	
 	focus = {
-		id = FIN_the_lotta_svard
-		icon = GFX_goal_generic_special_forces
-        prerequisite = { focus = FIN_civilian_kitchens }
-		x = 5
-		y = 4
+		id = FIN_push_forwards
+		icon = GFX_focus_generic_air_defense
+        prerequisite = { focus = FIN_continuation_war }
+		mutually_exclusive = { focus = FIN_reclaim_land }
+		x = 10
+		y = 11
 		cost = 10
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}	
 		available = {	111 = {	is_owned_by = FIN }	}
 
 
 		completion_reward = { 
-        
-        add_ideas = FRA_national_mobilization_focus
-
-			111 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
-					instant_build = yes
-				}
+      
+			swap_ideas = { 
+				remove_idea = continuation_war_idea
+				add_idea = continuation_war_idea_push
 			}
-		}
+		}	
 	}
-    
-    focus = {
-		id = FIN_limited_motorization
-		icon = GFX_goal_generic_army_motorized
-		bypass = { has_tech = motorised_infantry }
-		x = 17
-		y = 0
+	focus = {
+		id = FIN_reclaim_land
+		icon = GFX_focus_generic_coastal_fort
+        prerequisite = { focus = FIN_continuation_war }
+		mutually_exclusive = { focus = FIN_push_forwards }
+		x = 12
+		y = 11
 		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = motorized_bonus
-				bonus = 1
-				uses = 1
-				category = motorized_equipment
-			}
-		}
-	}
-    
-    	focus = {
-		id = FIN_study_foreign_vehicles
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = FIN_limited_motorization }
-		x = 18
-		y = 1
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = motorized_bonus
-				ahead_reduction = 0.5
-				bonus = 1
-				uses = 1
-				category = motorized_equipment
-			}
-		}
-	}
-   
-   focus = {
-		id = FIN_tuli_isku
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = FIN_limited_motorization }
-		x = 16
-		y = 1
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = artillery
-			}
-		}
-	}
-    
-    
-    	focus = {
-		id = FIN_further_artillery_support
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = FIN_tuli_isku }
-		x = 16
-		y = 2
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				ahead_reduction = 1
-				uses = 2
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-	}
-   
-   	focus = {
-		id = FIN_import_tanks
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = FIN_study_foreign_vehicles }
-		
-		x = 18
-		y = 2
-		cost = 10
-
 		ai_will_do = {
 			factor = 10
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1
-				uses = 1
-				category = armor
-			}		
-			custom_effect_tooltip = FIN_gwtank                  
-		}
-	}
-    
-    focus = {
-		id = FIN_theft_and_learning
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = FIN_import_tanks }
-		
-		x = 18
-		y = 3
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = FIN_stolentanks
-				bonus = 1
-				uses = 1
-				technology = light_tank_1934
-			}
-
-
-			add_tech_bonus = {
-				name = POL_cruiser_tank_experiments
-				bonus = 0.1
-				uses = 1
-				technology = heavy_tank_1934
-			}
-            
-            #1x 50% reduction on research for medium tanks
-		}
-	}
-   
-   	focus = {
-		id = FIN_aviation_effort
-		icon = GFX_goal_generic_build_airforce
-		x = 21
-		y = 0
-		cost = 10
-
-		complete_tooltip = {
-			air_experience = 25
-			if = { limit = { has_country_flag = aviation_effort_AB }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}			
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 1
-				uses = 1
-				category = air_doctrine
-			}			
-		}
-
-		completion_reward = {
-			air_experience = 25
-
-			if = {
-				limit = {
-					capital_scope = {
-						NOT = {
-							free_building_slots = {
-								building = air_base
-								size > 1
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_AB }
-				}
-			}
-			if = {
-				limit = {
-					capital_scope = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-				capital_scope = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_AB }
-				}
-			}
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 1
-				uses = 1
-				category = air_doctrine
-			}
-		}
-	}
-   
-       	focus = {
-		id = FIN_paratroopers_and_air_bases
-		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = FIN_aviation_effort }
-		x = 21
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
 		}	
-		completion_reward = {
-			add_tech_bonus = {
-				name = ITA_marines_and_landing_craft
-				bonus = 1
-				uses = 1
-                technology = paratroopers
-				technology = paratroopers2
-			}
-            
-            if = {
-				limit = {
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
+		available = {	111 = {	is_owned_by = FIN }	}
 
-		}
-	}
-   
-   
-   	focus = {
-		id = FIN_fighter_focus
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = FIN_aviation_effort }
-        
-		mutually_exclusive = { focus = FIN_bomber_focus }
-		x = 20
-		y = 2
-		cost = 10
-		completion_reward = {
-        custom_effect_tooltip = FIN_fighter
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 1
-				uses = 2
-				technology = fighter_1934
-				technology = fighter_1936
-				technology = fighter_1938
-				technology = fighter_1940
-				technology = fighter_1942
-				technology = fighter_1944
-			}
-            
-                    hidden_effect = {
 
-        
-        }
-		}
-	}
-
-	focus = {
-		id = FIN_bomber_focus
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = FIN_aviation_effort }
-		mutually_exclusive = { focus = FIN_fighter_focus }
-		x = 22
-		y = 2
-		cost = 10
-		completion_reward = {
-			custom_effect_tooltip = FIN_bomber
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 0.2
-				uses = 2
-				technology = strategic_bomber_1937
-				technology = strategic_bomber_1939
-				technology = strategic_bomber_1941
-				category = tactical_bomber
-			}           
-            hidden_effect = {
-				set_technology = {			
-				 tactical_bomber_1934 = 1 		
-				}
+		completion_reward = {        
+			swap_ideas = { 
+				remove_idea = continuation_war_idea
+				add_idea = continuation_war_idea_hold
 			}
 		}
 	}
-   
-   	focus = {
-		id = FIN_aviation_effort_2
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = FIN_bomber_focus focus = FIN_fighter_focus }
-		x = 21
-		y = 3
-		cost = 10
-
-		complete_tooltip = {
-			air_experience = 25
-			if = { limit = { has_country_flag = aviation_effort_2_AB }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name =  air_doc_bonus
-				bonus = 1
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		completion_reward = {
-			air_experience = 25
-			if = {
-				limit = {
-					capital_scope = {
-						NOT = {
-							free_building_slots = {
-								building = air_base
-								size > 1
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_2_AB }
-				}
-			}
-			if = {
-				limit = {
-					capital_scope = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-				capital_scope = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}				
-					ROOT = { set_country_flag = aviation_effort_2_AB }
-				}
-			}
-			add_tech_bonus = {
-				name =  air_doc_bonus
-				bonus = 1
-				uses = 1
-				category = air_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = FIN_CAS_effort
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = FIN_aviation_effort_2 }
-        prerequisite = { focus = FIN_study_foreign_vehicles }
-		x = 19
-		y = 4
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = CAS_bonus
-				bonus = 1
-				ahead_reduction = 0.5
-				uses = 1
-				category = cas_bomber
-			}
-		}
-	}
-
-	focus = {
-		id = FIN_rocket_effort
-		icon = GFX_focus_rocketry
-		prerequisite = { focus = FIN_aviation_effort_2 }
-		x = 21
-		y = 4
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = jet_rocket_bonus
-				ahead_reduction = 0.25
-				uses = 2
-				category = rocketry
-				category = jet_technology
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.25
-				always = yes
-			}
-		}
-	}
-
-	focus = {
-		id = FIN_nav_effort
-		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = FIN_aviation_effort_2 }
-		prerequisite = { focus = FIN_naval_effort }
-		x = 23
-		y = 4
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1
-				ahead_reduction = 0.5
-				uses = 1
-				category = naval_bomber
-			}
-		}
-	}
-   
-   
-	focus = {
-		id = FIN_naval_effort
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 25
-		y = 0
-		cost = 10
-
-		available = {
-			any_state = {
-				is_coastal = yes
-				is_controlled_by = ROOT
-			}
-		}
-
-		complete_tooltip = {
-			navy_experience = 25
-			add_extra_state_shared_building_slots = 3
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
-		
-		completion_reward = {
-			navy_experience = 25
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							dockyard > 0
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-					any_owned_state = {
-						is_coastal = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					any_owned_state = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					NOT = {
-						any_owned_state = {
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-				}
-				random_state = {
-					limit = {
-						controller = { tag = ROOT }
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}			
-		}
-	}
-
-	focus = {
-		id = FIN_flexible_navy
-		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = FIN_naval_effort }
-		mutually_exclusive = { focus = FIN_large_navy }
-		x = 24
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = sub_op_bonus
-				bonus = 1
-				uses = 2
-				technology = convoy_interdiction_ti
-				technology = unrestricted_submarine_warfare
-				technology = wolfpacks
-				technology = advanced_submarine_warfare
-				technology = combined_operations_raiding
-			}
-		}
-	}
-
-	focus = {
-		id = FIN_large_navy
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = FIN_naval_effort }
-		mutually_exclusive = { focus = FIN_flexible_navy }
-		x = 26
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = fleet_in_being_bonus
-				bonus = 1
-				uses = 2
-				category = fleet_in_being_tree
-			}
-		}
-	}
-
-	focus = {
-		id = FIN_submarine_effort
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = FIN_flexible_navy focus = FIN_large_navy }
-		x = 24
-		y = 2
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = ss_bonus
-				bonus = 1
-				ahead_reduction = 0.5
-				uses = 1
-				
-				technology = basic_submarine
-				technology = improved_submarine
-				technology = advanced_submarine
-			}
-		}
-	}
-
-	focus = {
-		id = FIN_cruiser_effort
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = FIN_large_navy focus = FIN_flexible_navy }
-		x = 26
-		y = 2
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 1
-				ahead_reduction = 0.5
-				uses = 1
-				technology = improved_light_cruiser
-				technology = advanced_light_cruiser
-				technology = improved_heavy_cruiser
-				technology = advanced_heavy_cruiser
-			}
-		}
-	}
-
-	focus = {
-		id = FIN_destroyer_effort
-		icon = GFX_goal_generic_navy_anti_submarine
-		prerequisite = { focus = FIN_submarine_effort }
-		x = 24
-		y = 3
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = dd_bonus
-				bonus = 1
-				ahead_reduction = 0.5
-				uses = 1
-				technology = early_destroyer
-				technology = basic_destroyer
-				technology = improved_destroyer
-				technology = advanced_destroyer
-			}
-		}
-	}
-
-	focus = {
-		id = FIN_capital_ships_effort
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = FIN_cruiser_effort }
-		x = 26
-		y = 3
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = capital_ships_bonus
-				bonus = 1
-				ahead_reduction = 0.5
-				uses = 1
-				technology = basic_battlecruiser
-				technology = basic_battleship
-				technology = improved_battleship
-				technology = advanced_battleship
-				technology = heavy_battleship
-				technology = heavy_battleship2
-				technology = early_carrier
-				technology = basic_carrier
-				technology = improved_carrier
-				technology = advanced_carrier
-			}
-		}
-	}
-    
-    focus = {
-		id = FIN_fortress_aland
-		prerequisite = { focus = FIN_naval_effort }
-        		available = {
-			FIN = {
-				controls_state = 145
-			}
-		}
-		x = 28
-		y = 1
-		cost = 10
-		icon = GFX_goal_generic_fortify_city
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-
-			145 = {		
-                add_building_construction = {
-						type = coastal_bunker
-						province = 9228
-						level = 3
-				}
-				add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				
-			}
-		}	
-	}
-    
-    	focus = {
-		id = FIN_marines_and_landing_craft
-		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = { focus = FIN_fortress_aland }
-		x = 28
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			add_tech_bonus = {
-				name = ITA_marines_and_landing_craft
-				bonus = 1
-				uses = 1
-				technology = marines
-				technology = marines2
-			}
-			add_tech_bonus = {
-				name = ITA_marines_and_landing_craft
-				bonus = 1
-				uses = 1
-				category = tp_tech
-			}
-		}
-	}
-    
-    	focus = {
-		id = FIN_flying_lottas
-		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = FIN_aviation_effort_2 }
-		x = 22
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			air_experience = 25
-			set_rule = {
-				can_generate_female_aces = yes
-			}
-		}
-	}
-   
-    }
-	
-
-    
-
-    
+}	  

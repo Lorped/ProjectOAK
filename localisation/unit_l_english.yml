@@ -244,7 +244,7 @@
  anti_tank:0 "Anti-Tank Company"
  anti_tank_desc:0 ""
  anti_air_company:0 "Anti-Air Company"
- artillery:0 "Artillery Company"
+ artillery:0 "Artillery"
  anti_air:0 "Anti-Air Battalion"
  anti_air_desc:0 "Light Anti-Air guns drawn by horses."
  anti_air_mot:0 "Motorised Anti-Air Battalion"

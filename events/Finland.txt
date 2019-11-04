@@ -377,7 +377,6 @@ country_event = {
 		target = SOV
 		type = annex_everything
 	 }
-	 add_ideas = continuation_war_idea
 	 hidden_effect = { news_event = { id = finland.27 } }
 	 GER = {
 		country_event = generic.2

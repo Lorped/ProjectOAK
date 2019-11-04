@@ -19,7 +19,9 @@ opinion_modifiers = {
 	CZE_german_leanings = {
 		value = 50
 	}
-
+	pandered = {
+		value = 25
+	}
 	huge_increase = {
 		value = 100
 	}

@@ -54,6 +54,39 @@ ideas = {
 				army_attack_factor = -0.25
 			}
 		}
+		continuation_war_idea_push = {
+
+			picture = ger_bulwark_against_bolshevism
+
+			name = continuation_war_idea
+		    
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_attack_factor = -0.15
+			}
+		}
+		continuation_war_idea_hold = {
+
+			picture = ger_bulwark_against_bolshevism
+
+			name = continuation_war_idea
+		    
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_attack_factor = -0.25
+				army_defence_factor = 0.1
+			}
+		}
 		FIN_revenge = {
 
 			picture = generic_morale_bonus
@@ -198,7 +231,52 @@ ideas = {
 	}
 
 	political_advisor = {
+		FIN_vaino_tanner = { 
 
+			picture = generic_political_advisor_europe_4
+			
+			allowed = {
+				original_tag = FIN
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+
+		
+		FIN_mauno_pekkala = {
+
+			picture = generic_political_advisor_europe_5
+
+			allowed = {
+				original_tag = FIN
+			}
+			
+			traits = { backroom_backstabber }
+		}
+
+		FIN_rainer_von_fieandt = {
+
+			picture = generic_political_advisor_europe_6
+				
+			allowed = {
+				original_tag = FIN
+			}
+			
+			traits = { quartermaster_general }
+		}
+
+		FIN_antti_hackzell = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = FIN
+			}
+			
+			traits = { silent_workhorse }
+		}
+	}
+	theorist_production = {
 		
 		FIN_ralf_torngren = {
 
@@ -221,18 +299,7 @@ ideas = {
 			
 			traits = { captain_of_industry }
 		}
-
-		FIN_antti_hackzell = {
-
-			picture = generic_political_advisor_europe_3
-			
-			allowed = {
-				original_tag = FIN
-			}
-			
-			traits = { silent_workhorse }
-		}
-	}
+	}	
 	theorist = {
 
 		FIN_akseli_anttila = {
@@ -274,7 +341,7 @@ ideas = {
 
 		FIN_lauri_malmberg = {
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = FIN
@@ -291,7 +358,7 @@ ideas = {
 
 		FIN_hugo_osterman = {
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_4
 			
 			allowed = {
 				original_tag = FIN
@@ -308,7 +375,7 @@ ideas = {
 		
 		FIN_carl_mannerheim = {
 			
-			picture = generic_army_europe_3
+			picture = generic_army_europe_6
 			
 			allowed = {
 				original_tag = FIN

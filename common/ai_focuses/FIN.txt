@@ -1,5 +1,7 @@
 ai_historical_focus_list_FIN = {
 	ai_national_focuses = {
+		FIN_defend_finland
+		FIN_foreign_aid
 		FIN_abandoned
 		FIN_prepare_for_revenge
 		FIN_militarisation
