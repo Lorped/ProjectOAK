@@ -1,15 +1,15 @@
 ﻿division_template = {
-	name = "Indian Infantry Division"			
+	name = "Indian Infantry Division"
     division_names_group = RAJ_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		
+
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		
+
       	infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
@@ -18,11 +18,11 @@
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
 		artillery_brigade =  { x = 3 y = 3 }
-		
+
 		artillery_medium = { x = 4 y = 0 }
-		anti_air = { x = 4 y = 1 }
+		anti_air_brigade = { x = 4 y = 1 }
 	}
-	
+
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
@@ -38,7 +38,7 @@ division_template = {
 		light_infantry = { x = 0 y = 1 }
 		light_infantry = { x = 0 y = 2 }
 		light_infantry = { x = 0 y = 3 }
-		
+
 		light_infantry = { x = 1 y = 0 }
 		light_infantry = { x = 1 y = 1 }
 		light_infantry = { x = 1 y = 2 }
@@ -47,7 +47,7 @@ division_template = {
 		pack_artillery_brigade = { x = 2 y = 1 }
 		pack_artillery_brigade = { x = 2 y = 2 }
 	}
-	
+
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
@@ -88,14 +88,14 @@ division_template = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
 		light_armor = { x = 0 y = 2 }
-		
+
 		light_armor = { x = 1 y = 0 }
 		light_armor = { x = 1 y = 1 }
 		light_armor = { x = 1 y = 2 }
-		
+
 		motorized = { x = 2 y = 0 }
        	motorized = { x = 2 y = 1 }
-		
+
 		motorized = { x = 3 y = 0 }
 		motorized = { x = 3 y = 1 }
 		armored_cars_battalion = { x = 3 y = 2 }
@@ -103,7 +103,7 @@ division_template = {
 		artillery_brigade_mot = { x = 4 y = 0 }
 		artillery_brigade_mot = { x = 4 y = 1 }
 		anti_tank_brigade_mot =  { x = 4 y = 2 }
-		anti_air_mot =  { x = 4 y = 3 }
+		anti_air_brigade_mot =  { x = 4 y = 3 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -121,70 +121,70 @@ units = {
 	division = {
 		name = "1st Malaya Infantry Brigade"
 		location = 12299
-		division_template = "District Division"		
+		division_template = "District Division"
 		start_experience_factor = 0.0
-		start_equipment_factor = 0.5		
+		start_equipment_factor = 0.5
 	}
-	
+
 	division = {
 		name = "2nd Malaya Infantry Brigade"
 		location = 7371
-		division_template = "District Division"		
+		division_template = "District Division"
 		start_experience_factor = 0.0
-		start_equipment_factor = 0.5		
+		start_equipment_factor = 0.5
 	}
-	
+
 	division = {
 		name = "3rd Malaya Infantry Brigade"
 		location = 7371
-		division_template = "District Division"		
+		division_template = "District Division"
 		start_experience_factor = 0.0
-		start_equipment_factor = 0.5		
+		start_equipment_factor = 0.5
 	}
-	
+
 	#Northern Command
-	
-	division= {	
+
+	division= {
 		name = "The Royal Tank Regiment"
 		location = 12717
 		division_template = "Indian Armoured Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5				
+		start_equipment_factor = 0.5
 	}
-	
-	division= {	
+
+	division= {
 		name = "Peshawar District"
 		location = 12717
 		division_template = "Indian Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5				
+		start_equipment_factor = 0.5
 	}
 
-	division= {	
+	division= {
 		name = "1st (Risalpur) Cavalry Brigade"
 		location = 12717
 		division_template = "Indian Cavalry Division"
 		start_experience_factor = 0.1
-		
+
 
 	}
-	division= {	
+	division= {
 		name = "Kohat District"
 		location = 4998
 		division_template = "Indian Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5		
+		start_equipment_factor = 0.5
 	}
 
-	division= {	
+	division= {
 		name = "Rawalpindi District"
 		location = 12005
 		division_template = "Indian Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5				
+		start_equipment_factor = 0.5
 	}
 
-	division= {	
+	division= {
 		name = "Lahore District"
 		location = 10843
 		division_template = "Indian Infantry Division"
@@ -192,94 +192,94 @@ units = {
 		start_equipment_factor = 0.5
 	}
 
-	division= {	
+	division= {
 		name = "Waziristan District"
 		location = 1978
 		division_template = "Indian Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
-		
-	division= {	
+
+	division= {
 		name = "Meerut District"
 		location = 11955
 		division_template = "Indian Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5				
+		start_equipment_factor = 0.5
 	}
 
-	division= {	
+	division= {
 		name = "3rd (Meerut) Cavalry Brigade"
 		location = 11955
 		division_template = "Indian Cavalry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5		
+		start_equipment_factor = 0.5
 	}
 
-	division= {	
+	division= {
 		name = "Lucknow District"
 		location = 12137
 		division_template = "Indian Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5		
+		start_equipment_factor = 0.5
 	}
 
-	division= {	
+	division= {
 		name = "Presidency & Assam District"
 		location = 1497
 		division_template = "District Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5		
+		start_equipment_factor = 0.5
 	}
-	
+
 	#Southern Command
-	division= {	
+	division= {
 		name = "Deccan District"
 		location = 12781
 		division_template = "District Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5		
+		start_equipment_factor = 0.5
 	}
 
-	division= {	
+	division= {
 		name = "4th (Secunderabad) Cavalry Brigade"
 		location = 12781
 		division_template = "Indian Cavalry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5		
+		start_equipment_factor = 0.5
 	}
 
-	division= {	
+	division= {
 		name = "Bombay District"
 		location = 1349
 		division_template = "District Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5		
+		start_equipment_factor = 0.5
 	}
 
-	division= {	
+	division= {
 		name = "Madras District"
 		location = 10278
 		division_template = "District Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5		
+		start_equipment_factor = 0.5
 	}
 
-	division= {	
+	division= {
 		name = "Western Independent District"
 		location = 5105
 		division_template = "Indian Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5		
+		start_equipment_factor = 0.5
 	}
 }
 
 air_wings = {
 	### AHQ India
-	439 = { 
+	439 = {
 		### AHQ India -- Fairey Gordons, Battles
 		fighter_equipment_1934 = {
-			owner = "RAJ" 
+			owner = "RAJ"
 			amount = 80
 		}
 	}
@@ -297,7 +297,7 @@ instant_effect = { #player
 		progress = 0.73
 		efficiency = 15
 	}
-	
+
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -310,7 +310,7 @@ instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
 			type = radio_equipment_1
-			creator = "RAJ" 
+			creator = "RAJ"
 		}
 		requested_factories = 2
 		progress = 0.3
@@ -319,7 +319,7 @@ instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
 			type = horse_equipment_0
-			creator = "RAJ" 
+			creator = "RAJ"
 		}
 		requested_factories = 2
 		progress = 0.3
@@ -328,7 +328,7 @@ instant_effect = { #player
 		add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
-			creator = "RAJ" 
+			creator = "RAJ"
 		}
 		requested_factories = 2
 		progress = 0.3
@@ -343,15 +343,15 @@ instant_effect = { #player
 		progress = 0.73
 		efficiency = 15
 	}
-	
-	
+
+
 	############################# equipment stockpile
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1
 			amount = 5000
 			producer = ENG
 		}
-	
+
 	add_equipment_to_stockpile = {
 		type = horse_equipment_0
 			amount = 800

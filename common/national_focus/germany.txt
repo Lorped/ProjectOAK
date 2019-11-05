@@ -1,15 +1,15 @@
 focus_tree = {
 	id = german_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = GER
 		}
 	}
-	
+
 	continuous_focus_position = { x = 3200 y = 850 }
 	default = no
 
@@ -21,11 +21,11 @@ focus_tree = {
 		x = -8
 		y = 0
 		cost = 5
-		
+
 		ai_will_do = {
 			factor = 5
 		}
-		
+
 		completion_reward = {
 			custom_effect_tooltip = GER_autobahn_tt
 			hidden_effect = {
@@ -69,7 +69,7 @@ focus_tree = {
 						}
 					}
 				}
-			}		
+			}
 		}
 	}
 
@@ -82,7 +82,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 9
 		}
-		
+
 		completion_reward = {
 			custom_effect_tooltip = autarky_tt
 			add_tech_bonus = {
@@ -106,8 +106,8 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1 
-					instant_build = yes 
+					level = 1
+					instant_build = yes
 				}
 				add_resource = {
 				    type = steel
@@ -119,7 +119,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_continue_the_new_plan
-		icon = GER_continue_the_new_plan 
+		icon = GER_continue_the_new_plan
 		relative_position_id = GER_autobahn
 		mutually_exclusive = { focus = GER_four_year_plan }
 		prerequisite = { focus = GER_autarky }
@@ -128,12 +128,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-		
+
 		}
 		ai_will_do = {
 			factor = 12
 		}
-		
+
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = hjalmar_schacht
@@ -143,7 +143,7 @@ focus_tree = {
 					limit = {
 						GER = {	is_ai = yes }
 					}
-					add_ideas = hjalmar_schacht 
+					add_ideas = hjalmar_schacht
 					add_political_power -150
 				}
 			}
@@ -152,7 +152,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_freedom_to_the_steel_barons
-		icon = GOAL_unknown 
+		icon = GOAL_unknown
 		relative_position_id = GER_continue_the_new_plan
 		prerequisite = { focus = GER_continue_the_new_plan }
 
@@ -164,12 +164,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-		
+
 		}
 		ai_will_do = {
 			factor = 12
 		}
-		
+
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = GER_steel_barons
@@ -181,7 +181,7 @@ focus_tree = {
 	focus = {
 		id = GER_mefo_loans_for_resources
 		relative_position_id = GER_continue_the_new_plan
-		icon = GOAL_unknown 
+		icon = GOAL_unknown
 		prerequisite = { focus = GER_freedom_to_the_steel_barons }
 		x = 0
 		y = 2
@@ -194,7 +194,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = GER_industrial_effort_2IC }
@@ -204,7 +204,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}			
+			}
 		}
 
 		completion_reward = {
@@ -258,7 +258,7 @@ focus_tree = {
 			}
 
 			custom_effect_tooltip =	GER_plan_z_tt_4
-		
+
 			hidden_effect = {
 				GER_mefo_bills_level_up = yes
 				GER_mefo_bills_level_up = yes
@@ -269,7 +269,7 @@ focus_tree = {
 	focus = {
 		id = GER_prevent_rheinmetall_merger
 		relative_position_id = GER_continue_the_new_plan
-		icon = GOAL_unknown 
+		icon = GOAL_unknown
 		prerequisite = { focus = GER_mefo_loans_for_resources }
 		x = 1
 		y = 3
@@ -282,12 +282,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+
 		completion_reward = {
 			add_political_power = 50
 
 			custom_effect_tooltip =	GER_plan_z_tt_4
-		
+
 			hidden_effect = {
 				GER_mefo_bills_level_up = yes
 				GER_mefo_bills_level_up = yes
@@ -332,7 +332,7 @@ focus_tree = {
 	focus = {
 		id = GER_new_subsidiaries
 		relative_position_id = GER_continue_the_new_plan
-		icon = GOAL_unknown 
+		icon = GOAL_unknown
 		prerequisite = { focus = GER_prevent_rheinmetall_merger }
 		x = 1
 		y = 4
@@ -345,7 +345,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+
 		completion_reward = {
 
 			swap_ideas = {
@@ -369,8 +369,8 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1 
-					instant_build = yes 
+					level = 1
+					instant_build = yes
 				}
 			}
 			random_owned_state = {
@@ -389,10 +389,10 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1 
-					instant_build = yes 
+					level = 1
+					instant_build = yes
 				}
-			}	
+			}
 			random_owned_state = {
 				limit = {
 					free_building_slots = {
@@ -409,13 +409,13 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1 
-					instant_build = yes 
+					level = 1
+					instant_build = yes
 				}
-			}		
+			}
 
 			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = idea_krupp						
+			show_ideas_tooltip = idea_krupp
 		}
 	}
 
@@ -423,7 +423,7 @@ focus_tree = {
 	focus = {
 		id = GER_the_steel_most_flow
 		relative_position_id = GER_continue_the_new_plan
-		icon = GOAL_unknown 
+		icon = GOAL_unknown
 		prerequisite = { focus = GER_mefo_loans_for_resources }
 		x = -1
 		y = 3
@@ -436,16 +436,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+
 		completion_reward = {
 
 			add_ideas = GER_schacht_autarky
 
-			give_resource_rights = { receiver = GER state = 6 }	
-			give_resource_rights = { receiver = GER state = 141 }	
+			give_resource_rights = { receiver = GER state = 6 }
+			give_resource_rights = { receiver = GER state = 141 }
 
 			custom_effect_tooltip =	GER_plan_z_tt_4
-		
+
 			hidden_effect = {
 				GER_mefo_bills_level_up = yes
 				GER_mefo_bills_level_up = yes
@@ -456,7 +456,7 @@ focus_tree = {
 	focus = {
 		id = GER_resource_rationing
 		relative_position_id = GER_continue_the_new_plan
-		icon = GOAL_unknown 
+		icon = GOAL_unknown
 		prerequisite = { focus = GER_the_steel_most_flow }
 		x = -1
 		y = 4
@@ -469,11 +469,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+
 		completion_reward = {
 
 			custom_effect_tooltip =	GER_plan_z_tt_4
-		
+
 			hidden_effect = {
 				GER_mefo_bills_level_up = yes
 				GER_mefo_bills_level_up = yes
@@ -492,16 +492,16 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 5 
-					instant_build = yes 
+					level = 5
+					instant_build = yes
 				}
 				add_building_construction = {
 					type = radar_station
-					level = 1 
-					instant_build = yes 
+					level = 1
+					instant_build = yes
 				}
 
-			}									
+			}
 			random_owned_state = {
 				add_building_construction = {
 					type = infrastructure
@@ -515,15 +515,15 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 5 
-					instant_build = yes 
+					level = 5
+					instant_build = yes
 				}
 				add_building_construction = {
 					type = radar_station
-					level = 1 
-					instant_build = yes 
+					level = 1
+					instant_build = yes
 				}
-			}			
+			}
 			random_owned_state = {
 				add_building_construction = {
 					type = infrastructure
@@ -537,15 +537,15 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 5 
-					instant_build = yes 
+					level = 5
+					instant_build = yes
 				}
 				add_building_construction = {
 					type = radar_station
-					level = 1 
-					instant_build = yes 
-				}	
-			}						
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -560,12 +560,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-		
+
 		}
 		ai_will_do = {
 			factor = 12
 		}
-		
+
 		completion_reward = {
 			activate_mission_tooltip = GER_four_year_plan
 
@@ -578,7 +578,7 @@ focus_tree = {
 					limit = {
 						GER = {	is_ai = yes }
 					}
-					add_ideas = hjalmar_schacht 
+					add_ideas = hjalmar_schacht
 					add_ideas = goering_e
 					add_political_power -300
 				}
@@ -599,7 +599,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 9
 		}
-		
+
 		completion_reward = {
 			custom_effect_tooltip = autarky_2_tt
 			add_ideas = ig_faben
@@ -608,7 +608,7 @@ focus_tree = {
 				limit = {
 					has_idea = GER_autarky_idea
 					}
-					swap_ideas = { 
+					swap_ideas = {
 					remove_idea = GER_autarky_idea
 					add_idea = GER_autarky_idea2
 					}
@@ -622,19 +622,19 @@ focus_tree = {
 		}
 	}
 
-	focus = { 
+	focus = {
 		id = GER_synthetic_oil_refinery
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ig_faben }
 		relative_position_id = ig_faben
 		x = -1
 		y = 1
-		cost = 7.20 
+		cost = 7.20
 		available = { has_tech = oil_processing }
-		ai_will_do = { 
-			factor = 5 
+		ai_will_do = {
+			factor = 5
 		}
-		
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 52 }
@@ -678,21 +678,21 @@ focus_tree = {
 		}
 	}
 
-	focus = { 
+	focus = {
 		id = GER_synthetic_rubber_refinery
 		icon = GFX_focus_generic_rubber
 		prerequisite = { focus = ig_faben }
 		relative_position_id = ig_faben
 		x = 1
 		y = 1
-		cost = 7.20 
+		cost = 7.20
 
 		available = { has_tech = rubber_processing }
 
-		ai_will_do = { 
-			factor = 5 
+		ai_will_do = {
+			factor = 5
 		}
-		
+
 		completion_reward = {
 
 			random_owned_controlled_state = {
@@ -754,7 +754,7 @@ focus_tree = {
 		available = {
 			has_tech = improved_oil_processing
 		}
-		
+
 		completion_reward = {
 			custom_effect_tooltip = autarky_3_tt
 
@@ -764,11 +764,11 @@ focus_tree = {
 				limit = {
 					has_idea = GER_autarky_idea2
 					}
-					swap_ideas = { 
+					swap_ideas = {
 					remove_idea = GER_autarky_idea2
 					add_idea = GER_autarky_idea3
 					}
-			} 
+			}
 			add_tech_bonus = {
 				name = oil
 				bonus = 1
@@ -795,7 +795,7 @@ focus_tree = {
 		available = {
 			has_tech = improved_rubber_processing
 		}
-		
+
 		completion_reward = {
 			custom_effect_tooltip = autarky_3_tt
 
@@ -805,7 +805,7 @@ focus_tree = {
 				limit = {
 					has_idea = GER_autarky_idea2
 					}
-					swap_ideas = { 
+					swap_ideas = {
 					remove_idea = GER_autarky_idea2
 					add_idea = GER_autarky_idea3
 					}
@@ -820,13 +820,126 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_mobilize_the_reich
+		icon = GFX_focus_ger_oppose_hitler
+		prerequisite = { focus = GER_expand_the_reichswerke focus = GER_seize_private_iron_ore focus = GER_new_subsidiaries focus = GER_resource_rationing }
+		prerequisite = { focus = ig_faben_rubber focus = ig_faben_oil }
+
+		relative_position_id = ig_faben
+		x = 0
+		y = 4
+		cost = 5
+
+		bypass = {
+			has_idea = war_economy
+		}
+
+		available = {
+			AND = {
+				has_country_flag = GER_the_end_of_czechoslovakia
+				has_army_manpower = { size > 1500000 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GER_reorganized_industry_tt
+			add_ideas = war_economy
+			hidden_effect = {
+				GER = {
+					country_event = { id = germany.320 days = 100 }
+				}
+			}
+			hidden_effect = {
+				remove_ideas = GER_schacht_autarky
+				GER = {
+					remove_resource_rights = 141
+					remove_resource_rights = 6
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = GER_reorganise_the_industry
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		prerequisite = { focus = GER_mobilize_the_reich }
+		relative_position_id = GER_mobilize_the_reich
+		x = 0
+		y = 1
+		cost = 5
+
+		bypass = {
+		}
+
+		available = {
+			and = {
+				has_idea = war_economy
+				has_idea = GER_disorganized_industry
+				any_country = {
+					OR = {
+						tag = GER
+						is_in_faction_with = GER
+					}
+					and = {
+						controls_state = 16
+						has_war = yes
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+
+
+	focus = {
 		id = ig_faben_seize_chemicals
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = GER_reorganise_the_industry }
 		relative_position_id = GER_reorganise_the_industry
 		x = 0
 		y = 1
-		cost = 7.20 
+		cost = 7.20
 		ai_will_do = {
 			factor = 9
 		}
@@ -834,7 +947,7 @@ focus_tree = {
 		available = {
 			country_exists = EFR
 		}
-		
+
 		completion_reward = {
 
 			custom_effect_tooltip = autarky_4_tt
@@ -888,7 +1001,7 @@ focus_tree = {
 					limit = {
 						has_idea = GER_autarky_idea3
 						}
-						swap_ideas = { 
+						swap_ideas = {
 						remove_idea = GER_autarky_idea3
 						add_idea = GER_autarky_idea4
 						}
@@ -897,23 +1010,23 @@ focus_tree = {
 					limit = {
 						has_idea = ig_faben_oil
 						}
-						swap_ideas = { 
+						swap_ideas = {
 						remove_idea = ig_faben_oil
 						add_idea = ig_faben_oil2
 						}
-				}  
+				}
 				if = {
 					limit = {
 						has_idea = ig_faben_rubber
 						}
-						swap_ideas = { 
+						swap_ideas = {
 						remove_idea = ig_faben_rubber
 						add_idea = ig_faben_rubber2
 						}
-				}  
+				}
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = GER_western_knowledge
@@ -929,7 +1042,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -950,22 +1063,22 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 5 
+			factor = 5
 		}
-		
+
 		completion_reward = {
-			
+
 			show_ideas_tooltip = GER_nationalize_steel_barons
 			hidden_effect = {
 				if = {
 					limit = {
 						has_idea = GER_steel_barons
 					}
-					swap_ideas = { 
+					swap_ideas = {
 						remove_idea = GER_steel_barons
 						add_idea = GER_nationalize_steel_barons
 					}
-				} 	
+				}
 			}
 		}
 	}
@@ -994,7 +1107,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}			
+			}
 		}
 
 		completion_reward = {
@@ -1068,9 +1181,9 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 5 
+			factor = 5
 		}
-		
+
 		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = idea_alkett
@@ -1091,7 +1204,7 @@ focus_tree = {
 		icon = GFX_focus_generic_steel
 		prerequisite = { focus = GER_absorb_rheinmetall }
 		relative_position_id = GER_curtail_the_steel_barons
-		x = -1 
+		x = -1
 		y = 3
 		cost = 5
 		available = {
@@ -1102,11 +1215,11 @@ focus_tree = {
 				is_demilitarized_zone = no
 			}
 		}
-		
+
 		ai_will_do = {
-			factor = 5 
+			factor = 5
 		}
-		
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 42 }
@@ -1128,7 +1241,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 20 
+					amount = 20
 				}
 			}
 			random_owned_controlled_state = {
@@ -1151,7 +1264,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 20 
+					amount = 20
 				}
 			}
 			effect_tooltip = {
@@ -1171,15 +1284,15 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5
-		
-		ai_will_do = { 
-			factor = 5 
+
+		ai_will_do = {
+			factor = 5
 		}
 
 		bypass = {
 			has_war = yes
 		}
-		
+
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = GER_industrial_effort_2_2IC }
@@ -1231,7 +1344,7 @@ focus_tree = {
 				uses = 2
 				category = industry
 			}
-			
+
 			effect_tooltip = {
 				GER_mefo_bills_level_up = yes
 			}
@@ -1243,7 +1356,7 @@ focus_tree = {
 			show_ideas_tooltip = opel
 
 		}
-	}	
+	}
 
 	focus = {
 		id = GER_extra_tech_slot
@@ -1275,16 +1388,16 @@ focus_tree = {
 		relative_position_id = GER_curtail_the_steel_barons
 		x = 1
 		y = 2
-		cost = 5		
+		cost = 5
 
-		ai_will_do = { 
-			factor = 5 
+		ai_will_do = {
+			factor = 5
 		}
 
 		bypass = {
 			has_war = yes
 		}
-	
+
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = alfried_krupp
@@ -1294,9 +1407,9 @@ focus_tree = {
 				bonus = 1
 				uses = 2
 				category = artillery
-				
+
 			}
-			
+
 			effect_tooltip = {
 				GER_mefo_bills_level_up = yes
 			}
@@ -1318,11 +1431,11 @@ focus_tree = {
 		available = {
 			has_country_flag = GER_the_end_of_czechoslovakia
 		}
-		
+
 		ai_will_do = {
-			factor = 5 
+			factor = 5
 		}
-		
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 9 }
@@ -1341,13 +1454,13 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 10 
-						instant_build = yes 
+						level = 10
+						instant_build = yes
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 5 
-						instant_build = yes 
+						level = 5
+						instant_build = yes
 					}
 			}
 			random_owned_controlled_state = {
@@ -1367,13 +1480,13 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 10 
-						instant_build = yes 
+						level = 10
+						instant_build = yes
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 5 
-						instant_build = yes 
+						level = 5
+						instant_build = yes
 					}
 			}
 			effect_tooltip = {
@@ -1385,6 +1498,60 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = GER_Wehrmacht
+		text = GER_Wehrmacht
+		icon = GFX_goal_ger_heer
+		relative_position_id = GER_lessons_of_the_civil_war
+		x = 8
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 2
+				uses = 2
+				category = land_doctrine
+			}
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = walther_von_brauchitsch
+		}
+	}
+
+
+
+	focus = {
+		id = GER_infanterie_tactics
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = GER_Wehrmacht }
+		relative_position_id = GER_Wehrmacht
+		x = 5
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			# Balance research bonus to 2 techs in land_doctrine
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = ferdinand_schorner
+			army_experience = 20
+			add_tech_bonus = {
+				name = equipment_bonus
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+
 	##Siemens ##
 
     focus = {
@@ -1395,15 +1562,15 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5
-		
-		ai_will_do = { 
-			factor = 5 
+
+		ai_will_do = {
+			factor = 5
 		}
 
 		bypass = {
 			has_war = yes
 		}
-	
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 59 }
@@ -1418,10 +1585,10 @@ focus_tree = {
 				name = lasers
 				bonus = 1
 				uses = 2
-				category = electronics		
+				category = electronics
 			}
-			set_technology = { 
-				radio_detection = 1 
+			set_technology = {
+				radio_detection = 1
 			}
 			random_owned_controlled_state = {
 				prioritize = { 51 }
@@ -1451,7 +1618,7 @@ focus_tree = {
 						}
 			}
 
-			
+
 			effect_tooltip = {
 				GER_mefo_bills_level_up = yes
 			}
@@ -1463,114 +1630,9 @@ focus_tree = {
 
 	### Start of German Mobilization and War ###
 
-	focus = {
-		id = GER_mobilize_the_reich
-		icon = GFX_focus_ger_oppose_hitler
-		prerequisite = { focus = GER_expand_the_reichswerke focus = GER_seize_private_iron_ore focus = GER_new_subsidiaries focus = GER_resource_rationing }
-		prerequisite = { focus = ig_faben_rubber focus = ig_faben_oil }
 
-		relative_position_id = ig_faben
-		x = 0
-		y = 4
-		cost = 5 
 
-		bypass = {
-			has_idea = war_economy
-		}
 
-		available = {
-			AND = {
-				has_country_flag = GER_the_end_of_czechoslovakia
-				has_army_manpower = { size > 1500000 } 
-			}
-		}
-		
-		ai_will_do = {
-			factor = 5 
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = GER_reorganized_industry_tt
-			add_ideas = war_economy
-			hidden_effect = {
-				GER = {
-					country_event = { id = germany.320 days = 100 }
-				}
-			}
-			hidden_effect = {
-				remove_ideas = GER_schacht_autarky
-				GER = {
-					remove_resource_rights = 141
-					remove_resource_rights = 6
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = GER_reorganise_the_industry
-		icon = GFX_focus_hol_abandon_the_gold_standard
-		prerequisite = { focus = GER_mobilize_the_reich }
-		relative_position_id = GER_mobilize_the_reich
-		x = 0
-		y = 1
-		cost = 5 
-
-		bypass = {
-		}
-
-		available = {
-			and = {
-				has_idea = war_economy
-				has_idea = GER_disorganized_industry 
-				any_country = {
-					OR = {
-						tag = GER
-						is_in_faction_with = GER
-					}
-					and = {
-						controls_state = 16
-						has_war = yes
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 5 
-		}
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
 
 	focus = {
 		id = GER_disperse_industry
@@ -1587,7 +1649,7 @@ focus_tree = {
 		bypass = {
 			has_tech = dispersed_industry3
 		}
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_four_year_plan
@@ -1611,7 +1673,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+
 		completion_reward = {
 			organize_air_defence = yes
 			organize_air_defence = yes
@@ -1675,7 +1737,7 @@ focus_tree = {
 				has_idea = GER_economy_of_plunder_6
 			}
 		}
-		
+
 		completion_reward = {
 			show_ideas_tooltip = GER_swedish_trade2
 			hidden_effect = {
@@ -1683,17 +1745,17 @@ focus_tree = {
 					limit = {
 						has_idea = GER_swedish_trade
 					}
-					swap_ideas = { 
+					swap_ideas = {
 						remove_idea = GER_swedish_trade
 						add_idea = GER_swedish_trade2
 					}
 				}
-			} 
+			}
 		}
 	}
 
 	focus = {
-		id = GER_consolidate_production_lines 
+		id = GER_consolidate_production_lines
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = GER_swiss_cash }
 		mutually_exclusive = { focus = GER_specialization_of_worker_skills }
@@ -1708,7 +1770,7 @@ focus_tree = {
 		available = {
 			has_tech = assembly_line_production
 		}
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_four_year_plan
@@ -1744,14 +1806,14 @@ focus_tree = {
 		available = {
 			has_tech = assembly_line_production
 		}
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_four_year_plan
 				bonus = 1
 				uses = 1
 				category = industry
-			} 
+			}
 			add_tech_bonus = {
 				name = GER_four_year_plan
 				bonus = 1
@@ -1779,9 +1841,9 @@ focus_tree = {
 			has_tech = dispersed_industry4
 			has_tech = excavation4
 			has_war_with = SOV
-			has_idea = GER_economy_of_plunder_6			
+			has_idea = GER_economy_of_plunder_6
 		}
-		
+
 		completion_reward = {
 			custom_effect_tooltip = todt_summoned_to_berlin_tt
 			GER = {
@@ -1789,7 +1851,7 @@ focus_tree = {
 			}
 			remove_ideas = GER_swedish_trade2
 			remove_ideas = GER_disorganized_industry
-			remove_ideas = GER_economy_of_plunder_6			
+			remove_ideas = GER_economy_of_plunder_6
 
 			add_ideas = speer
 		}
@@ -1799,11 +1861,11 @@ focus_tree = {
 		id = GER_volunteer_workers
 		icon = GFX_focus_ger_volkssturm
 		prerequisite = { focus = GER_summon_fritz_todt }
-		relative_position_id = GER_summon_fritz_todt 
+		relative_position_id = GER_summon_fritz_todt
 		x = -2
 		y = 1
 		cost = 5
-		available = { 
+		available = {
 			OR = {
 				surrender_progress > 0.05
 				casualties >1200000
@@ -1812,7 +1874,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		available_if_capitulated = yes	
+		available_if_capitulated = yes
 
 		completion_reward = {
 			add_ideas = GER_guestworkers
@@ -1838,14 +1900,14 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		
+
 		completion_reward = {
-			
+
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = joseph_goebbels
 			add_political_power = 150
-		} 
-	}	
+		}
+	}
 
 	focus = {
 		id = GER_werewolfgorillas
@@ -1866,10 +1928,10 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = volkssturm
-			add_stability = -0.1 
+			add_stability = -0.1
 		}
 	}
 
@@ -1892,9 +1954,9 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		
-		completion_reward = {	
-			add_ideas = non_discriminatory_conscription 
+
+		completion_reward = {
+			add_ideas = non_discriminatory_conscription
 			add_stability = -0.1
 		}
 	}
@@ -1907,20 +1969,20 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 8
-		available = { has_tech = dispersed_industry3 }	
-		
+		available = { has_tech = dispersed_industry3 }
+
 		ai_will_do = {
-			factor = 5 
+			factor = 5
 		}
-		
+
 		completion_reward = {
-			51 = { 
+			51 = {
 				remove_building = {
 					type = arms_factory
 					level = 6
 				}
 			}
-			42 = { 
+			42 = {
 				remove_building = {
 					type = arms_factory
 					level = 6
@@ -1932,7 +1994,7 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 				technology = dispersed_industry4
-				
+
 			}
 		}
 	}
@@ -1947,17 +2009,17 @@ focus_tree = {
 		x = -4
 		y = 1
 		cost = 5
-		
-		
+
+
 		ai_will_do = {
 			factor = 15
 		}
-		
+
 		available = {
 		     is_puppet = no
 		     has_government = fascism
 		}
-		
+
 		completion_reward = {
 			if = {
 				limit = {
@@ -1984,7 +2046,7 @@ focus_tree = {
 		}
 	}
 
-	focus = { 
+	focus = {
 		id = GER_SS_armed_branch
 		icon = GFX_idea_generic_secret_police
 		prerequisite = { focus = GER_Schutzstaffel_focus }
@@ -2014,8 +2076,8 @@ focus_tree = {
 			SS_set_templates = yes
 			SS_resolve_effects_wehrmacht = yes
 			set_technology = {
-				ss_unlock_early_panzers = 1 
-				ss_unlock = 1 
+				ss_unlock_early_panzers = 1
+				ss_unlock = 1
 				ss_unlock_heavy_tanks = 1
 			}
 			create_corps_commander = {
@@ -2067,7 +2129,7 @@ focus_tree = {
 		}
 	}
 
-	focus = { 
+	focus = {
 		id = GER_SS_restrict_recruitment
 		icon = GFX_idea_general_staff
 		prerequisite = { focus = GER_SS_armed_branch }
@@ -2092,7 +2154,7 @@ focus_tree = {
 		}
 	}
 
-	focus = { 
+	focus = {
 		id = GER_SS_recruit_everywhere
 		icon = GFX_idea_general_staff
 		prerequisite = { focus = GER_SS_armed_branch }
@@ -2117,29 +2179,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GER_Wehrmacht
-		text = GER_Wehrmacht
-		icon = GFX_goal_ger_heer
-		relative_position_id = GER_lessons_of_the_civil_war
-		x = 8
-		y = 6
-		cost = 5
-		ai_will_do = {
-			factor = 12
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 2
-				uses = 2
-				category = land_doctrine
-			}
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = walther_von_brauchitsch			
-		}
-	}
+
 
 	focus = {
 		id = GER_achtung_panzer
@@ -2157,12 +2197,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 
-			set_technology = { 
-				tank_radio = 1 
+			set_technology = {
+				tank_radio = 1
 			}
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 1.5 
+				bonus = 1.5
 				uses = 3
 				technology = armored_spearhead
 				technology = schwerpunk
@@ -2181,20 +2221,20 @@ focus_tree = {
 		icon = GFX_focus_ger_armour_investment
 		relative_position_id = GER_achtung_panzer
 		x = 1
-		y = 1 
+		y = 1
 		cost = 5
-		
-		ai_will_do = { 
-			factor = 5 
+
+		ai_will_do = {
+			factor = 5
 		}
 
 		bypass = {
 			has_war = yes
 		}
-		
+
 		completion_reward = {
 			custom_effect_tooltip = GER_tank_competition
-			
+
 			effect_tooltip = {
 				GER_mefo_bills_level_up = yes
 			}
@@ -2206,7 +2246,7 @@ focus_tree = {
 					GER = { has_tech = ger_medium_tank_1936 }
 					NOT = { GER = { has_tech = ger_medium_tank_1938 } }
 				}
-				set_technology = { 
+				set_technology = {
 					ger_medium_tank_1938 = 1
 				}
 			}
@@ -2214,7 +2254,7 @@ focus_tree = {
 				limit = {
 					GER = { has_tech = ger_medium_tank_1938 }
 				}
-				set_technology = { 
+				set_technology = {
 					ger_medium_tank_1940 = 1
 				}
 			}
@@ -2232,7 +2272,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 10
-		}	
+		}
 		available = {
 			has_tech = ger_medium_tank_1938
 			has_tech = tech_signal_company
@@ -2255,7 +2295,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_hanomag			
+		id = GER_hanomag
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = GER_achtung_panzer }
 		relative_position_id = GER_achtung_panzer
@@ -2264,14 +2304,14 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 8
-		}	
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = hanomag
-			add_tech_bonus = {				
+			add_tech_bonus = {
 				bonus = 1
-				uses = 1 
+				uses = 1
 				technology = ger_mechanised_infantry
 			}
 		}
@@ -2290,10 +2330,10 @@ focus_tree = {
 			factor = 0
 		}
 		available_if_capitulated = yes
-		completion_reward = {	
+		completion_reward = {
 			add_tech_bonus = {
-				name = armor_bonus	
-				bonus = 1 
+				name = armor_bonus
+				bonus = 1
 				uses = 3
 				technology = ger_medium_td_1942
 				technology = ger_medium_art_1942
@@ -2308,7 +2348,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_kampfgruppes		
+		id = GER_kampfgruppes
 		text = GER_kampfgruppes
 		icon = GFX_focus_generic_combined_arms
 		prerequisite = { focus = GER_Wehrmacht }
@@ -2320,10 +2360,10 @@ focus_tree = {
 			factor = 8
 		}
 		available = {
-			
+
 		}
-		available_if_capitulated = yes	
-		
+		available_if_capitulated = yes
+
 		completion_reward = {
 			every_army_leader = {
 				add_attack = 1
@@ -2334,11 +2374,11 @@ focus_tree = {
 
 			#kampfgruppe
 			add_tech_bonus = {
-				name = Kampgruppes		
+				name = Kampgruppes
 				bonus = 2
 				uses = 1
-				technology = kampfgruppe	
-				
+				technology = kampfgruppe
+
 			}
 		}
 	}
@@ -2412,9 +2452,9 @@ focus_tree = {
 					remove_idea = general_staff4
 					add_idea = general_staff5
 				}
-			}																							
+			}
 		}
-	}		
+	}
 
 	focus = {
 		id = GER_polish_occupation
@@ -2433,10 +2473,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			GER_economy_of_plunder = yes 
+			GER_economy_of_plunder = yes
 
 			add_state_core = 85
-			add_state_core = 86 
+			add_state_core = 86
 			86 = { set_state_name = "Posen" }
 			set_province_name = { id = 6558 name = "Posen" }
 
@@ -2458,9 +2498,9 @@ focus_tree = {
 					level = -1
 				}
 				add_building_construction = {
-					type = arms_factory 
-					level = 1 
-				}	
+					type = arms_factory
+					level = 1
+				}
 			}
 
 			country_event = { id = germany.130 days = 15 }
@@ -2477,20 +2517,20 @@ focus_tree = {
 						garrison = { x = 0 y = 0 }
 						garrison = { x = 0 y = 1 }
 						garrison = { x = 0 y = 2 }
-						
+
 						garrison = { x = 1 y = 0 }
 						garrison = { x = 1 y = 1 }
 						garrison = { x = 1 y = 2 }
-							
+
 						light_infantry = { x = 2 y = 0 }
 						light_infantry = { x = 2 y = 1 }
 						light_infantry = { x = 2 y = 2 }
 
-						artillery_brigade = { x = 3 y = 0 }		
+						artillery_brigade = { x = 3 y = 0 }
 						artillery_brigade = { x = 3 y = 1 }
 						artillery_brigade = { x = 3 y = 2 }
 						artillery_brigade = { x = 3 y = 3 }
-						
+
 					}
 
 			        support = {
@@ -2504,47 +2544,47 @@ focus_tree = {
 				every_state = {
 					limit = { state = 10 }
 					create_unit = {
-						division = "name = \"501. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"501. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"502. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"502. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"503. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"503. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"504. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"504. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"505. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"505. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"506. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"506. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"507. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"507. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"508. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"508. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"509. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"509. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}		
+					}
 					create_unit = {
-						division = "name = \"510. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"510. Landsschützen (Poland)\" division_template = \"Landsschützen (Poland)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 				}
-			}			
+			}
 		}
 	}
 
@@ -2571,16 +2611,16 @@ focus_tree = {
 					controls_state = 16
 					controls_state = 7
 					controls_state = 6
-					controls_state = 10 
+					controls_state = 10
 					has_war = yes
 				}
 			}
 		}
 
 		ai_will_do = {
-			factor = 5 
+			factor = 5
 		}
-		
+
 		completion_reward = {
 
 			custom_effect_tooltip = GER_seize_foreign_assets_tt
@@ -2609,7 +2649,7 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-	
+
 					hidden_effect = {
 						damage_building = { type = arms_factory damage = 0.3 }
 						damage_building = { type = industrial_complex damage = 0.1 }
@@ -2647,7 +2687,7 @@ focus_tree = {
 						level = 3
 						instant_build = yes
 					}
-	
+
 					hidden_effect = {
 						damage_building = { type = arms_factory damage = 0.3 }
 						damage_building = { type = industrial_complex damage = 0.1 }
@@ -2675,7 +2715,7 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-	
+
 					hidden_effect = {
 						damage_building = { type = arms_factory damage = 0.3 }
 						damage_building = { type = industrial_complex damage = 0.1 }
@@ -2705,8 +2745,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			GER_economy_of_plunder = yes 
-		
+			GER_economy_of_plunder = yes
+
 			every_state = {
 				limit = {
 					OR = {
@@ -2723,14 +2763,14 @@ focus_tree = {
 					level = -1
 				}
 				add_building_construction = {
-					type = arms_factory 
-					level = 1 
-				}	
+					type = arms_factory
+					level = 1
+				}
 			}
 
-			country_event = { id = germany.129 days = 5 }	
+			country_event = { id = germany.129 days = 5 }
 
-			hidden_effect = {	
+			hidden_effect = {
 
 				add_manpower = -80000
 
@@ -2742,20 +2782,20 @@ focus_tree = {
 						garrison = { x = 0 y = 0 }
 						garrison = { x = 0 y = 1 }
 						garrison = { x = 0 y = 2 }
-						
+
 						garrison = { x = 1 y = 0 }
 						garrison = { x = 1 y = 1 }
 						garrison = { x = 1 y = 2 }
-							
+
 						light_infantry = { x = 2 y = 0 }
 						light_infantry = { x = 2 y = 1 }
 						light_infantry = { x = 2 y = 2 }
 
-						artillery_brigade = { x = 3 y = 0 }		
+						artillery_brigade = { x = 3 y = 0 }
 						artillery_brigade = { x = 3 y = 1 }
 						artillery_brigade = { x = 3 y = 2 }
 						artillery_brigade = { x = 3 y = 3 }
-						
+
 					}
 
 			        support = {
@@ -2769,47 +2809,47 @@ focus_tree = {
 				every_state = {
 					limit = { state = 110 }
 					create_unit = {
-						division = "name = \"501. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"501. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"502. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"502. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"503. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"503. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"504. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"504. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"505. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"505. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"506. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"506. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"507. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"507. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"508. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"508. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"509. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"509. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}		
+					}
 					create_unit = {
-						division = "name = \"510. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"510. Landsschützen (Norge)\" division_template = \"Landsschützen (Norge)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 				}
-			}			
+			}
 		}
 	}
 
@@ -2857,9 +2897,9 @@ focus_tree = {
 					remove_idea = general_staff4
 					add_idea = general_staff5
 				}
-			}																							
+			}
 		}
-	}		
+	}
 
 	focus = {
 		id = GER_occupation_of_the_benelux
@@ -2884,7 +2924,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
-			GER_economy_of_plunder = yes 
+			GER_economy_of_plunder = yes
 
 			every_state = {
 				limit = {
@@ -2902,14 +2942,14 @@ focus_tree = {
 					level = -1
 				}
 				add_building_construction = {
-					type = arms_factory 
-					level = 1 
-				}	
-			}			
+					type = arms_factory
+					level = 1
+				}
+			}
 
 			country_event = { id = germany.131 days = 5 }
 
-			hidden_effect = {	
+			hidden_effect = {
 				add_manpower = -60000
 				division_template = {
 					name = "Landsschützen (Niederlande)"
@@ -2919,20 +2959,20 @@ focus_tree = {
 						garrison = { x = 0 y = 0 }
 						garrison = { x = 0 y = 1 }
 						garrison = { x = 0 y = 2 }
-						
+
 						garrison = { x = 1 y = 0 }
 						garrison = { x = 1 y = 1 }
 						garrison = { x = 1 y = 2 }
-							
+
 						light_infantry = { x = 2 y = 0 }
 						light_infantry = { x = 2 y = 1 }
 						light_infantry = { x = 2 y = 2 }
 
-						artillery_brigade = { x = 3 y = 0 }		
+						artillery_brigade = { x = 3 y = 0 }
 						artillery_brigade = { x = 3 y = 1 }
 						artillery_brigade = { x = 3 y = 2 }
 						artillery_brigade = { x = 3 y = 3 }
-						
+
 					}
 
 			        support = {
@@ -2946,34 +2986,34 @@ focus_tree = {
 				every_state = {
 					limit = { state = 110 }
 					create_unit = {
-						division = "name = \"501. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Niederlande)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"501. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Niederlande)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"502. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Niederlande)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"502. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Niederlande)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"503. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Niederlande)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"503. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Niederlande)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"504. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Niederlande)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"504. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Niederlande)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"505. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Niederlande)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"505. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Niederlande)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"506. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Niederlande)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"506. Landsschützen (Niederlande)\" division_template = \"Landsschützen (Niederlande)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 				}
-			}			
+			}
 
 		}
-	}	
+	}
 
 	focus = {
 		id = GER_collaborationist_government
@@ -2990,11 +3030,11 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			GER_economy_of_plunder = yes 
+			GER_economy_of_plunder = yes
 
-			 
+
 		}
-	}		
+	}
 
 	focus = {
 		id = GER_occupation_of_france
@@ -3015,7 +3055,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
-			GER_economy_of_plunder = yes 
+			GER_economy_of_plunder = yes
 
 			every_state = {
 				limit = {
@@ -3034,10 +3074,10 @@ focus_tree = {
 					level = -1
 				}
 				add_building_construction = {
-					type = arms_factory 
-					level = 1 
-				}	
-			}					
+					type = arms_factory
+					level = 1
+				}
+			}
 
 			country_event = { id = germany.132 days = 5 }
 
@@ -3069,7 +3109,7 @@ focus_tree = {
 				country_event = { id = wtt_germany.64 }
 			}
 
-			hidden_effect = {	
+			hidden_effect = {
 
 				add_manpower = -80000
 
@@ -3081,20 +3121,20 @@ focus_tree = {
 						garrison = { x = 0 y = 0 }
 						garrison = { x = 0 y = 1 }
 						garrison = { x = 0 y = 2 }
-						
+
 						garrison = { x = 1 y = 0 }
 						garrison = { x = 1 y = 1 }
 						garrison = { x = 1 y = 2 }
-							
+
 						light_infantry = { x = 2 y = 0 }
 						light_infantry = { x = 2 y = 1 }
 						light_infantry = { x = 2 y = 2 }
 
-						artillery_brigade = { x = 3 y = 0 }		
+						artillery_brigade = { x = 3 y = 0 }
 						artillery_brigade = { x = 3 y = 1 }
 						artillery_brigade = { x = 3 y = 2 }
 						artillery_brigade = { x = 3 y = 3 }
-						
+
 					}
 
 			        support = {
@@ -3108,49 +3148,49 @@ focus_tree = {
 				every_state = {
 					limit = { state = 16 }
 					create_unit = {
-						division = "name = \"501. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"501. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"502. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"502. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"503. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"503. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"504. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"504. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"505. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"505. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"506. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"506. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"507. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"507. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"508. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"508. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"509. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"509. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}		
+					}
 					create_unit = {
-						division = "name = \"510. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"510. Landsschützen (Frankreich)\" division_template = \"Landsschützen (Frankreich)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 				}
-			}					    
+			}
 		}
-	}	
+	}
 
 	focus = { #Invasion of Yugoslavia
 		id = GER_fuhrer_directive_25
@@ -3196,11 +3236,11 @@ focus_tree = {
 					remove_idea = general_staff4
 					add_idea = general_staff5
 				}
-			}																							
+			}
 		}
-	}		
+	}
 
-	focus = { 
+	focus = {
 		id = GER_establish_the_occupational_zones_in_yugoslavia
 		icon = GFX_GER_curtail_yugoslavia
 		prerequisite = { focus = GER_fuhrer_directive_25 }
@@ -3214,17 +3254,17 @@ focus_tree = {
 		}
 
 		available = {
-			YUG = { has_capitulated = yes }			
+			YUG = { has_capitulated = yes }
 		}
 
 		available_if_capitulated = yes
 		completion_reward = {
-			
-			GER_economy_of_plunder = yes 
+
+			GER_economy_of_plunder = yes
 
 			country_event = { id = germany.133 days = 10 }
 
-			hidden_effect = {	
+			hidden_effect = {
 
 				add_manpower = -80000
 
@@ -3236,20 +3276,20 @@ focus_tree = {
 						garrison = { x = 0 y = 0 }
 						garrison = { x = 0 y = 1 }
 						garrison = { x = 0 y = 2 }
-						
+
 						garrison = { x = 1 y = 0 }
 						garrison = { x = 1 y = 1 }
 						garrison = { x = 1 y = 2 }
-							
+
 						light_infantry = { x = 2 y = 0 }
 						light_infantry = { x = 2 y = 1 }
 						light_infantry = { x = 2 y = 2 }
 
-						artillery_brigade = { x = 3 y = 0 }		
+						artillery_brigade = { x = 3 y = 0 }
 						artillery_brigade = { x = 3 y = 1 }
 						artillery_brigade = { x = 3 y = 2 }
 						artillery_brigade = { x = 3 y = 3 }
-						
+
 					}
 
 			        support = {
@@ -3263,51 +3303,51 @@ focus_tree = {
 				every_state = {
 					limit = { state = 107 }
 					create_unit = {
-						division = "name = \"501. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"501. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"502. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"502. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"503. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"503. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"504. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"504. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"505. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"505. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"506. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"506. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"507. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"507. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"508. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"508. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 					create_unit = {
-						division = "name = \"509. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"509. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}		
+					}
 					create_unit = {
-						division = "name = \"510. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8" 
+						division = "name = \"510. Landsschützen (Jugoslawien)\" division_template = \"Landsschützen (Jugoslawien)\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 						owner = GER
-					}	
+					}
 				}
-			}					    
+			}
 		}
 	}
 
-	focus = { 
+	focus = {
 		id = GER_secure_hellas
 		icon = GFX_GER_seize_hellas
 		prerequisite = { focus = GER_fuhrer_directive_25 }
@@ -3323,7 +3363,7 @@ focus_tree = {
 			create_wargoal = {
 				target = GRE
 				type = annex_everything
-			}		
+			}
 			if = {
 				limit = { has_idea = general_staff }
 				swap_ideas = {
@@ -3351,11 +3391,11 @@ focus_tree = {
 					remove_idea = general_staff4
 					add_idea = general_staff5
 				}
-			}																							
+			}
 		}
 	}
 
-	focus = { 
+	focus = {
 		id = GER_drang_nach_osten
 		icon = GFX_GER_drang_nach_osten
 		prerequisite = { focus = GER_kampfgruppes }
@@ -3417,12 +3457,12 @@ focus_tree = {
 						remove_idea = general_staff5
 						add_idea = general_staff6
 					}
-				}	
+				}
 			}
 		}
-	}	
+	}
 
-	focus = { 
+	focus = {
 		id = GER_the_winter_of_1941
 		icon = GFX_GER_winter_of_1941
 		prerequisite = { focus = GER_drang_nach_osten }
@@ -3453,7 +3493,7 @@ focus_tree = {
 		}
 	}
 
-	focus = { 
+	focus = {
 		id = GER_festung_principle
 		icon = GFX_GER_fortress_strategy
 		prerequisite = { focus = GER_the_winter_of_1941 }
@@ -3468,12 +3508,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = OB_ost_turtle
-			custom_effect_tooltip = GER_osttruppen_tt	
-			set_technology = { osttruppen_tech = 1 }			
+			custom_effect_tooltip = GER_osttruppen_tt
+			set_technology = { osttruppen_tech = 1 }
 		}
-	}			
+	}
 
-	focus = { 
+	focus = {
 		id = GER_mobile_fortresses
 		icon = GFX_GER_heavy_tiger_cats
 		prerequisite = { focus = GER_festung_principle }
@@ -3490,19 +3530,19 @@ focus_tree = {
 				technology = ger_heavy_tank_1942
 				uses = 1
 				bonus = 2
-				name = GER_mobile_fortresses 
+				name = GER_mobile_fortresses
 			}
 			add_tech_bonus = {
 				category = armor
 				uses = 1
 				bonus = 1
-				name = GER_mobile_fortresses 
+				name = GER_mobile_fortresses
 			}
 			add_tech_bonus = {
 				technology = ger_mechanised_infantry2
 				uses = 1
 				bonus = 1
-				name = GER_mobile_fortresses 
+				name = GER_mobile_fortresses
 			}
 
 
@@ -3512,7 +3552,7 @@ focus_tree = {
 		}
 	}
 
-	focus = { 
+	focus = {
 		id = GER_grenadiers_never_retreat
 		icon = GFX_GER_award_heroes
 		prerequisite = { focus = GER_mobile_fortresses }
@@ -3531,7 +3571,7 @@ focus_tree = {
 					limit = {
 						has_idea = OB_ost_turtle
 					}
-					swap_ideas = { 
+					swap_ideas = {
 						remove_idea = OB_ost_turtle
 						add_idea = OB_ost_turtle2
 					}
@@ -3540,7 +3580,7 @@ focus_tree = {
 		}
 	}
 
-	focus = { 
+	focus = {
 		id = GER_offense_is_the_best_defense
 		icon = GFX_GER_offense_is_the_best_defense
 		prerequisite = { focus = GER_the_winter_of_1941 }
@@ -3556,9 +3596,9 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = OB_ost_wolf
 		}
-	}	
+	}
 
-	focus = { 
+	focus = {
 		id = GER_the_wild_cats_that_roam_in_russia
 		icon = GFX_GER_the_wild_cats_that_roam_in_russia
 		prerequisite = { focus = GER_offense_is_the_best_defense }
@@ -3573,7 +3613,7 @@ focus_tree = {
 		completion_reward = {
 
 			show_ideas_tooltip = MAN_man
-		
+
 			add_tech_bonus = {
 				name = GER_the_wild_cats_that_roam_in_russia
 				bonus = 1.5
@@ -3585,20 +3625,20 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 				category = armor
-			}				
+			}
 			add_tech_bonus = {
 				technology = ger_mechanised_infantry2
 				uses = 1
 				bonus = 1
-				name = GER_the_wild_cats_that_roam_in_russia 
+				name = GER_the_wild_cats_that_roam_in_russia
 			}
 			set_technology = {
 				ger_large_tracks = 1
 			}
-		}			
-	}	
+		}
+	}
 
-	focus = { 
+	focus = {
 		id = GER_endless_offensives
 		icon = GFX_GER_endless_offensives
 		prerequisite = { focus = GER_the_wild_cats_that_roam_in_russia }
@@ -3617,16 +3657,16 @@ focus_tree = {
 					limit = {
 						has_idea = OB_ost_wolf
 					}
-					swap_ideas = { 
+					swap_ideas = {
 						remove_idea = OB_ost_wolf
 						add_idea = OB_ost_wolf2
 					}
 				}
-			}			
+			}
 		}
 	}
 
-	focus = { 
+	focus = {
 		id = GER_the_final_crusade
 		icon = GFX_focus_the_final_crusade
 		prerequisite = { focus = GER_grenadiers_never_retreat focus = GER_endless_offensives }
@@ -3645,9 +3685,9 @@ focus_tree = {
 					has_idea = OB_ost_wolf2
 				}
 				remove_ideas = OB_ost_wolf2
-				swap_ideas = { 				
+				swap_ideas = {
 					remove_idea = general_staff7
-					add_idea = general_staff9					
+					add_idea = general_staff9
 				}
 			}
 			else_if = {
@@ -3655,7 +3695,7 @@ focus_tree = {
 					has_idea = OB_ost_turtle2
 				}
 				remove_ideas = OB_ost_turtle2
-				swap_ideas = { 				
+				swap_ideas = {
 					remove_idea = general_staff7
 					add_idea = general_staff8
 				}
@@ -3664,7 +3704,7 @@ focus_tree = {
 		}
 	}
 
-	### LUFTWAFFE BRANCH #### 
+	### LUFTWAFFE BRANCH ####
 
     focus = {
 		id = GER_air_innovation	 ## Luftwaffe
@@ -3680,7 +3720,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {
 		}
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_sup_bonus
@@ -3723,29 +3763,29 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}	
-			add_ideas = GER_air_innovations_1_idea			
+			}
+			add_ideas = GER_air_innovations_1_idea
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = ritter_von_greim
 		}
 	}
 
-	focus = { 
+	focus = {
 		id = GER_udets_strike_force
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = GER_air_innovation }
 		mutually_exclusive = { focus = GER_victory_through_airpower }
-		relative_position_id = GER_air_innovation 
+		relative_position_id = GER_air_innovation
 		x = -3
 		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 0.1
-		}	
-				
+		}
+
 		completion_reward = {
 			air_experience = 25
-			
+
 			add_tech_bonus = {
 				bonus = 1
 				uses = 2
@@ -3756,23 +3796,23 @@ focus_tree = {
 			custom_effect_tooltip = available_research_team
 			show_ideas_tooltip = ernst_udet
 		}
-	}		
+	}
 
-	focus = { 
+	focus = {
 		id = GER_Fast_Bomber
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = GER_udets_strike_force }
-		relative_position_id = GER_air_innovation 
+		relative_position_id = GER_air_innovation
 		x = -2
 		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 0.1
-		}	
-				
+		}
+
 		completion_reward = {
 			air_experience = 25
-			
+
 			add_tech_bonus = {
 				bonus = 1
 				uses = 2
@@ -3782,9 +3822,9 @@ focus_tree = {
 
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = hugo_sperrle_t
-			
+
 		}
-	}	
+	}
 
 	focus = {
 		id = GER_junkers_CAS
@@ -3793,7 +3833,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_udets_strike_force
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -3804,7 +3844,7 @@ focus_tree = {
 		x = -4
 		y = 2
 		relative_position_id = GER_air_innovation
-		completion_reward = {	
+		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = junkers
 		}
@@ -3845,36 +3885,36 @@ focus_tree = {
 		icon = GFX_focus_CZE_military_aeronautical_institute
 		prerequisite = { focus = GER_air_innovation }
 		mutually_exclusive = { focus = GER_udets_strike_force }
-		relative_position_id = GER_air_innovation 
-		
+		relative_position_id = GER_air_innovation
+
 		x = 3
 		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 0.2
-		}	
-		
+		}
+
 		completion_reward = {
 			air_experience = 25
 			custom_effect_tooltip = available_research_team
 			show_ideas_tooltip = erhard_milch_t
 		}
-	}	
+	}
 
 	focus = {
 		id = GER_Ural_Bomber
 		icon = GFX_goal_poland_goal
 		prerequisite = { focus = GER_victory_through_airpower }
 		mutually_exclusive = { focus = GER_Fast_Bomber }
-		relative_position_id = GER_air_innovation 
-		
+		relative_position_id = GER_air_innovation
+
 		x = 2
 		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 0.2
-		}	
-		
+		}
+
 		completion_reward = {
 			air_experience = 25
 			add_political_power = 150
@@ -3885,15 +3925,15 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 				category = heavy_air
-				ahead_reduction = 1 	
+				ahead_reduction = 1
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = GER_long_range_escorts
 		icon = GFX_focus_usa_escort_fighters
-		prerequisite = { focus = GER_victory_through_airpower }		
+		prerequisite = { focus = GER_victory_through_airpower }
 		cost = 5.00
 		prerequisite = {
 		}
@@ -3943,7 +3983,7 @@ focus_tree = {
 				bonus = 1.5
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = GER_scrap_lufthansa
@@ -3953,15 +3993,15 @@ focus_tree = {
 		x = 6
 		y = 1
 		cost = 5
-		
-		ai_will_do = { 
-			factor = 5 
+
+		ai_will_do = {
+			factor = 5
 		}
 
 		available = {
 			has_tech = ger_tactical_bomber_1936
 		}
-	
+
 		completion_reward = {
 			country_event = { id = germany.325 days = 10 }
 		}
@@ -3972,10 +4012,10 @@ focus_tree = {
 		text = GER_paratroopers
 		icon = GFX_focus_generic_paratrooper
 		prerequisite = { focus = GER_scrap_lufthansa }
-		relative_position_id = GER_scrap_lufthansa 
+		relative_position_id = GER_scrap_lufthansa
 		x = 0
 		y = 2
-		cost = 2.2 
+		cost = 2.2
 		ai_will_do = {
 			factor = 0
 		}
@@ -3987,9 +4027,9 @@ focus_tree = {
 			add_tech_bonus = {
 				category = para_tech
 				uses = 2
-				bonus = 1 
+				bonus = 1
 			}
-			custom_effect_tooltip = GER_Fallschirmjaeger		
+			custom_effect_tooltip = GER_Fallschirmjaeger
 			hidden_effect = {
 				load_oob = "GER_Fallschirmjaeger"
 			}
@@ -4005,63 +4045,63 @@ focus_tree = {
 		x = 0
 		y = 3
 		cost = 5
-		
-		ai_will_do = { 
-			factor = 5 
+
+		ai_will_do = {
+			factor = 5
 		}
 
 		bypass = {
 			has_war = yes
 		}
-	
+
 		completion_reward = {
 			if = {
-				limit = { 
+				limit = {
 					has_tech = ger_fighter_1938
 				}
-				add_equipment_to_stockpile = { type = fighter_equipment_1938 amount = 800 producer = GER }   
-				else = {					
-				add_equipment_to_stockpile = { type = fighter_equipment_1936 amount = 800 producer = GER }   
+				add_equipment_to_stockpile = { type = fighter_equipment_1938 amount = 800 producer = GER }
+				else = {
+				add_equipment_to_stockpile = { type = fighter_equipment_1936 amount = 800 producer = GER }
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_tech = ger_heavy_fighter_1938
 				}
-				add_equipment_to_stockpile = { type = heavy_fighter_equipment_1938 amount = 400 producer = GER }   
-				else = {					
-				add_equipment_to_stockpile = { type = heavy_fighter_equipment_1936 amount = 400 producer = GER }   
+				add_equipment_to_stockpile = { type = heavy_fighter_equipment_1938 amount = 400 producer = GER }
+				else = {
+				add_equipment_to_stockpile = { type = heavy_fighter_equipment_1936 amount = 400 producer = GER }
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_tech = ger_tactical_bomber_1938
 				}
-				add_equipment_to_stockpile = { type = tac_bomber_equipment_1938 amount = 200 producer = GER }   
-				else = {					
-				add_equipment_to_stockpile = { type = tac_bomber_equipment_1936 amount = 200 producer = GER }   
+				add_equipment_to_stockpile = { type = tac_bomber_equipment_1938 amount = 200 producer = GER }
+				else = {
+				add_equipment_to_stockpile = { type = tac_bomber_equipment_1936 amount = 200 producer = GER }
 				}
 			}
-			
+
 			if = {
-				limit = { 
+				limit = {
 					has_tech = ger_CAS_1935
 					NOT = { has_tech = ger_CAS_1937	}
 				}
-				add_equipment_to_stockpile = { type = CAS_equipment_1935 amount = 200 producer = GER }   
+				add_equipment_to_stockpile = { type = CAS_equipment_1935 amount = 200 producer = GER }
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_tech = ger_CAS_1937
 					NOT = { has_tech = ger_CAS_1939	}
 				}
-				add_equipment_to_stockpile = { type = CAS_equipment_1937 amount = 200 producer = GER }   
+				add_equipment_to_stockpile = { type = CAS_equipment_1937 amount = 200 producer = GER }
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_tech = ger_CAS_1939
 				}
-				add_equipment_to_stockpile = { type = CAS_equipment_1939 amount = 200 producer = GER }   
+				add_equipment_to_stockpile = { type = CAS_equipment_1939 amount = 200 producer = GER }
 			}
 			effect_tooltip = {
 				GER_mefo_bills_level_up = yes
@@ -4070,7 +4110,7 @@ focus_tree = {
 				GER_mefo_bills_level_up = yes
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = GER_air_innovation_2
@@ -4090,7 +4130,7 @@ focus_tree = {
 			}
 		}
 		available_if_capitulated = yes
-		completion_reward = { 
+		completion_reward = {
 			air_experience = 50
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = focke_wulf
@@ -4104,20 +4144,20 @@ focus_tree = {
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = GER_air_innovation }
 		prerequisite = { focus = GER_prepare_the_kriegsmarine }
-		relative_position_id = GER_air_innovation 
+		relative_position_id = GER_air_innovation
 		x = 8
 		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 0.2
-		}	
-		
+		}
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 1
 				uses = 2
-				category = naval_air	
+				category = naval_air
 			}
 		}
 	}
@@ -4126,7 +4166,7 @@ focus_tree = {
 		id = GER_fritz_x
 		icon = GFX_goal_poland_goal
 		prerequisite = { focus = GER_naval_bomber }
-		relative_position_id = GER_naval_bomber 
+		relative_position_id = GER_naval_bomber
 		available = {
 			has_tech = advanced_centimetric_radar
 		}
@@ -4135,8 +4175,8 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 0.2
-		}	
-		
+		}
+
 		completion_reward = {
 			add_ideas = GER_fritz_x_idea
 		}
@@ -4154,21 +4194,21 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-		available_if_capitulated = yes		
-		
-		available = { 
+		available_if_capitulated = yes
+
+		available = {
 		}
 
 		bypass = {
 		}
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				category = cas_bomber
 				uses = 1
 				bonus = 1
 				ahead_reduction = 1
-				name = GER_fuck_names 
+				name = GER_fuck_names
 			}
 		}
 	}
@@ -4185,21 +4225,21 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-		available_if_capitulated = yes		
-		
-		available = { 
+		available_if_capitulated = yes
+
+		available = {
 		}
 
 		bypass = {
 		}
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				category = light_fighter
 				uses = 1
 				bonus = 1
 				ahead_reduction = 1
-				name = GER_fuck_names 
+				name = GER_fuck_names
 			}
 		}
 	}
@@ -4215,7 +4255,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available_if_capitulated = yes	
+		available_if_capitulated = yes
 
 		available = {
 			date > 1943.1.1
@@ -4238,7 +4278,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available_if_capitulated = yes	
+		available_if_capitulated = yes
 
 		available = {
 			has_tech = rocket_engines
@@ -4265,7 +4305,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available_if_capitulated = yes	
+		available_if_capitulated = yes
 
 		available = {
 			has_tech = experimental_rockets
@@ -4310,7 +4350,7 @@ focus_tree = {
 				uses = 2
 				category = rocketry
 			}
-		}		
+		}
 	}
 
 	focus = {
@@ -4324,7 +4364,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available_if_capitulated = yes	
+		available_if_capitulated = yes
 
 		available = {
 			has_tech = improved_rocket_engines
@@ -4333,7 +4373,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
-				uses = 1 
+				uses = 1
 				ahead_reduction = 1
 				technology = advanced_rocket_engines
 			}
@@ -4372,7 +4412,7 @@ focus_tree = {
 				uses = 2
 				category = nuclear
 			}
-			hidden_effect = { news_event = { id = news.174 } }						
+			hidden_effect = { news_event = { id = news.174 } }
 		}
 	}
 
@@ -4387,7 +4427,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available_if_capitulated = yes	
+		available_if_capitulated = yes
 
 		available = {
 			nuclear_reactor > 9
@@ -4475,7 +4515,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = GER_ships
-				uses = 2 
+				uses = 2
 				bonus = 0.75
 				category = naval_equipment
 
@@ -4519,7 +4559,7 @@ focus_tree = {
 		icon = GFX_focus_generic_cruiser2
 		x = -2
 		y = 1
-		
+
 		relative_position_id = GER_prepare_the_kriegsmarine
 		cost = 5
 		ai_will_do = {
@@ -4553,15 +4593,15 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		available = { 
+		available = {
 		}
 
 		ai_will_do = {
 			factor = 12
 		}
-		
+
 		available_if_capitulated = yes
-		
+
 		complete_tooltip = {
 			navy_experience = 25
 			every_state = {
@@ -4586,7 +4626,7 @@ focus_tree = {
 				set_technology = { cruiser_submarines = 1 }
 			}
 		}
-		
+
 		completion_reward = {
 			navy_experience = 25
 			random_owned_controlled_state = {
@@ -4680,7 +4720,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = 0
 		y = 2
-		
+
 		relative_position_id = GER_modular_construction
 		cost = 5
 		ai_will_do = {
@@ -4807,7 +4847,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		available_if_capitulated = yes	
+		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -4826,10 +4866,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_surface_raiders 
+		id = GER_surface_raiders
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = GER_carrier_focus focus = GER_battleship_focus }
-		relative_position_id = GER_naval_expansion 
+		relative_position_id = GER_naval_expansion
 		x = 0
 		y = 2
 		cost = 5
@@ -4839,17 +4879,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
-				name = navy_doctrine_bonus 
-				bonus = 1.5 
-				uses = 3 
+				name = navy_doctrine_bonus
+				bonus = 1.5
+				uses = 3
 				technology = raider_patrols
 				technology = capital_ship_raiders
 				technology = battlefleet_concentration_ti
 			}
 		}
 	}
-	
-	focus = { 
+
+	focus = {
 		id = GER_modern_battlefleet
 		icon = GFX_goal_generic_navy_carrier
 		prerequisite = { focus = GER_surface_raiders }
@@ -4858,10 +4898,10 @@ focus_tree = {
 		y = 1
 		cost = 5
 		ai_will_do = {
-			factor = 0.25 
+			factor = 0.25
 		}
 		available_if_capitulated = yes
-		
+
 		complete_tooltip = {
 			navy_experience = 50
 
@@ -4869,13 +4909,13 @@ focus_tree = {
 				limit = { has_state_flag = GER_naval_rearmament_4dockyards }
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = dockyard 
+					type = dockyard
 					level = 3
 					instant_build = yes
 				}
 			}
 		}
-		
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -4903,34 +4943,10 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GER_infanterie_tactics			
-		icon = GFX_goal_generic_axis_build_infantry
-		prerequisite = { focus = GER_Wehrmacht }
-		relative_position_id = GER_Wehrmacht
-		x = 5
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 8
-		}	
-		available_if_capitulated = yes
-		completion_reward = {
-			# Balance research bonus to 2 techs in land_doctrine
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = ferdinand_schorner
-			army_experience = 20
-			add_tech_bonus = {
-				name = equipment_bonus
-				bonus = 1
-				uses = 2
-				category = infantry_weapons
-			}
-		}
-	}
+
 
 	focus = {
-		id = GER_artillery_expansion 			
+		id = GER_artillery_expansion
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = GER_infanterie_tactics }
 		relative_position_id = GER_infanterie_tactics
@@ -4940,7 +4956,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 8
 		}
-		available_if_capitulated = yes	
+		available_if_capitulated = yes
 		completion_reward = {
 			# Balance research bonus to 2 techs in land_doctrine
 			army_experience = 10
@@ -4953,30 +4969,30 @@ focus_tree = {
 		}
 	}
 
-	focus = { 
+	focus = {
 		id = GER_rocket_artillery
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = GER_artillery_expansion }
 		relative_position_id = GER_artillery_expansion
 		x = 0
 		y = 2
-		cost = 5 
+		cost = 5
 		ai_will_do = {
-			factor = 5 
+			factor = 5
 		}
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
 			name = rocket_artillery
-			bonus = 1 
-			uses = 1 
+			bonus = 1
+			uses = 1
 			technology = rocket_artillery
 			technology = rocket_artillery2
 			technology = rocket_artillery3
 			technology = rocket_artillery4
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = GER_modernize_support
@@ -4985,11 +5001,11 @@ focus_tree = {
 		relative_position_id = GER_infanterie_tactics
 		x = 1
 		y = 1
-		cost = 5 
+		cost = 5
 		ai_will_do = {
-			factor = 4 
+			factor = 4
 		}
-		available_if_capitulated = yes 
+		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
 				name = modernize_support
@@ -5007,11 +5023,11 @@ focus_tree = {
 		relative_position_id = GER_infanterie_tactics
 		x = 1
 		y = 3
-		cost = 5 
+		cost = 5
 		ai_will_do = {
-			factor = 4 
+			factor = 4
 		}
-		available_if_capitulated = yes 
+		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_AT_infantry

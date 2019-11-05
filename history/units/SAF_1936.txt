@@ -6,12 +6,12 @@
 		light_infantry = { x = 0 y = 1 }
 		light_infantry = { x = 0 y = 2 }
 		light_infantry = { x = 0 y = 3 }
-		
+
 		light_infantry = { x = 1 y = 0 }
 		light_infantry = { x = 1 y = 1 }
 		light_infantry = { x = 1 y = 2 }
 		light_infantry = { x = 1 y = 3 }
-		
+
 		light_infantry = { x = 2 y = 0 }
 		light_infantry = { x = 2 y = 1 }
 		light_infantry = { x = 2 y = 2 }
@@ -41,11 +41,11 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		
+
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		
+
       	infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
@@ -54,11 +54,11 @@ division_template = {
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
 		anti_tank_brigade =  { x = 3 y = 3 }
-		
+
 		artillery_medium = { x = 4 y = 0 }
-		anti_air = { x = 4 y = 1 }
+		anti_air_brigade = { x = 4 y = 1 }
 	}
-	
+
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
@@ -70,7 +70,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Garrison"	
+	name = "Garrison"
     division_names_group = SAF_GAR_01
 	regiments = {
 		garrison = { x = 0 y = 0 }
@@ -85,7 +85,7 @@ division_template = {
 
 		artillery_brigade = { x = 2 y = 0 }
 		artillery_brigade = { x = 2 y = 1 }
-		
+
 	}
 	support = {
 	    DIV_HQ = { x = 0 y = 0 }
@@ -96,53 +96,53 @@ division_template = {
 
 ##### OOB #####
 units = {
-		
-	division= {	
+
+	division= {
 		name = "Cape Command"
 		location = 12589 # Capetown
 		division_template = "District Force"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	division= {	
+	division= {
 		name = "Natal Command"
 		location = 1468 # Durbin
 		division_template = "District Force"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	division= {	
+	division= {
 		name = "Orange Free State Cmd."
 		location = 12648  # Bloemfontein
 		division_template = "Garrison"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	division= {	
+	division= {
 		name = "Eastern Province Cmd."
 		location = 4696 # East London
 		division_template = "Garrison"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	division= {	
+	division= {
 		name = "RH-Transvaal Command"
 		location = 10400 # Pretoria
 		division_template = "Garrison"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	division= {	
+	division= {
 		name = "Witwatersrand Command"
 		location = 10400 # Johannesburg
 		division_template = "District Force"
 		start_experience_factor = 0.2
-		
+
 
 	}
 
@@ -154,7 +154,7 @@ air_wings = {
 	275 = {
 		# SAAF Fighter Squadron -- Hawker Furys
 		fighter_equipment_1934 =  {
-			owner = "SAF" 
+			owner = "SAF"
 			amount = 80
 		}
 	}
@@ -172,7 +172,7 @@ instant_effect = { #player
 		progress = 0.73
 		efficiency = 15
 	}
-	
+
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -185,7 +185,7 @@ instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
 			type = radio_equipment_1
-			creator = "SAF" 
+			creator = "SAF"
 		}
 		requested_factories = 2
 		progress = 0.3
@@ -194,7 +194,7 @@ instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
 			type = horse_equipment_0
-			creator = "SAF" 
+			creator = "SAF"
 		}
 		requested_factories = 2
 		progress = 0.3
@@ -203,7 +203,7 @@ instant_effect = { #player
 		add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
-			creator = "SAF" 
+			creator = "SAF"
 		}
 		requested_factories = 2
 		progress = 0.3
@@ -218,9 +218,9 @@ instant_effect = { #player
 		progress = 0.73
 		efficiency = 15
 	}
-	
-	
-	#################### stockpile 
+
+
+	#################### stockpile
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1
 			amount = 1200

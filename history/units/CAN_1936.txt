@@ -6,12 +6,12 @@
 		light_infantry = { x = 0 y = 1 }
 		light_infantry = { x = 0 y = 2 }
 		light_infantry = { x = 0 y = 3 }
-		
+
 		light_infantry = { x = 1 y = 0 }
 		light_infantry = { x = 1 y = 1 }
 		light_infantry = { x = 1 y = 2 }
 		light_infantry = { x = 1 y = 3 }
-		
+
 		light_infantry = { x = 2 y = 0 }
 		light_infantry = { x = 2 y = 1 }
 		light_infantry = { x = 2 y = 2 }
@@ -41,11 +41,11 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		
+
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		
+
       	infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
@@ -54,11 +54,11 @@ division_template = {
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
 		anti_tank_brigade =  { x = 3 y = 3 }
-		
+
 		artillery_medium = { x = 4 y = 0 }
-		anti_air = { x = 4 y = 1 }
+		anti_air_brigade = { x = 4 y = 1 }
 	}
-	
+
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
@@ -70,7 +70,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Cavalry"  
+	name = "Cavalry"
 	division_names_group = CAN_GAR_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -95,7 +95,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Garrison"	
+	name = "Garrison"
 	division_names_group = CAN_GAR_01
 	regiments = {
 		garrison = { x = 0 y = 0 }
@@ -110,7 +110,7 @@ division_template = {
 
 		artillery_brigade = { x = 2 y = 0 }
 		artillery_brigade = { x = 2 y = 1 }
-		
+
 	}
 	support = {
 	    DIV_HQ = { x = 0 y = 0 }
@@ -120,9 +120,9 @@ division_template = {
 }
 
 units = {
-	
+
 	## 1st Miltary District ##
-	division= {	
+	division= {
 		name = "1st District light infantry"
 		location = 722 # London ONT
 		division_template = "District Light Infantry"
@@ -132,7 +132,7 @@ units = {
 	}
 
 	## 2nd Miltary District ##
-	division= {	
+	division= {
 		name = "2nd District light infantry"
 		location = 3775 # Toronto
 		division_template = "District Light Infantry"
@@ -140,17 +140,17 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
+	division= {
 		name = "2nd District Cavalry"
 		location = 3775 # Toronto
-		division_template = "Cavalry" 
+		division_template = "Cavalry"
 		start_experience_factor = 0.2
-		
+
 
 	}
 
 	## 3rd Miltary District ##
-	division= {	
+	division= {
 		name = "3rd District light infantry"
 		location = 3605 # Kingston ONT
 		division_template = "District Light Infantry"
@@ -160,106 +160,106 @@ units = {
 	}
 
 	## 4th Miltary District ##
-	division= {	
+	division= {
 		name = "4th District light infantry"
 		location = 4345 # Montreal
 		division_template = "District Light Infantry"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	division= {	
+	division= {
 		name = "4th District Cavalry"
 		location = 4345 # Montreal
-		division_template = "Cavalry" 
+		division_template = "Cavalry"
 		start_experience_factor = 0.2
-		
+
 
 	}
 
 	## 5th Miltary District ##
-	division= {	
+	division= {
 		name = "5th District light infantry"
 		location = 12149 # Quebec City
 		division_template = "District Light Infantry"
 		start_experience_factor = 0.2
-		
+
 
 	}
 
 	## 6th Miltary District ##
-	division= {	
+	division= {
 		name = "6th District light infantry"
 		location = 7361  # Halifax
 		division_template = "District Light Infantry"
 		start_experience_factor = 0.2
-		
+
 
 	}
 
 	## 7th Miltary District ##
-	division= {	
+	division= {
 		name = "7th District light infantry"
 		location = 4285 # St Johns
 		division_template = "District Light Infantry"
 		start_experience_factor = 0.2
-		
+
 
 	}
 
 	## 10th Miltary District ##
-	division= {	
+	division= {
 		name = "10th District light infantry"
 		location = 4872  # Winnepeg
 		division_template = "District Light Infantry"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	division= {	
+	division= {
 		name = "10th District Cavalry"
 		location = 4872  # Winnepeg
-		division_template = "Cavalry" 
+		division_template = "Cavalry"
 		start_experience_factor = 0.2
-		
+
 
 	}
 
-	division= {	
+	division= {
 		name = "12th District Cavalry"
 		location = 12603  # Regina SASK
-		division_template = "Cavalry" 
+		division_template = "Cavalry"
 		start_experience_factor = 0.2
-		
+
 
 	}
 
-	division= {	
+	division= {
 		name = "13th District Cavalry"
 		location = 3706  # Calgary ALB
-		division_template = "Cavalry" 
+		division_template = "Cavalry"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	
-	division= {	
+
+	division= {
 		name = "14th District Garrison"
 		location = 3706  # Calgary ALB
-		division_template = "Garrison" 
+		division_template = "Garrison"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	
-	division= {	
+
+	division= {
 		name = "15th District Garrison"
 		location = 3706  # Calgary ALB
-		division_template = "Garrison" 
+		division_template = "Garrison"
 		start_experience_factor = 0.2
-		
 
-	}					
+
+	}
 }
 
 air_wings = {
@@ -267,7 +267,7 @@ air_wings = {
 	276 = {
 		# RCAF Station Trenton (ONT) -- Westland Wapitis
 		nav_bomber_equipment_1936 =  {
-			owner = "CAN" 
+			owner = "CAN"
 			amount = 50
 		}
 	}
@@ -284,7 +284,7 @@ instant_effect = { #player
 		progress = 0.73
 		efficiency = 15
 	}
-	
+
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -297,7 +297,7 @@ instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
 			type = radio_equipment_1
-			creator = "CAN" 
+			creator = "CAN"
 		}
 		requested_factories = 2
 		progress = 0.3
@@ -306,7 +306,7 @@ instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
 			type = horse_equipment_0
-			creator = "CAN" 
+			creator = "CAN"
 		}
 		requested_factories = 2
 		progress = 0.3
@@ -315,7 +315,7 @@ instant_effect = { #player
 		add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
-			creator = "CAN" 
+			creator = "CAN"
 		}
 		requested_factories = 2
 		progress = 0.3
@@ -330,8 +330,8 @@ instant_effect = { #player
 		progress = 0.73
 		efficiency = 15
 	}
-	
-	
+
+
 	############################# equipment stockpile
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1
@@ -344,7 +344,7 @@ instant_effect = { #player
 			amount = 200
 			producer = CAN
 		}
-	
+
 	add_equipment_to_stockpile = {
 		type = horse_equipment_0
 			amount = 1300

@@ -8,11 +8,11 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		
+
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		
+
       	infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
@@ -21,9 +21,9 @@ division_template = {
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
 		anti_tank_brigade =  { x = 3 y = 3 }
-		
+
 		artillery_medium = { x = 4 y = 0 }
-		anti_air = { x = 4 y = 1 }
+		anti_air_brigade = { x = 4 y = 1 }
 	}
 }
 
@@ -36,11 +36,11 @@ division_template = {
 		light_armor = { x = 0 y = 1 }
 		light_armor = { x = 0 y = 2 }
 		light_armor = { x = 0 y = 3 }
-		
+
 		light_armor = { x = 1 y = 0 }
 		light_armor = { x = 1 y = 1 }
 		light_armor = { x = 1 y = 2 }
-		
+
 		motorized = { x = 2 y = 0 }
        	motorized = { x = 2 y = 1 }
     	armored_cars_battalion = { x = 2 y = 2 }
@@ -50,7 +50,7 @@ division_template = {
 		motorized = { x = 3 y = 1 }
 		armored_cars_battalion = { x = 3 y = 2 }
 		motorized = { x = 3 y = 3 }
-		
+
 	}
 
 	support = {
@@ -99,7 +99,7 @@ units = {
 	division = {
 		name = "Rychle Vojská Skupina 'Kalinciak'"
 		location = 9692
-		division_template = "Mobilná Skupina" 
+		division_template = "Mobilná Skupina"
 		start_experience_factor = 0.2
 	}
 }
@@ -111,7 +111,7 @@ air_wings = {
 		}
 }
 
-### Starting Production ###	
+### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
@@ -134,7 +134,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_equipment_1934
-			creator = "SLO" 
+			creator = "SLO"
 		}
 		requested_factories = 1
 		progress = 0.4

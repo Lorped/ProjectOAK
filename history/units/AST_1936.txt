@@ -6,12 +6,12 @@
 		light_infantry = { x = 0 y = 1 }
 		light_infantry = { x = 0 y = 2 }
 		light_infantry = { x = 0 y = 3 }
-		
+
 		light_infantry = { x = 1 y = 0 }
 		light_infantry = { x = 1 y = 1 }
 		light_infantry = { x = 1 y = 2 }
 		light_infantry = { x = 1 y = 3 }
-		
+
 		light_infantry = { x = 2 y = 0 }
 		light_infantry = { x = 2 y = 1 }
 		light_infantry = { x = 2 y = 2 }
@@ -25,7 +25,7 @@
 		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
 		recon = { x = 0 y = 2 }
-		military_police = { x = 0 y = 3 }		
+		military_police = { x = 0 y = 3 }
 		maintenance_company = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
 		field_hospital = { x = 1 y = 2 }
@@ -41,11 +41,11 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		
+
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		
+
       	infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
@@ -54,16 +54,16 @@ division_template = {
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
 		anti_tank_brigade =  { x = 3 y = 3 }
-		
+
 		artillery_medium = { x = 4 y = 0 }
-		anti_air = { x = 4 y = 1 }
+		anti_air_brigade = { x = 4 y = 1 }
 	}
-	
+
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
 		recon = { x = 0 y = 2 }
-		military_police = { x = 0 y = 3 }		
+		military_police = { x = 0 y = 3 }
 		maintenance_company = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
 		field_hospital = { x = 1 y = 2 }
@@ -71,7 +71,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Cavalry Division"  
+	name = "Cavalry Division"
     division_names_group = AST_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -96,7 +96,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Garrison"	
+	name = "Garrison"
     division_names_group = AST_GAR_01
 	regiments = {
 		garrison = { x = 0 y = 0 }
@@ -111,7 +111,7 @@ division_template = {
 
 		artillery_brigade = { x = 2 y = 0 }
 		artillery_brigade = { x = 2 y = 1 }
-		
+
 	}
 	support = {
 	    DIV_HQ = { x = 0 y = 0 }
@@ -121,14 +121,14 @@ division_template = {
 }
 
 units = {
-	division= {	
+	division= {
 		name = "5th Infantry Division"
 		location = 1652 # Perth
 		division_template = "CMF Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 	}
-	division= {	
+	division= {
 		name = "1st Cavalry Division"
 		location = 7564 # Brisbane
 		division_template = "Cavalry Division"
@@ -137,15 +137,15 @@ units = {
 
 	}
 	# 2nd Military District -- New South Wales
-	division= {	
+	division= {
 		name = "1st Infantry Division"
 		location = 12406 # Sydney
 		division_template = "CMF Division"
-		start_experience_factor = 0.4	
+		start_experience_factor = 0.4
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
+	division= {
 		name = "2nd Infantry Division"
 		location = 7859 # Canberra
 		division_template = "CMF Division"
@@ -155,7 +155,7 @@ units = {
 	}
 
 	# 3rd Military District -- New South Wales
-	division= {	
+	division= {
 		name = "3rd Infantry Division"
 		location = 7798 # Melbourne
 		division_template = "CMF Division"
@@ -163,7 +163,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
+	division= {
 		name = "4th Infantry Division"
 		location = 7798 # Melbourne
 		division_template = "CMF Division"
@@ -171,13 +171,13 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
+	division= {
 		name = "2nd Cavalry Division"
 		location = 7798 # Melbourne
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
-		
+
 	}
 }
 
@@ -185,14 +185,14 @@ air_wings = {
 
 	285 = {
 		fighter_equipment_1934 =  {
-			owner = "AST" 
+			owner = "AST"
 			amount = 50
 		}
 	}
 	517 = {
 		# RAAF Station Laverton -- Hawker Demons, Westland Wapitis
 		tac_bomber_equipment_1934 =  {
-			owner = "AST" 
+			owner = "AST"
 			amount = 50
 		}
 	}
@@ -209,7 +209,7 @@ instant_effect = { #player
 		progress = 0.73
 		efficiency = 15
 	}
-	
+
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -222,7 +222,7 @@ instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
 			type = radio_equipment_1
-			creator = "AST" 
+			creator = "AST"
 		}
 		requested_factories = 2
 		progress = 0.3
@@ -231,7 +231,7 @@ instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
 			type = horse_equipment_0
-			creator = "AST" 
+			creator = "AST"
 		}
 		requested_factories = 2
 		progress = 0.3
@@ -240,7 +240,7 @@ instant_effect = { #player
 		add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
-			creator = "AST" 
+			creator = "AST"
 		}
 		requested_factories = 2
 		progress = 0.3
@@ -255,8 +255,8 @@ instant_effect = { #player
 		progress = 0.73
 		efficiency = 15
 	}
-	
-	
+
+
 	################ Stockpile ##################
 
 		add_equipment_to_stockpile = {

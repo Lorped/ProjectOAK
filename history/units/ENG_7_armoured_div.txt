@@ -1,15 +1,15 @@
 ﻿
 division_template = {
-	name = "Armoured Division"			
+	name = "Armoured Division"
     division_names_group = ENG_ARM_01
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }
 		medium_armor = { x = 0 y = 2 }
-		
+
 		heavy_armor = { x = 1 y = 0 }
 		heavy_armor = { x = 1 y = 1 }
-		
+
 		motorized = { x = 2 y = 0 }
 		motorized = { x = 2 y = 1 }
 		armored_cars_battalion = { x = 2 y = 2 }
@@ -17,11 +17,11 @@ division_template = {
 		motorized = { x = 3 y = 0 }
 		motorized = { x = 3 y = 1 }
 		armored_cars_battalion = { x = 3 y = 2 }
-		
-		artillery_brigade_mot = { x = 4 y = 0 }	
-		artillery_medium_mot  = { x = 4 y = 1 }	
+
+		artillery_brigade_mot = { x = 4 y = 0 }
+		artillery_medium_mot  = { x = 4 y = 1 }
 		anti_tank_brigade_mot =  { x = 4 y = 2 }
-		anti_air_mot = { x = 4 y = 3 }	
+		anti_air_brigade_mot = { x = 4 y = 3 }	
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -29,7 +29,7 @@ division_template = {
        	engineer = { x = 0 y = 2 }
 		signal_company = { x = 0 y = 3 }
 		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }	
+		logistics_company = { x = 1 y = 1 }
 	}
 	priority = 2
 }
@@ -37,7 +37,7 @@ division_template = {
 ### OOB ###
 units = {
 
-	division= {			
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 7

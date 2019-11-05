@@ -89,7 +89,7 @@
  CANNOT_OPEN_TASK_FORCE_COMPOSITION_EDITOR_FOR_DETACHED_TASK_FORCES:0 "§RCannot edit the composition of a detached task force§!"
  TASK_FORCE_COMPOSITION_EDITOR_DESC:0 "Allows you to set targets for the number of ships of each class you want to maintain in the task force.\nRequires §YAutomatic reinforcement§! to be enabled."
  TASK_FORCE_COMPOSITION_EDITOR_TITLE:0 "Task force composition editor"
- NAVAL_SUB_UNIT_DEF_SELECTION_WINDOW_TITLE:0 "Select a ship class"                                                                
+ NAVAL_SUB_UNIT_DEF_SELECTION_WINDOW_TITLE:0 "Select a ship class"
  TASK_FORCE_COMPOSITION_NEW_TEMPLATE_NAME:0 "New template"
  TASK_FORCE_COMPOSITION_FROM_SELECTED:0 "Set the template from the current composition of the task force"
  SAVE_TASK_FORCE_COMPOSITION_TEMPLATE:0 "Save the composition as $NAME$"
@@ -115,7 +115,7 @@
  TASK_FORCE_HAS_FUEL_INEFFICIENT_SHIP_FOR_MISSION:0 "£mapicon_unit_invalid_orders  The following ship classes are not fuel efficient for the mission $MISSION|H$"
  SPECIFIC_NAVY_CONTAINS_PRIDE_OF_FLEET:0 "$NAVY_NAME|H$ contains §HPride of the Fleet§! §H($NAME$)§!"
  DISBAND_PRIDE_OF_THE_FLEET_COST:1 "Disbanding your §HPride of the Fleet§! §H($NAME$)§! will cost $COST|R$ £pol_power "
- 
+
  SET_SHIP_PRIDE_OF_FLEET:0 "§HAssign§! $NAME|H$ as §HPride of the Fleet§!"
  REPLACE_SHIP_PRIDE_OF_FLEET:0 "§RReassign§! $NAME|H$ as current §HPride of the Fleet§!"
  SET_SHIP_PRIDE_OF_FLEET_DESC:0 "You will receive following bonuses:\n$BONUS$\n\n"
@@ -123,20 +123,20 @@
  SET_SHIP_PRIDE_OF_FLEET_DESC_2_WITH_EXISTING:0 "It will cost $COST|R$ £pol_power  replace current §HPride of the Fleet§! §H($OLD_NAME$)§!."
  UNSET_SHIP_PRIDE_OF_FLEET:0 "§RUnassign§! $NAME|H$ as §HPride of the Fleet§!"
  UNSET_SHIP_PRIDE_OF_FLEET_DESC:0 "You will §RLose§! following bonuses:\n$BONUS$\n\nIt will cost $COST|R$ £pol_power  to unassign."
- 
+
  PRIDE_OF_THE_FLEET_COUNTRY_BONUS:0 "\n§HCountry Bonus:§!\n$BONUS$"
  PRIDE_OF_THE_FLEET_SHIP_BONUS:0 "\n§HShip Bonus:§!\n$BONUS$"
  PRIDE_OF_THE_FLEET_TEMP_BONUS:0 "\n§RPenalty when sunk (for $NUM$ days):§!\n$BONUS$"
- 
+
  SET_SHIP_PRIDE_OF_FLEET_POPUP:0 "§HAssign Pride of the Fleet§!"
  SET_SHIP_PRIDE_OF_FLEET_POPUP_DESC:0 "Are you sure you want to §HAssign§! $NAME|H$ as §HPride of the Fleet§!?\n\nOnce assigned, it will cost $COST|R$ £pol_power  to unassign or replace §HPride of the Fleet§!. You will receive following bonuses:\n$BONUS$\n\n"
-  
+
  REPLACE_SHIP_PRIDE_OF_FLEET_POPUP:0 "§HReplace as Pride of the Fleet§!"
  REPLACE_SHIP_PRIDE_OF_FLEET_POPUP_DESC:0 "Are you sure you want to §HAssign§! $NAME|H$ as §HPride of the Fleet§! and §RReplace§! $OLD_NAME|H$?\n\nIt will cost $COST|R$ £pol_power  to replace §HPride of the Fleet§!. You will receive following bonuses:\n$BONUS$\n\n"
 
  UNSET_SHIP_PRIDE_OF_FLEET_POPUP:0 "§HUnassign Pride of the Fleet§!"
  UNSET_SHIP_PRIDE_OF_FLEET_POPUP_DESC:0 "Are you sure you want to §RUnassign§! $NAME|H$ from §HPride of the Fleet§!?\n\nIt will cost $COST|R$ £pol_power  to unassign and you will §RLose§! following bonuses:\n$BONUS$"
- 
+
  NOT_ENOUGH_PP_TO_UNASSIGN:0 "\n\n§RNot enough Political Power§!"
  NOT_ENOUGH_PP_TO_DISBAND_POTF:0 "\n\n§RNot enough Political Power to unassign §!§HPride of the Fleet§!"
  SELECT_HOME_BASE:0 "Select home base for selected fleets"
@@ -243,9 +243,9 @@
  SERVICE_MANPOWER_HEADER:0 "Service Manpower"
  anti_tank:0 "Anti-Tank Company"
  anti_tank_desc:0 ""
- anti_air_company:0 "Anti-Air Company"
+ anti_air:0 "Anti-Air Company"
  artillery:0 "Artillery"
- anti_air:0 "Anti-Air Battalion"
+ anti_air_brigade:0 "Anti-Air Battalion"
  anti_air_desc:0 "Light Anti-Air guns drawn by horses."
  anti_air_mot:0 "Motorised Anti-Air Battalion"
  anti_air_mot_desc:0 "Light Anti-Air guns towed by trucks."
@@ -298,7 +298,7 @@
  #special forces
  group_special_infantry_title:0 "Special Forces"
  group_special_infantry_title_desc:0 ""
- 
+
  ##Red Guards##
  red_infantry:0 "Red Guard Infantry Battalion"
  red_infantry_desc:0 ""
@@ -331,7 +331,7 @@
  red_anti_air_mot:0 "Red Guard Motorized Anti Air Battalion"
  red_anti_air_mot_desc:0 ""
  ## SS units ##
- 
+
  ss_garrison:0 "SS Garrison Battalion"
  ss_garrison_desc:0 ""
  ss_anti_air:0 "SS Anti-Air"
@@ -372,7 +372,7 @@
  light_infantry:0 "Light Infantry Battalion"
  light_infantry_desc:0 "Infantry with lighter kits more suited for rough terrain."
  SPR_infantry_spain:0 "Brigada Legionario"
- infantry_spain:0 "Brigada Internacionales"	
+ infantry_spain:0 "Brigada Internacionales"
  infantry_spain_desc:0 "Spanish civil war volunteers."
  garrison:0 "Garrison Battalion"
  garrison_desc:0 "Infantry specialized in defence and garrisoning."
@@ -386,7 +386,7 @@
  recon_desc:0 "Sending smaller groups to scout ahead before moving in the main force allows us to gather intelligence about where the enemy is and how many we are facing."
  bicycle_battalion:0 "Bicycle Battalion"
  bicycle_battalion_desc:0 "Meat for the meat grinder, but with extra bits of metal."
- 
+
  bicycle_infantry:0 "Bicycle Infantry"
  recon_ac:0 "Armored Cars Recon"
  recon_ac_desc:0 ""
@@ -588,12 +588,12 @@
  ss_light_panzer_td_desc:0 "SS Light Panzerjäger"
  ss_light_panzer_art:0 "SS Light Panzer Artillerie"
  ss_light_panzer_art_desc:0 "SS Light Panzer Artillerie"
- 
+
  ss_medium_panzer_td:0 "SS Medium Panzerjäger"
  ss_medium_panzer_td_desc:0 "SS Medium Panzerjäger"
  ss_medium_panzer_art:0 "SS Medium Panzerartillerie"
  ss_medium_panzer_art_desc:0 "SS Panzerartillerie based on medium tank chassis"
- 
+
  ss_heavy_panzer_td:0 "SS Schwere Panzerjäger"
  ss_heavy_panzer_td_desc:0 "SS Schwere Panzerjäger"
  ss_heavy_panzer_art:0 "SS Schwere Panzerartillerie"
@@ -607,23 +607,23 @@
 
  ss_heavy_panzer:0 "SS Schwere Panzer"
  ss_heavy_panzer_desc:0 "SS Schwere Panzer"
- 
+
  group_schutzstaffel_title:0 "SS Frontline battalions"
  group_schutzstaffel_title_desc:0 "SS Frontline battalions"
- 
+
  group_schutzstaffel_title_mobile:0 "Mobile SS Frontline battalions"
  group_schutzstaffel_title_mobile_desc:0 "Mobile SS Frontline battalions"
- 
+
  group_schutzstaffel_title_panzer:0 "SS Panzer battalions"
  group_schutzstaffel_title_panzer_desc:0 "SS Panzer battalions"
- 
+
  group_schutzstaffel_title_artillery:0 "SS Frontline artillery"
  group_schutzstaffel_title_artillery_desc:0 "SS FFrontline artillery"
- 
+
 ##Soviet Group names
  group_red_army_tanks_title:0 "Red Guard Tank Battalions"
  group_red_army_tanks_title_desc:0 "Red Guard Tank Battalions"
- 
+
  group_red_army_inf_title:0 "Red Guard Infantry Battalions"
  group_red_army_inf_title_desc:0 "Red Guard Infantry Battalions"
 
@@ -705,8 +705,8 @@
  GER_engineer:0 "Pionier-Bataillon"
  GER_anti_tank_brigade:0 "PaK-Abteilung"
  GER_anti_tank_brigade_mot:0 "Motorisiert PaK-Abteilung"
- GER_artillery_brigade:0 "leichte Artillerie-Abteilung" 
- GER_artillery_brigade_mot:0 "Motorisiert leichte Artillerie-Abteilung" 
+ GER_artillery_brigade:0 "leichte Artillerie-Abteilung"
+ GER_artillery_brigade_mot:0 "Motorisiert leichte Artillerie-Abteilung"
  GER_light_infantry:0 "Füsilier-Bataillon"
  GER_recon:0 "Aufklärungsabteilung"
  GER_recon_ac:0 "Panzerspähwagen"
@@ -723,6 +723,6 @@
  GER_logistics_company:0 "Motorisiert Nachschub"
  GER_logistics_company_mot:0 "Mechanisiert Nachschub"
  GER_signal_company:0 "Nachrichten"
- GER_light_sp_artillery_brigade:0 "Leichte Geschützwagen" 
+ GER_light_sp_artillery_brigade:0 "Leichte Geschützwagen"
  GER_medium_sp_artillery_brigade:0 "Geschützwagen"
  GER_heavy_sp_artillerY:0 "Scwhere Geschützwagen"

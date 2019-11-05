@@ -1,9 +1,9 @@
 ﻿division_template = {
 	name = "Gebirgsjäger-Brigade NOR"		# Gebirgsbrigade
 	#Note: precursor to Gebirgs-Divisions
-	
+
 	division_names_group = GER_Mnt_01
-	
+
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 	   	mountaineers = { x = 0 y = 1 }
@@ -29,11 +29,11 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		
+
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		
+
       	infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
@@ -42,11 +42,11 @@ division_template = {
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
 		anti_tank_brigade =  { x = 3 y = 3 }
-		
+
 		artillery_medium = { x = 4 y = 0 }
-		anti_air = { x = 4 y = 1 }
+		anti_air_brigade = { x = 4 y = 1 }
 	}
-	
+
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
@@ -109,62 +109,62 @@ units = {
 	}
 
 	##### XXI Gruppe #####
-	
+
 	division = {
 		name = "3. GebirgsJäger Division"
 		location = 11367
 		division_template = "Gebirgsjäger-Brigade NOR"
 		start_experience_factor = 0.5
-	
+
 	}
 	division = {
 		name = "196. Infanterie-Division"
 		location = 6151
 		division_template = "Infanterie-Division NOR"
 		start_experience_factor = 0.3
-		
+
 	}
 	division = {
 		name = "5. GebirgsJäger Division"
 		location = 192
 		division_template = "Gebirgsjäger-Brigade NOR"
 		start_experience_factor = 0.5
-	
+
 	}
 	division = {
 		name = "197. Infanterie-Division"
 		location = 192
 		division_template = "Infanterie-Division NOR"
 		start_experience_factor = 0.3
-		
+
 	}
-	
+
 	division = {
 		name = "8. GebirgsJäger Division"
 		location = 3022
 		division_template = "Gebirgsjäger-Brigade NOR"
 		start_experience_factor = 0.5
-	
+
 	}
 	division = {
 		name = "250. Infanterie-Division"
 		location = 3022
 		division_template = "Infanterie-Division NOR"
 		start_experience_factor = 0.3
-		
+
 	}
 	division = {
 		name = "9. GebirgsJäger Division"
 		location = 3022
 		division_template = "Gebirgsjäger-Brigade NOR"
 		start_experience_factor = 0.5
-	
+
 	}
 	division = {
 		name = "251. Infanterie-Division"
 		location = 3022
 		division_template = "Infanterie-Division NOR"
 		start_experience_factor = 0.3
-		
+
 	}
 }

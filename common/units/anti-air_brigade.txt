@@ -2,11 +2,11 @@
 # For land units: infantry,armored,other
 # For sea units: ship,transport,uboat
 sub_units = {
-    anti_air = {
+    anti_air_brigade = {
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 0
-		  
+
 		active = yes
 
 		type = {
@@ -17,13 +17,13 @@ sub_units = {
 		group = infantry
 
 		categories = {
-			
+
 			category_army
 			category_line_artillery
 			category_anti_air
 		}
 
-		
+
 		combat_width = 2
 		training_time = 80
 
@@ -33,7 +33,7 @@ sub_units = {
 		}
 
 		can_be_parachuted = no
-		
+
 		#Size Definitions
 		max_strength = 1
 		max_organisation = 0
@@ -41,9 +41,9 @@ sub_units = {
 		manpower = 300
 		weight = 0.5
 		transport = horse_equipment
-		
+
         supply_consumption = 0.1
-		
+
 		forest = {
 			attack = -0.1
 			movement = -0.1
@@ -68,11 +68,11 @@ sub_units = {
 			attack = -0.4
 		}
 	}
-	anti_air_mot = {
+	anti_air_brigade_mot = {
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 0
-		
+
 		active = yes
 
 		type = {
@@ -83,13 +83,13 @@ sub_units = {
 		group = mobile
 
 		categories = {
-			
+
 			category_army
 			category_line_artillery
 			category_anti_air
 		}
 
-		
+
 		combat_width = 2
 		training_time = 80
 
@@ -99,7 +99,7 @@ sub_units = {
 		}
 
 		can_be_parachuted = no
-		
+
 		#Size Definitions
 		max_strength = 1
 		max_organisation = 0
@@ -107,8 +107,8 @@ sub_units = {
 		manpower = 300
 		weight = 0.5
 		transport = motorized_equipment
-		
-        supply_consumption = 0.15				
+
+        supply_consumption = 0.15
 		forest = {
 			attack = -0.1
 			movement = -0.5
@@ -131,6 +131,6 @@ sub_units = {
 
 		amphibious = {
 			attack = -0.4
-		}						 
-	}	
+		}
+	}
 }
