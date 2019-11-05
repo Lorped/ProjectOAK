@@ -879,19 +879,20 @@ technologies = {
 		
 		enable_subunits = {
 			medium_assault_gun_brigade
+			medium_assault_gun_company
 		}
 		path = {
 			leads_to_tech = ger_medium_assault_gun_1941
 			research_cost_coeff = 1
 		}
 		research_cost = 1.2
-		start_year = 1939
+		start_year = 1938
 		dependencies = {
 			improved_machine_tools = 1
 		}
 		folder = {
 			name = ger_armour_folder
-			position = { x = 6 y = @1939 }
+			position = { x = 6 y = @1938 }
 		}
 				
 		ai_will_do = {
@@ -1016,11 +1017,11 @@ technologies = {
 		}	
 		
 		research_cost = 1.2
-		start_year = 1941
+		start_year = 1940
 
 		folder = {
 			name = ger_armour_folder
-			position = { x = 6 y = @1941 }
+			position = { x = 6 y = @1940 }
 		}
 				
 		ai_will_do = {
@@ -1224,14 +1225,14 @@ technologies = {
 		}
 			
 		research_cost = 1.2
-		start_year = 1943
+		start_year = 1942
         path = {
 			leads_to_tech = ger_heavy_assault_gun_1945
 			research_cost_coeff = 1
 		}
 		folder = {
 			name = ger_armour_folder
-			position = { x = 6 y = @1943 }
+			position = { x = 6 y = @1942 }
 		}
 		dependencies = {
 			assembly_line_production = 1
@@ -1561,13 +1562,14 @@ technologies = {
 	ger_heavy_assault_gun_1945 = { #sturmtiger
 
 		enable_equipments = {
-			heavy_assault_gun_equipment_1945
+			heavy_assault_gun_equipment_1944
 		}
 		enable_subunits = {
 			heavy_assaut_gun_brigade
+			heavy_assaut_gun_company
 		}
 		research_cost = 1.6
-		start_year = 1945
+		start_year = 1944
 		dependencies = {
 			modern_tools = 1
 		}
@@ -1576,11 +1578,11 @@ technologies = {
 		}
 		folder = {
 			name = ger_armour_folder
-			position = { x = 6 y = @1945 }
+			position = { x = 6 y = @1944 }
 		}
 		categories = {
 			armor
-			cat_medium_armor
+			cat_heavy_armor
 		}
 	}
 	

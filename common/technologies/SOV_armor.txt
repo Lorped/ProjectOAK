@@ -798,6 +798,7 @@ technologies = {
 		
 		enable_subunits = {
 			heavy_assaut_gun_brigade
+			heavy_assaut_gun_company
 		}
 		path = {
 			leads_to_tech = sov_heavy_assault_gun_1941
@@ -819,7 +820,7 @@ technologies = {
 		
 		categories = {
 			armor
-			cat_medium_armor
+			cat_heavy_armor
 		}
 	}
 	
@@ -946,7 +947,7 @@ technologies = {
 		
 		categories = {
 			armor
-			cat_medium_armor
+			cat_heavy_armor
 		}
 	}
 	
@@ -1092,7 +1093,7 @@ technologies = {
 		
 		categories = {
 			armor
-			cat_medium_armor
+			cat_heavy_armor
 		}
 	}
 	
@@ -1437,9 +1438,6 @@ technologies = {
 		heavy_sp_artillery_brigade = {
 			fuel_consumption_factor = -0.05
 		}
-		medium_assault_gun_brigade = {
-			fuel_consumption_factor = -0.05
-		}
 		heavy_assaut_gun_brigade = {
 			fuel_consumption_factor = -0.05
 		}
@@ -1522,9 +1520,6 @@ technologies = {
 			fuel_consumption_factor = 0.05
 		}
 		heavy_sp_artillery_brigade = {
-			fuel_consumption_factor = 0.05
-		}
-		medium_assault_gun_brigade = {
 			fuel_consumption_factor = 0.05
 		}
 		heavy_assaut_gun_brigade = {
@@ -1725,23 +1720,7 @@ technologies = {
 		
        
 		}
-		medium_assault_gun_brigade = {
-			
-			forest = {
-		    movement = 0.04
-			attack = 0.04
-		    }
-		    mountain = 	{
-		      attack = 0.04
-			  movement = 0.04
-		    }
-		    urban = {
-			attack = 0.04
-			movement = 0.04
-		    }
 		
-       
-		}
 		heavy_assaut_gun_brigade = {
 			
 			forest = {
@@ -2083,35 +2062,7 @@ technologies = {
 		
        
 		}
-		medium_assault_gun_brigade = {
-			
-			jungle = {
-		       attack = 0.04
-			   movement = 0.04
-		 }
-		marsh = {
-		      attack = 0.04
-			  movement = 0.04
-		}
 		
-		river = { 
-			attack = 0.04 
-			movement = 0.04
-		}
-		
-		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
-		}
-        desert = {
-			attack = 0.04
-			
-			movement = 0.04 
-		}
-		
-       
-		}
 		heavy_assaut_gun_brigade = {
 			
 			jungle = {

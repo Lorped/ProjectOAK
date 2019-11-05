@@ -35,6 +35,8 @@ equipments = {
 			aluminium = 2
 			rubber = 1
 		}
+		#Space taken in convoy
+		lend_lease_cost = 8
 		
 		manpower = 40
 	}
@@ -74,6 +76,8 @@ equipments = {
 			tungsten = 3
 			rubber = 1
 		}
+		#Space taken in convoy
+		lend_lease_cost = 10
 		
 		manpower = 80
 	}

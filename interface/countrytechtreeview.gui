@@ -1879,7 +1879,7 @@ guiTypes = {
 				origo = center_up
 				instantTextBoxType = {
 					name = "ger_armour_subtitle_inftank"
-					position = { x = -180 y = 710 }
+					position = { x = -325 y = 710 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}

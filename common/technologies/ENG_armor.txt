@@ -1411,12 +1411,6 @@ technologies = {
 		heavy_sp_artillery_brigade = {
 			fuel_consumption_factor = -0.05
 		}
-		medium_assault_gun_brigade = {
-			fuel_consumption_factor = -0.05
-		}
-		heavy_assaut_gun_brigade = {
-			fuel_consumption_factor = -0.05
-		}
 		light_tank_destroyer_brigade = {
 			fuel_consumption_factor = -0.05
 		}
@@ -1487,12 +1481,6 @@ technologies = {
 			fuel_consumption_factor = 0.05
 		}
 		heavy_sp_artillery_brigade = {
-			fuel_consumption_factor = 0.05
-		}
-		medium_assault_gun_brigade = {
-			fuel_consumption_factor = 0.05
-		}
-		heavy_assaut_gun_brigade = {
 			fuel_consumption_factor = 0.05
 		}
 		light_tank_destroyer_brigade = {

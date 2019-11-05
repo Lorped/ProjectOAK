@@ -182,7 +182,7 @@ equipments = {
 		reliability = 0.9
 
 		initiative = 0.01
-
+		lend_lease_cost = 1
 		build_cost_ic = 3.5
 		resources = {
 		    chromium = 2
@@ -256,7 +256,7 @@ equipments = {
 
 		reliability = 0.9
 		maximum_speed = 4
-	
+		lend_lease_cost = 1
 		build_cost_ic = 1.0
 		resources = {
 		  steel = 2

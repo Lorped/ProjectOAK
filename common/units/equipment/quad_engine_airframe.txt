@@ -78,6 +78,9 @@ equipments = {
 			tungsten = 3
 			rubber = 1
 		}
+		#Space taken in convoy
+		lend_lease_cost = 12
+		
 		fuel_consumption = 1.6
 		manpower = 160
 	}

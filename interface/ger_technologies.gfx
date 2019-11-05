@@ -713,7 +713,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GER_heavy_assault_gun_equipment_1945_medium"
+		name = "GFX_GER_heavy_assault_gun_equipment_1944_medium"
 		texturefile = "gfx/interface/technologies/land/ger/subtech_sturmtiger.tga"
 	}
 

@@ -55,10 +55,6 @@ equipments = {
 		ap_attack = 5
 		air_attack = 0
 		
-
-		#Space taken in convoy
-		lend_lease_cost = 5
-		
 		build_cost_ic = 9
 		resources = {
 			tungsten = 1
@@ -84,10 +80,6 @@ equipments = {
 		soft_attack = 33
 		hard_attack = 2			
 		ap_attack = 18
-		
-
-		#Space taken in convoy
-		lend_lease_cost = 8
 		
 		build_cost_ic = 10
 		resources = {
@@ -115,10 +107,6 @@ equipments = {
 		soft_attack = 39		 
 		hard_attack = 2.5			
 		ap_attack = 20
-		
-
-		#Space taken in convoy
-		lend_lease_cost = 10
 		
 		build_cost_ic = 11
 		resources = {
@@ -247,10 +235,6 @@ equipments = {
 		ap_attack = 10
 		air_attack = 0
 		
-
-		#Space taken in convoy
-		lend_lease_cost = 8
-		
 		build_cost_ic = 12
 		resources = {
 			tungsten = 1
@@ -276,10 +260,6 @@ equipments = {
 		soft_attack = 42
 		hard_attack = 5			
 		ap_attack = 20
-		
-
-		#Space taken in convoy
-		lend_lease_cost = 8
 		
 		build_cost_ic = 13
 		resources = {
@@ -307,10 +287,6 @@ equipments = {
 		soft_attack = 46		 
 		hard_attack = 7			
 		ap_attack = 25
-		
-
-		#Space taken in convoy
-		lend_lease_cost = 8
 		
 		build_cost_ic = 14
 		resources = {
@@ -344,6 +320,8 @@ equipments = {
 		hard_attack = 1
 		ap_attack = 2
 		air_attack = 0.0
+		
+		lend_lease_cost = 4
 		
 		build_cost_ic = 11
 		resources = {
