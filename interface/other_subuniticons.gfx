@@ -55,7 +55,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_ss_heavy_panzer_icon_medium" 									textureFile = "gfx/interface/counters/divisions_large/MPU.ss.heavy.armour.dds" noOfFrames = 2 }
 
 	spriteType = { name = "GFX_unit_ss_artillery_brigade_icon_medium" 						textureFile = "gfx/interface/counters/divisions_large/MPU.ss.arty.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_ss_artillery_brigade_mot_icon_medium" 				textureFile = "gfx/interface/counters/divisions_large/MPU_ss.arty.motorized.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_ss_artillery_brigade_mot_icon_medium" 				textureFile = "gfx/interface/counters/divisions_large/MPU.ss.arty.motorized.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_ss_pack_artillery_brigade_icon_medium" 				textureFile = "gfx/interface/counters/divisions_large/MPU.ss.pack.arty.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_ss_artillery_medium_icon_medium" 							textureFile = "gfx/interface/counters/divisions_large/MPU.ss.heavy.arty.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_ss_artillery_medium_mot_icon_medium" 					textureFile = "gfx/interface/counters/divisions_large/MPU.ss.heavy.arty.motor.dds" noOfFrames = 2 }
@@ -119,7 +119,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_ss_heavy_panzer_icon_medium_white" 						textureFile = "gfx/interface/counters/divisions_small/MPU.ss.heavy.armour.dds" noOfFrames = 2 }
 
 	spriteType = { name = "GFX_unit_ss_artillery_brigade_icon_medium_white" 			textureFile = "gfx/interface/counters/divisions_small/MPU.ss.arty.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_ss_artillery_brigade_mot_icon_medium_white" 	textureFile = "gfx/interface/counters/divisions_small/MPU_ss.arty.motorized.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_ss_artillery_brigade_mot_icon_medium_white" 	textureFile = "gfx/interface/counters/divisions_small/MPU.ss.arty.motorized.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_ss_pack_artillery_brigade_icon_medium_white" 	textureFile = "gfx/interface/counters/divisions_small/MPU.ss.pack.arty.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_ss_artillery_medium_icon_medium_white" 				textureFile = "gfx/interface/counters/divisions_small/MPU.ss.heavy.arty.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_ss_artillery_medium_mot_icon_medium_white" 		textureFile = "gfx/interface/counters/divisions_small/MPU.ss.heavy.arty.motor.dds" noOfFrames = 2 }
