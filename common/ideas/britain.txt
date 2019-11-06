@@ -1,7 +1,26 @@
 ideas = {
 
 	country = {
+		
+		commonwealth_mobilisation = {
 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				mobilization_speed = 0.1
+			}
+
+			picture = ast_volunteer_defence_corps
+			
+			removal_cost = -1			
+			
+		}
 		ENG_special_air_service_idea = {
 
 			name = ENG_special_air_service

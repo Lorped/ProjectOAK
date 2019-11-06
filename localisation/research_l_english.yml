@@ -21,7 +21,7 @@
  engineer_riverurban_tt:0 "Engineers:\n§Y Urban:§!\n Attack:§G +5.0%§!\n Movement:§G +5.0%§!\n§Y River:§!\n Attack:§G +5.0%§!\n Movement:§G +5.0%§!\n"
  spanish_civil_war_tech:0 "Spanish Civil War (increase HP of all units)"
  spanish_civil_war_tech_end:0 "Spanish Civil War End (HP of all units back to normal)"
- panzer_4_tt:0 "§GThe Panzer IV J has the same statistics as the Panzer IV F2 at lower production cost.§W"
+ panzer_4_tt:0 "§GThe Panzer IV J has the same statistics as the Panzer IV F2 at a lower production cost.§W"
  
  camo1:0 "Early Camouflage Kits"
  camo2:0 "Late Camouflage Kits"

@@ -773,6 +773,10 @@ country_event = {
 
 	option = {
 		name = britain.38.a 
+		add_timed_idea = {
+			idea = commonwealth_mobilisation
+			days = 180
+		}
 		if = {
 			limit = {
 				has_idea = free_trade 

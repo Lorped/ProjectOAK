@@ -23,7 +23,9 @@ ideas = {
 			
 			traits = { silent_workhorse }
 		}
-
+		
+	}
+	theorist_production = {
 		POR_jaime_cortesao = {
 
 			picture = generic_political_advisor_europe_3
@@ -34,8 +36,17 @@ ideas = {
 			
 			traits = { captain_of_industry }
 		}
-	}
+		POR_porugal_guy = {
 
+			picture = generic_political_advisor_europe_4
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { war_industrialist }
+		}
+	}
 	theorist = {
 
 		POR_jose_norton_de_matos = {
