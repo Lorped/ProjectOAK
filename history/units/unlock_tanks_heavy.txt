@@ -11,8 +11,8 @@
 		motorized = { x = 1 y = 2 }
 		armored_cars_battalion = { x = 1 y = 3 }
 
-		artillery_brigade_mot = { x = 2 y = 0 }
-		artillery_brigade_mot = { x = 2 y = 1 }
+		mot_artillery_brigade = { x = 2 y = 0 }
+		mot_artillery_brigade = { x = 2 y = 1 }
 		motorized =  { x = 2 y = 2 }
 	}
 	support = {
@@ -21,6 +21,6 @@
 		logistics_company = { x = 0 y = 2 }
 		maintenance_company = { x = 1 y = 0 }
 		field_hospital = { x = 1 y = 1 }
-		anti_air = { x = 1 y = 2 }			
+		anti_air = { x = 1 y = 2 }
 	}
 }

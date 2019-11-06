@@ -1,34 +1,34 @@
 ############ Artillery regiment
 sub_units = {
-	
+
 	artillery_brigade = {
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 200
 		active = yes
-		
-		
-		
+
+
+
 		type = {
 			artillery
 		}
 
 		group = infantry
-		
+
 		categories = {
 			category_army
 			category_line_artillery
 			category_light_artillery
-			
+
 		}
 
 		combat_width = 2
-	
+
 		need = {
 			artillery_equipment = 24
-			horse_equipment = 24 
+			horse_equipment = 24
 		}
-		
+
 		manpower = 500
 		max_strength = 1
 		max_organisation = 0
@@ -38,7 +38,7 @@ sub_units = {
 		supply_consumption = 0.2
 
 		transport = horse_equipment
-		
+
 		forest = {
 			attack = -0.2
 			movement = -0.25
@@ -75,24 +75,25 @@ sub_units = {
 			attack = -0.4
 		}
 	}
-	artillery_brigade_mot = {
+
+	mot_artillery_brigade = {
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 200
 		active = yes
-		
-		type = {			
+
+		type = {
 		    motorized
 			artillery
 		}
 
 		group = mobile
-		
+
 		categories = {
 			category_army
 			category_line_artillery
 			category_light_artillery
-			
+
 		}
 
 		combat_width = 2
@@ -100,19 +101,19 @@ sub_units = {
 		manpower = 500
 		need = {
 			artillery_equipment = 24
-			motorized_equipment = 24 
+			motorized_equipment = 24
 		}
-		
-		
+
+
 		max_strength = 1
 		max_organisation = 2
 		default_morale = 0.1
 		training_time = 80
 		weight = 0.7
 		supply_consumption = 0.25
-		
 
-		transport = motorized_equipment 
+
+		transport = motorized_equipment
 
 		forest = {
 			attack = -0.2
@@ -150,28 +151,29 @@ sub_units = {
 			attack = -0.4
 		}
 	}
+
 	pack_artillery_brigade = {
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 200
 		active = yes
-		
+
 		can_be_parachuted = no
-		
-		
-		
+
+
+
 		type = {
-			
+
 			artillery
 		}
 
 		group = infantry
-		
+
 		categories = {
 			category_army
 			category_line_artillery
 			category_pack_artillery
-			
+
 		}
 
 		combat_width = 2
@@ -180,7 +182,7 @@ sub_units = {
 			pack_artillery_equipment = 24
 			horse_equipment = 24
 		}
-		
+
 		manpower = 400
 		max_strength = 1
 		max_organisation = 5
@@ -191,7 +193,7 @@ sub_units = {
 
 
 		transport = horse_equipment
-		
+
 		forest = {
 			attack = -0.1
 			movement = -0.1
@@ -225,44 +227,45 @@ sub_units = {
 			attack = -0.2
 		}
 	}
+
 	artillery_medium = {
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 100
 		active = yes
-		
+
 		type = {
-			
+
 			artillery
 		}
-		
+
 		group = infantry
-		
+
 		categories = {
 			category_army
 			category_heavy_artillery
 			category_line_artillery
-			
+
 		}
 
 		combat_width = 2
 
 		need = {
-			medartillery_equipment = 24			
-			horse_equipment = 24 
+			medartillery_equipment = 24
+			horse_equipment = 24
 		}
-	
+
 		manpower = 550
 		training_time = 85
 		max_organisation = 0
 		default_morale = 0.1
 		max_strength = 1
 		weight = 0.75
-		
+
 		supply_consumption = 0.25
-		
+
 		transport = horse_equipment
-		
+
 		forest = {
 			attack = -0.2
 			movement = -0.3
@@ -299,48 +302,49 @@ sub_units = {
 			attack = -0.6
 		}
 	}
+
 	artillery_medium_mot = {
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 0
 		active = yes
-		
+
 		type = {
 			motorized
 			artillery
 		}
-		
+
 		group = mobile
-		
+
 		categories = {
 			category_army
 			category_heavy_artillery
 			category_line_artillery
-			
+
 		}
 
 		combat_width = 2
-		
+
 
 		need = {
 			medartillery_equipment = 24
-			motorized_equipment = 24 
-			
+			motorized_equipment = 24
+
 		}
-	
+
 		manpower = 550
 		training_time = 85
 		max_organisation = 2
 		default_morale = 0.12
 		max_strength = 1
 		weight = 0.85
-		
+
 		supply_consumption = 0.3
-		
-		transport = motorized_equipment 
+
+		transport = motorized_equipment
 
 		can_be_parachuted = no
-		
+
 		forest = {
 			attack = -0.2
 			movement = -0.25
@@ -377,24 +381,25 @@ sub_units = {
 			attack = -0.6
 		}
 	}
+
 	rocket_artillery_brigade = {
 		sprite = "artillery"
 		map_icon_category = infantry
 		priority = 200
 		active = no
-		
+
 		type = {
 		    artillery
 			rocket
 		}
 
 		group = infantry
-		
+
 		categories = {
 			category_army
 			category_line_artillery
-			
-		}		
+
+		}
 
 		combat_width = 2
 
@@ -402,7 +407,7 @@ sub_units = {
 			rocket_artillery_equipment = 24
 			horse_equipment = 24
 		}
-		
+
 		manpower = 500
 
 		max_organisation = 0
@@ -412,7 +417,7 @@ sub_units = {
 		weight = 0.6
 		transport = horse_equipment
 		supply_consumption = 0.25
-		
+
 		forest = {
 			attack = -0.2
 			movement = -0.2
@@ -449,13 +454,13 @@ sub_units = {
 			attack = -0.4
 		}
 	}
-	
+
 	motorized_rocket_brigade = {
 		sprite = motorized
 		map_icon_category = infantry
 		priority = 200
 		active = no
-		
+
 		type = {
 			artillery
 			motorized
@@ -463,20 +468,20 @@ sub_units = {
 		}
 
 		group = mobile
-		
+
 		categories = {
 			category_army
 			category_line_artillery
-			
-		}		
+
+		}
 
 		combat_width = 2
 
 		need = {
 			rocket_artillery_equipment = 24
-			motorized_equipment = 24 
+			motorized_equipment = 24
 		}
-		
+
 		manpower = 500
 		max_organisation = 2
 		default_morale = 0.1
@@ -485,7 +490,7 @@ sub_units = {
 		weight = 0.7
 		transport = motorized_equipment
 		supply_consumption = 0.28
-		
+
 		forest = {
 			attack = -0.1
 			movement = -0.4
@@ -523,4 +528,3 @@ sub_units = {
 		}
 	}
 }
-

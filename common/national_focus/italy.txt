@@ -1263,10 +1263,10 @@ focus_tree = {
 						motorized = { x = 2 y = 2 }
 						armored_cars_battalion = { x = 2 y = 3 }
 
-						artillery_brigade_mot = { x = 3 y = 0 }
-						artillery_brigade_mot = { x = 3 y = 1 }
-						artillery_brigade_mot = { x = 3 y = 2 }
-						anti_tank_brigade_mot = { x = 3 y = 3 }
+						mot_artillery_brigade = { x = 3 y = 0 }
+						mot_artillery_brigade = { x = 3 y = 1 }
+						mot_artillery_brigade = { x = 3 y = 2 }
+						mot_anti_tank_brigade = { x = 3 y = 3 }
 					}
 
 					support = {
@@ -1669,10 +1669,10 @@ focus_tree = {
 						motorized = { x = 2 y = 1 }
 						armored_cars_battalion = { x = 2 y = 2 }
 
-						artillery_brigade_mot = { x = 3 y = 0 }
-						artillery_brigade_mot = { x = 3 y = 1 }
-						anti_tank_brigade_mot =  { x = 3 y = 2 }
-						anti_air_brigade_mot = { x = 3 y = 3 }
+						mot_artillery_brigade = { x = 3 y = 0 }
+						mot_artillery_brigade = { x = 3 y = 1 }
+						mot_anti_tank_brigade =  { x = 3 y = 2 }
+						mot_anti_air_brigade = { x = 3 y = 3 }
 					}
 
 					support = {

@@ -88,8 +88,8 @@ division_template = {
 		cavalry = { x = 1 y = 2 }
 		cavalry = { x = 1 y = 3 }
 
-		artillery_brigade_mot = { x = 2 y = 0 }
-		artillery_brigade_mot = { x = 2 y = 1 }
+		mot_artillery_brigade = { x = 2 y = 0 }
+		mot_artillery_brigade = { x = 2 y = 1 }
 	}
 
 	support = {

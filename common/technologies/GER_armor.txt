@@ -1,6 +1,6 @@
 technologies = {
 	#Vertical position
-	
+
 	@1934 = 1
 	@1936 = 5
 	@1937 = 7
@@ -13,9 +13,9 @@ technologies = {
 	@1944 = 21
 	@1945 = 23
 	@1946 = 25
-	
-	
-	
+
+
+
 	ger_motorised_infantry = {
 
 		enable_subunits = {
@@ -24,32 +24,32 @@ technologies = {
 		enable_equipments = {
 			motorized_equipment_1
 		}
-		
-		
+
+
 		path = {
 			leads_to_tech = ger_mechanised_infantry
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
 			name = ger_armour_folder
 			position = { x = -4 y = @1936 }
 		}
-		
-		
+
+
 		categories = {
 			motorized_equipment
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 7
-			
+
 		}
 	}
-	
+
 	ger_mechanised_infantry = {
 
 		enable_equipments = {
@@ -59,7 +59,7 @@ technologies = {
 			mechanized
 			logistics_company_mot
 		}
-		
+
 		path = {
 			leads_to_tech = ger_mechanised_infantry2
 			research_cost_coeff = 1
@@ -77,12 +77,12 @@ technologies = {
 			}
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
-		
+
 		categories = {
 			motorized_equipment
 			cat_mechanized_equipment
 		}
-		
+
 		ai_will_do = {
 			factor = 20
 		}
@@ -92,7 +92,7 @@ technologies = {
 		enable_equipments = {
 			mechanized_equipment_2
 		}
-		
+
 		path = {
 			leads_to_tech = ger_mechanised_infantry3
 			research_cost_coeff = 1
@@ -104,12 +104,12 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = -4 y = @1943 }
 		}
-		
+
 		categories = {
 			motorized_equipment
 			cat_mechanized_equipment
 		}
-		
+
 		ai_will_do = {
 			factor = 15
 		}
@@ -135,17 +135,17 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = -4 y = @1945 }
 		}
-		
+
 		categories = {
 			motorized_equipment
 			cat_mechanized_equipment
 		}
-		
+
 		ai_will_do = {
 			factor = 15
 		}
 	}
-	
+
     # Armored cars
 	ger_tech_armored_cars = {
 
@@ -158,33 +158,33 @@ technologies = {
 			mechanized_armored_cars_battalion
 			armored_cars_battalion
 		}
-		
+
 		enable_equipments = { armored_cars_equipment_1}
 		path = {
 			leads_to_tech = ger_tech_armored_cars2
 			research_cost_coeff = 1
 		}
-        
+
 		research_cost = 1
 		start_year = 1934
 		folder = {
 			name = ger_armour_folder
 			position = { x = -2 y = @1934 }
 		}
-		
+
 		categories = {
 			armor
 			cat_light_armor
 		}
-		
+
 		ai_will_do = {
 			factor = 4
-			
+
 		}
 	}
-	
+
 	ger_tech_armored_cars2 = {
-		
+
 		enable_equipments = { armored_cars_equipment_2
 		}
 		path = {
@@ -198,164 +198,164 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = -2 y = @1936 }
 		}
-		
+
 		categories = {
 			armor
 			cat_light_armor
 		}
-		
+
 		ai_will_do = {
 			factor = 4
-			
+
 		}
 	}
-	
+
 	ger_tech_armored_cars3 = {
-		
-		
+
+
 		enable_equipments = { armored_cars_equipment_3
 		}
-		
+
 		path = {
 			leads_to_tech = ger_tech_armored_cars4
 			research_cost_coeff = 1
 		}
-        
+
 		research_cost = 1.2
 		start_year = 1939
 		folder = {
 			name = ger_armour_folder
 			position = { x = -2 y = @1939 }
 		}
-		
+
 		categories = {
 			armor
 			cat_light_armor
 		}
-		
+
 		ai_will_do = {
 			factor = 4
-			
+
 		}
 	}
 	ger_tech_armored_cars4 = {
-		
-		
-		
+
+
+
 		enable_equipments = { armored_cars_equipment_4
 		}
 		path = {
 			leads_to_tech = ger_tech_armored_cars5
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 1.2
 		start_year = 1942
 		folder = {
 			name = ger_armour_folder
 			position = { x = -2 y = @1942 }
 		}
-		
+
 		categories = {
 			armor
 			cat_light_armor
 		}
-		
+
 		ai_will_do = {
 			factor = 4
-			
+
 		}
 	}
 	ger_tech_armored_cars5 = {
 
-		
+
 		enable_equipments = { armored_cars_equipment_5
 		}
-		
+
 		research_cost = 1.4
 		start_year = 1945
 		folder = {
 			name = ger_armour_folder
 			position = { x = -2 y = @1945 }
 		}
-		
+
 		categories = {
 			armor
 			cat_light_armor
 		}
-		
+
 		ai_will_do = {
 			factor = 4
-			
+
 		}
 	}
-	
+
 	############################# Light armor ############################
-	ger_light_tank_1934 = { 
+	ger_light_tank_1934 = {
 
 		enable_equipments = {
-			light_tank_equipment_1934 
+			light_tank_equipment_1934
 		}
-			
+
 		path = {
 			leads_to_tech = ger_light_tank_1936
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 1.5
 		start_year = 1934
 		folder = {
 			name = ger_armour_folder
 			position = { x = 0 y = @1934 }
 		}
-      
-		ai_will_do = {
-			factor = 5
-			
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}	
-	
-	ger_light_tank_1936 = { 
 
-		enable_equipments = {
-			light_tank_equipment_1936 
-		}
-		
-		path = {
-			leads_to_tech = ger_light_tank_1938
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		start_year = 1936
-		
-		folder = {
-			name = ger_armour_folder
-			position = { x = 0 y = @1936 }
-		}
-		
 		ai_will_do = {
 			factor = 5
+
 		}
-		
-		
+
 		categories = {
 			armor
 			cat_light_armor
 		}
 	}
-	
-	ger_light_tank_1938 = { 
+
+	ger_light_tank_1936 = {
 
 		enable_equipments = {
-			light_tank_equipment_1938 
-		}	
-		
+			light_tank_equipment_1936
+		}
+
+		path = {
+			leads_to_tech = ger_light_tank_1938
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+
+		folder = {
+			name = ger_armour_folder
+			position = { x = 0 y = @1936 }
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+
+	ger_light_tank_1938 = {
+
+		enable_equipments = {
+			light_tank_equipment_1938
+		}
+
 		path = {
 			leads_to_tech = ger_light_tank_1940
 			research_cost_coeff = 1
@@ -365,23 +365,23 @@ technologies = {
 		}
 		research_cost = 1.5
 		start_year = 1938
-		
+
 		folder = {
 			name = ger_armour_folder
 			position = { x = 0 y = @1938 }
 		}
-		
+
 		sub_technologies = {
 			ger_light_td_1938
 			ger_light_art_1938
 			ger_light_spaa_1938
 		}
-		
+
 		ai_will_do = {
 			factor = 5
-			
+
 		}
-		
+
 		categories = {
 			armor
 			cat_light_armor
@@ -395,43 +395,43 @@ technologies = {
 	    enable_subunits = {
 			light_tank_destroyer_brigade
 		}
-	
+
 		research_cost = 1.2
 		start_year = 1938
-		
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
-		
+
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_light_art_1938 = {
 
 		enable_equipments = {
 			light_tank_artillery_equipment_1938
 		}
-		
+
 		enable_subunits = {
 			light_sp_artillery_brigade
 		}
-	
+
 		research_cost = 1.4
 		start_year = 1938
-		
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_light_spaa_1938 = {
 
 		enable_equipments = {
@@ -440,26 +440,26 @@ technologies = {
 		enable_subunits = {
 			light_sp_anti_air_brigade
 		}
-		
-	
+
+
 		research_cost = 1.0
 		start_year = 1938
-		
+
 		ai_will_do = {
 			factor = 0
 
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
-	ger_light_tank_1940 = { 
+
+	ger_light_tank_1940 = {
 
 		enable_equipments = {
 			light_tank_equipment_1940
-		}	
+		}
 		dependencies = {
 			advanced_machine_tools = 1
 		}
@@ -467,15 +467,15 @@ technologies = {
 			leads_to_tech = ger_light_tank_1942
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 1.5
 		start_year = 1940
-		
+
 		folder = {
 			name = ger_armour_folder
 			position = { x = 0 y = @1940 }
 		}
-		
+
 		sub_technologies = {
 			ger_light_td_1940
 			ger_light_art_1940
@@ -484,9 +484,9 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-	
+
 		}
-		
+
 		categories = {
 			armor
 			cat_light_armor
@@ -497,61 +497,61 @@ technologies = {
 		enable_equipments = {
 			light_tank_destroyer_equipment_1940
 		}
-		
+
 		research_cost = 1.2
 		start_year = 1940
-		
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_light_art_1940 = {
 
 		enable_equipments = {
 			light_tank_artillery_equipment_1940
 		}
-	
+
 		research_cost = 1.4
 		start_year = 1940
-	
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_light_spaa_1940 = {
 
 		enable_equipments = {
 			light_tank_aa_equipment_1940
 		}
-		
+
 		research_cost = 1.0
 		start_year = 1940
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	ger_light_tank_1942 = { 
+	ger_light_tank_1942 = {
 
 		enable_equipments = {
 			light_tank_equipment_1942
-		}	
+		}
 		dependencies = {
 			assembly_line_production = 1
 		}
@@ -559,15 +559,15 @@ technologies = {
 			leads_to_tech = ger_light_tank_1944
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 1.5
 		start_year = 1942
-		
+
 		folder = {
 			name = ger_armour_folder
 			position = { x = 0 y = @1942 }
 		}
-		
+
 		sub_technologies = {
 			ger_light_td_1942
 			ger_light_art_1942
@@ -576,9 +576,9 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-	
+
 		}
-		
+
 		categories = {
 			armor
 			cat_light_armor
@@ -589,61 +589,61 @@ technologies = {
 		enable_equipments = {
 			light_tank_destroyer_equipment_1942
 		}
-		
+
 		research_cost = 1.2
 		start_year = 1942
-		
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_light_art_1942 = {
 
 		enable_equipments = {
 			light_tank_artillery_equipment_1942
 		}
-	
+
 		research_cost = 1.4
 		start_year = 1942
-	
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_light_spaa_1942 = {
 
 		enable_equipments = {
 			light_tank_aa_equipment_1942
 		}
-		
+
 		research_cost = 1.0
 		start_year = 1942
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	ger_light_tank_1944 = { 
+	ger_light_tank_1944 = {
 
 		enable_equipments = {
 			light_tank_equipment_1944
-		}	
+		}
 		research_cost = 1.5
 		start_year = 1944
 		dependencies = {
@@ -653,18 +653,18 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = 0 y = @1944 }
 		}
-		
+
 		sub_technologies = {
 			ger_light_td_1944
 			ger_light_art_1944
 			ger_light_spaa_1944
 		}
-		
+
 		ai_will_do = {
 			factor = 5
-			
+
 		}
-		
+
 		categories = {
 			armor
 			cat_light_armor
@@ -675,58 +675,58 @@ technologies = {
 		enable_equipments = {
 			light_tank_destroyer_equipment_1944
 		}
-		
+
 		research_cost = 1.2
 		start_year = 1944
-		
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_light_art_1944 = {
 
 		enable_equipments = {
 			light_tank_artillery_equipment_1944
 		}
-	
+
 		research_cost = 1.4
 		start_year = 1944
-	
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_light_spaa_1944 = {
 
 		enable_equipments = {
 			light_tank_aa_equipment_1944
 		}
-		
+
 		research_cost = 1.0
 		start_year = 1944
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
-	ger_medium_tank_1936 = {	
+
+	ger_medium_tank_1936 = {
 
 		enable_equipments = {
 			medium_tank_equipment_1936
@@ -734,12 +734,12 @@ technologies = {
 		enable_subunits = {
 			medium_armor
 		}
-		
+
 		path = {
 			leads_to_tech = ger_medium_tank_1938
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 1.8
 		start_year = 1936
 
@@ -747,36 +747,36 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = 2 y = @1936 }
 		}
-		
-		
-			
+
+
+
 		ai_will_do = {
 			factor = 10
-			
+
 		}
-		
+
 		categories = {
 			armor
 			cat_medium_armor
 		}
 	}
 
-	
-	ger_medium_tank_1938 = { 
+
+	ger_medium_tank_1938 = {
 
 		enable_equipments = {
-			medium_tank_equipment_1938 
+			medium_tank_equipment_1938
 		}
-		
+
 		path = {
 			leads_to_tech = ger_medium_tank_1940
 			research_cost_coeff = 1
 		}
-		
+
 		dependencies = {
 			improved_machine_tools = 1
 		}
-		
+
 		research_cost = 1.8
 		start_year = 1938
 
@@ -784,99 +784,99 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = 2 y = @1938 }
 		}
-		
+
 		sub_technologies = {
 			ger_medium_td_1938
 			ger_medium_art_1938
 			ger_medium_spaa_1938
 		}
-		
+
 		ai_will_do = {
 			factor = 10
-			
+
 		}
-		
+
 		categories = {
 			armor
 			cat_medium_armor
 		}
 	}
-	
+
 	ger_medium_td_1938 = {
 
 		enable_equipments = {
 			medium_tank_destroyer_equipment_1938
 		}
-		
+
 		enable_subunits = {
 			medium_tank_destroyer_brigade
 		}
-		
+
 		research_cost = 1.4
 		start_year = 1938
 
-		
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_medium_art_1938 = {
 
 		enable_equipments = {
 			medium_tank_artillery_equipment_1938
 		}
-		
+
 		enable_subunits = {
 			medium_sp_artillery_brigade
 		}
-	
+
 		research_cost = 1.6
 		start_year = 1938
-		
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_medium_spaa_1938 = {
 
 		enable_equipments = {
 			medium_tank_aa_equipment_1938
 		}
-		
+
 		enable_subunits = {
     		medium_sp_anti_air_brigade
 		}
-		
+
 		research_cost = 1.2
 		start_year = 1938
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
-	ger_medium_assault_gun_1939 = { 
+
+	ger_medium_assault_gun_1939 = {
 
 		enable_equipments = {
 			medium_assault_gun_equipment_1939
 		}
-		
+
 		enable_subunits = {
 			medium_assault_gun_brigade
 			medium_assault_gun_company
@@ -894,128 +894,128 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = 6 y = @1938 }
 		}
-				
+
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		categories = {
 			armor
 			cat_medium_armor
 		}
 	}
-	
-	ger_medium_tank_1940 = { 
+
+	ger_medium_tank_1940 = {
 
 		enable_equipments = {
 			medium_tank_equipment_1940
 		}
-		
+
 		path = {
 			leads_to_tech = ger_medium_tank_1942
 			research_cost_coeff = 1
 		}
-			
+
 		dependencies = {
 			advanced_machine_tools = 1
 		}
 		research_cost = 1.8
 		start_year = 1940
-		
+
 		folder = {
 			name = ger_armour_folder
 			position = { x = 2 y = @1940 }
 		}
-		
+
 		sub_technologies = {
 			ger_medium_td_1940
 			ger_medium_art_1940
 			ger_medium_spaa_1940
 		}
-		
-		
+
+
 		ai_will_do = {
 			factor = 10
-			
+
 		}
-		
+
 		categories = {
 			armor
 			cat_medium_armor
 		}
 	}
-	
+
 	ger_medium_td_1940 = {
 
 		enable_equipments = {
 			medium_tank_destroyer_equipment_1940
 		}
-		
+
 		research_cost = 1.4
 		start_year = 1940
 
 		ai_will_do = {
 			factor = 0
-			
+
 		}
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_medium_art_1940 = {
 
 		enable_equipments = {
 			medium_tank_artillery_equipment_1940
 		}
-	
+
 		research_cost = 1.6
 		start_year = 1940
-		
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_medium_spaa_1940 = {
 
 		enable_equipments = {
 			medium_tank_aa_equipment_1940
 		}
-		
-		
-	
+
+
+
 		research_cost = 1.2
 		start_year = 1940
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
-	ger_medium_assault_gun_1941 = { 
+
+	ger_medium_assault_gun_1941 = {
 
 		enable_equipments = {
 			medium_assault_gun_equipment_1941
 		}
-		
+
 		dependencies = {
 			advanced_machine_tools = 1
 		}
 		path = {
 			leads_to_tech = ger_medium_assault_gun_1943
 			research_cost_coeff = 1
-		}	
-		
+		}
+
 		research_cost = 1.2
 		start_year = 1940
 
@@ -1023,18 +1023,18 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = 6 y = @1940 }
 		}
-				
+
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		categories = {
 			armor
 			cat_medium_armor
 		}
 	}
-	
-	ger_medium_tank_1942 = { 
+
+	ger_medium_tank_1942 = {
 
 		enable_equipments = {
 			medium_tank_equipment_1942
@@ -1052,113 +1052,113 @@ technologies = {
 		}
 		research_cost = 1.8
 		start_year = 1942
-		
+
 		folder = {
 			name = ger_armour_folder
 			position = { x = 2 y = @1942 }
 		}
-		
+
 		sub_technologies = {
 			ger_medium_td_1942
 			ger_medium_art_1942
 			ger_medium_spaa_1942
 		}
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		categories = {
 			armor
 			cat_medium_armor
 		}
 	}
-	
+
 	ger_medium_td_1942 = {
 
 		enable_equipments = {
 			medium_tank_destroyer_equipment_1942
 		}
-		
+
 		research_cost = 1.4
 		start_year = 1942
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_medium_art_1942 = {
 
 		enable_equipments = {
 			medium_tank_artillery_equipment_1942
 		}
-	
+
 		research_cost = 1.6
 		start_year = 1942
-		
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_medium_spaa_1942 = {
 
 		enable_equipments = {
 			medium_tank_aa_equipment_1942
 		}
-		
+
 		research_cost = 1.2
 		start_year = 1942
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	ger_medium_tank_1944 = { 
+	ger_medium_tank_1944 = {
 
 		enable_equipments = {
 			panzer_tank_equipment_1944
-		}	
+		}
 		dependencies = {
 			modern_tools = 1
 		}
 		research_cost = 1.8
 		start_year = 1944
-		
+
 		on_research_complete = {
 			custom_effect_tooltip = panzer_4_tt
 		}
-		
+
 		folder = {
 			name = ger_armour_folder
 			position = { x = 2 y = @1944 }
 		}
-		
+
 		sub_technologies = {
 			ger_medium_td_1944
 			ger_medium_art_1944
 			ger_medium_spaa_1944
 		}
-		
+
 		ai_will_do = {
 			factor = 8
-			
+
 		}
-		
+
 		categories = {
 			armor
 			cat_medium_armor
@@ -1169,51 +1169,51 @@ technologies = {
 		enable_equipments = {
 			medium_tank_destroyer_equipment_1944
 		}
-		
+
 		research_cost = 1.4
 		start_year = 1944
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_medium_art_1944= {
 
 		enable_equipments = {
 			medium_tank_artillery_equipment_1944
 		}
-	
+
 		research_cost = 1.6
 		start_year = 1944
-		
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_medium_spaa_1944 = {
 
 		enable_equipments = {
 			medium_tank_aa_equipment_1944
 		}
-		
+
 		research_cost = 1.2
 		start_year = 1944
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		categories = {
 			armor
 		}
@@ -1223,7 +1223,7 @@ technologies = {
 		enable_equipments = {
 			medium_assault_gun_equipment_1943
 		}
-			
+
 		research_cost = 1.2
 		start_year = 1942
         path = {
@@ -1236,29 +1236,29 @@ technologies = {
 		}
 		dependencies = {
 			assembly_line_production = 1
-		}		
+		}
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		categories = {
 			armor
 			cat_medium_armor
 		}
 	}
-	
+
 	ger_medium_tank_1943 = { #PANTHER
 
 		enable_equipments = {
 			medium_tank_equipment_1943
-		}	
+		}
 		path = {
 			leads_to_tech = ger_medium_tank_1945
 			research_cost_coeff = 1
 		}
 		research_cost = 1.8
 		start_year = 1943
-		
+
 		folder = {
 			name = ger_armour_folder
 			position = { x = 4 y = @1943 }
@@ -1271,12 +1271,12 @@ technologies = {
 			ger_medium_art_1943
 			ger_medium_spaa_1943
 		}
-		
+
 		ai_will_do = {
 			factor = 12
-			
+
 		}
-		
+
 		categories = {
 			armor
 			cat_medium_armor
@@ -1287,130 +1287,130 @@ technologies = {
 		enable_equipments = {
 			medium_tank_destroyer_equipment_1943
 		}
-		
+
 		research_cost = 1.4
 		start_year = 1943
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_medium_art_1943 = {
 
 		enable_equipments = {
 			medium_tank_artillery_equipment_1943
 		}
-	
+
 		research_cost = 1.6
 		start_year = 1943
-		
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_medium_spaa_1943 = {
 
 		enable_equipments = {
 			medium_tank_aa_equipment_1943
 		}
-		
+
 		research_cost = 1.2
 		start_year = 1943
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	ger_medium_tank_1945 = { 
+	ger_medium_tank_1945 = {
 
 		enable_equipments = {
-			medium_tank_equipment_1945 
-		}	
-		
+			medium_tank_equipment_1945
+		}
+
 		research_cost = 2
 		start_year = 1945
-		
+
 		folder = {
 			name = ger_armour_folder
 			position = { x = 4 y = @1945 }
 		}
-		
+
 		dependencies = {
 			modern_tools = 1
 		}
-		
+
 		ai_will_do = {
 			factor = 15
-			
+
 		}
-		
+
 		categories = {
 			armor
 			cat_medium_armor
 		}
 	}
-	
-	ger_heavy_tank_1934 = { 
+
+	ger_heavy_tank_1934 = {
 
 		enable_equipments = {
-			heavy_tank_equipment_1934 
+			heavy_tank_equipment_1934
 		}
 		enable_subunits = {
 			heavy_armor
 		}
-			
+
 		path = {
 			leads_to_tech = ger_heavy_tank_1942
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 2
 		start_year = 1934
-		
+
 		folder = {
 			name = ger_armour_folder
 			position = { x = 8 y = @1934 }
 		}
-		
+
 		ai_will_do = {
 			factor = 1
-			
+
 		}
-		
+
 		categories = {
 			armor
 			cat_heavy_armor
 		}
 	}
-	
-	
-	
-	ger_heavy_tank_1942 = { 
+
+
+
+	ger_heavy_tank_1942 = {
 
 		enable_equipments = {
 			heavy_tank_equipment_1942
 		}
-		
+
 		path = {
 			leads_to_tech = ger_heavy_tank_1944
 			research_cost_coeff = 1
 		}
-		
+
 		dependencies = {
 			assembly_line_production = 1
 		}
@@ -1422,22 +1422,22 @@ technologies = {
 		}
 		research_cost = 2.2
 		start_year = 1942
-		
+
 		folder = {
 			name = ger_armour_folder
 			position = { x = 8 y = @1942 }
 		}
-		
+
 		sub_technologies = {
 		    ger_heavy_td_1942
 			ger_heavy_art_1942
 		}
-		
+
 		ai_will_do = {
 			factor = 15
-			
+
 		}
-		
+
 		categories = {
 			armor
 			cat_heavy_armor
@@ -1446,77 +1446,77 @@ technologies = {
 	ger_heavy_td_1942  = {
 
 		enable_equipments = {
-			heavy_tank_destroyer_equipment_1942 
+			heavy_tank_destroyer_equipment_1942
 		}
-		
+
 		enable_subunits = {
 			heavy_tank_destroyer_brigade
 		}
-		
+
 		research_cost = 1.6
 		start_year = 1942
 
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_heavy_art_1942 = {
 
 		enable_equipments = {
 			heavy_tank_artillery_equipment_1942
 		}
-		
+
 		enable_subunits = {
 			heavy_sp_artillery_brigade
 		}
-	
+
 		research_cost = 1.8
 		start_year = 1942
-		
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
-	ger_heavy_tank_1944 = { 
+
+	ger_heavy_tank_1944 = {
 
 		enable_equipments = {
-			heavy_tank_equipment_1944 
+			heavy_tank_equipment_1944
 		}
-				
+
 		dependencies = {
 			modern_tools = 1
 		}
-		
+
 		research_cost = 2.2
 		start_year = 1944
-		
+
 		folder = {
 			name = ger_armour_folder
 			position = { x = 8 y = @1944 }
 		}
-		
+
 		sub_technologies = {
 		    ger_heavy_td_1944
 		    ger_heavy_art_1944
 		}
-		
+
 		ai_will_do = {
 			factor = 15
-			
+
 		}
-		
+
 		categories = {
 			armor
 			cat_heavy_armor
@@ -1527,34 +1527,34 @@ technologies = {
 		enable_equipments = {
 			heavy_tank_destroyer_equipment_1944
 		}
-		
+
 		research_cost = 1.6
 		start_year = 1944
-		
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
+
 		categories = {
 			armor
 		}
 	}
-	
+
 	ger_heavy_art_1944 = {
 
 		enable_equipments = {
 			heavy_tank_artillery_equipment_1944
 		}
-	
+
 		research_cost = 1.8
 		start_year = 1944
-		
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
+
 		categories = {
 			armor
 		}
@@ -1565,8 +1565,8 @@ technologies = {
 			heavy_assault_gun_equipment_1944
 		}
 		enable_subunits = {
-			heavy_assaut_gun_brigade
-			heavy_assaut_gun_company
+			heavy_assault_gun_brigade
+			heavy_assault_gun_company
 		}
 		research_cost = 1.6
 		start_year = 1944
@@ -1585,12 +1585,12 @@ technologies = {
 			cat_heavy_armor
 		}
 	}
-	
+
 	#engines/trucks
-	
+
 	ger_basic_tank_engines = {
 
-	    
+
 		category_all_armor = {
 			maximum_speed = 0.02
 			reliability = 0.02
@@ -1598,7 +1598,7 @@ technologies = {
 		on_research_complete = {
 		hidden_effect = {add_ideas = reliability2}
 		}
-	
+
 		path = {
 			leads_to_tech = ger_diesel_engine
 			research_cost_coeff = 1
@@ -1613,17 +1613,17 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = 11 y = @1934 }
 		}
-		
+
 		categories = {
 			tank_upgrade
 		}
-		
+
 		ai_will_do = {
 			factor = 10
-			
+
 		}
 	}
-	
+
 	ger_diesel_engine = {
 
 	    xor={
@@ -1656,7 +1656,7 @@ technologies = {
 		medium_assault_gun_brigade = {
 			fuel_consumption_factor = -0.05
 		}
-		heavy_assaut_gun_brigade = {
+		heavy_assault_gun_brigade = {
 			fuel_consumption_factor = -0.05
 		}
 		light_tank_destroyer_brigade = {
@@ -1679,7 +1679,7 @@ technologies = {
 		}
 		medium_sp_anti_air_brigade = {
 			fuel_consumption_factor = -0.05
-		}		
+		}
 		ss_light_panzer = {
 			fuel_consumption_factor = -0.05
 		}
@@ -1706,7 +1706,7 @@ technologies = {
 		}
 		ss_heavy_panzer_td = {
 			fuel_consumption_factor = -0.05
-		}		
+		}
 		ss_light_sp_anti_air_brigade = {
 			fuel_consumption_factor = -0.05
 		}
@@ -1731,14 +1731,14 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = 10 y = @1936 }
 		}
-		
+
 		categories = {
 			tank_upgrade
 		}
-		
+
 		ai_will_do = {
 			factor = 10
-			
+
 		}
 	}
 	ger_petrol_engine = {
@@ -1773,7 +1773,7 @@ technologies = {
 		medium_assault_gun_brigade = {
 			fuel_consumption_factor = 0.05
 		}
-		heavy_assaut_gun_brigade = {
+		heavy_assault_gun_brigade = {
 			fuel_consumption_factor = 0.05
 		}
 		light_tank_destroyer_brigade = {
@@ -1796,7 +1796,7 @@ technologies = {
 		}
 		medium_sp_anti_air_brigade = {
 			fuel_consumption_factor = 0.05
-		}		
+		}
 		ss_light_panzer = {
 			fuel_consumption_factor = 0.05
 		}
@@ -1823,7 +1823,7 @@ technologies = {
 		}
 		ss_heavy_panzer_td = {
 			fuel_consumption_factor = 0.05
-		}		
+		}
 		ss_light_sp_anti_air_brigade = {
 			fuel_consumption_factor = 0.05
 		}
@@ -1848,24 +1848,24 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = 12 y = @1936 }
 		}
-		
+
 		categories = {
 			tank_upgrade
 		}
-		
+
 		ai_will_do = {
 			factor = 10
-			
+
 		}
 	}
 	ger_suspension_upgrade = {
         on_research_complete = {
 		custom_effect_tooltip = suspension_tt
-		
+
 		}
-		
+
 		light_armor = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -1878,11 +1878,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		medium_armor = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -1895,11 +1895,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		heavy_armor = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -1912,11 +1912,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		light_sp_artillery_brigade = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -1929,11 +1929,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		medium_sp_artillery_brigade = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -1946,11 +1946,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		heavy_sp_artillery_brigade = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -1963,11 +1963,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		medium_assault_gun_brigade = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -1980,11 +1980,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
-		heavy_assaut_gun_brigade = {
-			
+		heavy_assault_gun_brigade = {
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -1997,11 +1997,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		light_tank_destroyer_brigade = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2014,11 +2014,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		medium_tank_destroyer_brigade = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2031,11 +2031,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		heavy_tank_destroyer_brigade = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2048,11 +2048,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		light_sp_anti_air_brigade = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2065,11 +2065,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		medium_sp_anti_air_brigade = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2082,11 +2082,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		light_sp_anti_air_brigade = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2099,11 +2099,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		medium_sp_anti_air_brigade = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2116,12 +2116,12 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
-		
+
 		ss_light_panzer = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2134,11 +2134,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		ss_medium_panzer = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2151,11 +2151,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		ss_heavy_panzer = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2168,11 +2168,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		ss_light_panzer_art = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2185,11 +2185,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		ss_medium_panzer_art = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2202,11 +2202,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		ss_heavy_panzer_art = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2219,11 +2219,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		ss_light_panzer_td = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2236,11 +2236,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		ss_medium_panzer_td = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2253,11 +2253,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		ss_heavy_panzer_td = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2270,12 +2270,12 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
-		
+
 		ss_light_sp_anti_air_brigade = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2288,11 +2288,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		ss_medium_sp_anti_air_brigade = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2305,11 +2305,11 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		ss_medium_assault_gun_brigade = {
-			
+
 			forest = {
 		    movement = 0.04
 			attack = 0.04
@@ -2322,8 +2322,8 @@ technologies = {
 			attack = 0.04
 			movement = 0.04
 		    }
-		
-       
+
+
 		}
 		path = {
 			leads_to_tech = ger_large_tracks
@@ -2339,23 +2339,23 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = 11 y = @1938 }
 		}
-		
+
 		categories = {
 			tank_upgrade
 		}
-		
+
 		ai_will_do = {
 			factor = 10
-			
+
 		}
 	}
 	ger_large_tracks = {
         on_research_complete = {
 		custom_effect_tooltip = large_tracks_tt
-		
+
 		}
 		light_armor = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2364,28 +2364,28 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
-		
+
 		medium_armor = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2394,27 +2394,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		heavy_armor = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2423,27 +2423,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		light_sp_artillery_brigade = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2452,27 +2452,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		medium_sp_artillery_brigade = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2481,27 +2481,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		heavy_sp_artillery_brigade = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2510,27 +2510,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		medium_assault_gun_brigade = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2539,27 +2539,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
-		heavy_assaut_gun_brigade = {
-			
+		heavy_assault_gun_brigade = {
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2568,27 +2568,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		light_tank_destroyer_brigade = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2597,27 +2597,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		medium_tank_destroyer_brigade = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2626,27 +2626,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		heavy_tank_destroyer_brigade = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2655,27 +2655,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		light_sp_anti_air_brigade = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2684,27 +2684,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		medium_sp_anti_air_brigade = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2713,26 +2713,26 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-       
+
 		}
 		light_sp_anti_air_brigade = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2741,27 +2741,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		medium_sp_anti_air_brigade = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2770,28 +2770,28 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
-		
+
 		ss_light_panzer = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2800,27 +2800,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		ss_medium_panzer = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2829,27 +2829,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		ss_heavy_panzer = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2858,27 +2858,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		ss_light_panzer_art = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2887,27 +2887,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		ss_medium_panzer_art = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2916,27 +2916,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		ss_heavy_panzer_art = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2945,27 +2945,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		ss_light_panzer_td = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -2974,27 +2974,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		ss_medium_panzer_td = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -3003,27 +3003,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		ss_heavy_panzer_td = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -3032,28 +3032,28 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
-		
+
 		ss_light_sp_anti_air_brigade = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -3062,27 +3062,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		ss_medium_sp_anti_air_brigade = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -3091,27 +3091,27 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		ss_medium_assault_gun_brigade = {
-			
+
 			jungle = {
 		       attack = 0.04
 			   movement = 0.04
@@ -3120,24 +3120,24 @@ technologies = {
 		      attack = 0.04
 			  movement = 0.04
 		}
-		
-		river = { 
-			attack = 0.04 
+
+		river = {
+			attack = 0.04
 			movement = 0.04
 		}
-		
+
 		plains = {
-			attack = 0.04 
-			
-			movement = 0.04 
+			attack = 0.04
+
+			movement = 0.04
 		}
         desert = {
 			attack = 0.04
-			
-			movement = 0.04 
+
+			movement = 0.04
 		}
-		
-       
+
+
 		}
 		path = {
 			leads_to_tech = ger_transmission_upgrade
@@ -3156,15 +3156,15 @@ technologies = {
 		categories = {
 			tank_upgrade
 		}
-		
+
 		ai_will_do = {
 			factor = 10
-			
+
 		}
 	}
 	ger_transmission_upgrade = {
-        
-		
+
+
 		category_all_armor = {
 			reliability = 0.04
 			maximum_speed = 0.04
@@ -3184,14 +3184,14 @@ technologies = {
 		categories = {
 			tank_upgrade
 		}
-		
+
 		ai_will_do = {
 			factor = 10
-			
+
 		}
 	}
 	ger_rivetted_armour = {
-        
+
 		category_all_armor = {
 			armor_value = 0.02
 			reliability = -0.05
@@ -3212,20 +3212,20 @@ technologies = {
 		categories = {
 			tank_upgrade
 		}
-		
+
 		ai_will_do = {
 			factor = 10
-			
+
 		}
 	}
 	ger_casted_armour = {
-        
+
 		category_all_armor = {
 			armor_value = 0.02
 			defense = 0.05
 			breakthrough = 0.02
 		}
-		
+
 		research_cost = 1.4
 		start_year = 1940
 		dependencies = {
@@ -3242,14 +3242,14 @@ technologies = {
 		categories = {
 			tank_upgrade
 		}
-		
+
 		ai_will_do = {
 			factor = 10
-			
+
 		}
 	}
 	ger_welded_armour = {
-        
+
 		category_all_armor = {
 			armor_value = 0.05
 			defense = 0.05
@@ -3259,7 +3259,7 @@ technologies = {
 		custom_effect_tooltip = welded_tt
 		hidden_effect = {add_ideas = welded_armour_idea}
 		}
-		
+
 		research_cost = 1.6
 		start_year = 1942
 		folder = {
@@ -3276,14 +3276,14 @@ technologies = {
 		categories = {
 			tank_upgrade
 		}
-		
+
 		ai_will_do = {
 			factor = 10
-			
+
 		}
 	}
 	ger_armour_skirts = {
-        
+
 		category_all_armor = {
 			armor_value = 0.03
 			maximum_speed = -0.03
@@ -3298,14 +3298,14 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = 11 y = @1944 }
 		}
-		
+
 		categories = {
 			tank_upgrade
 		}
-		
+
 		ai_will_do = {
 			factor = 10
-			
+
 		}
 	}
 

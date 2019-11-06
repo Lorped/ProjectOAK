@@ -5,40 +5,40 @@
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		
+
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 0 y = 2 }
 
-		artillery_brigade = { x = 2 y = 0 }		
+		artillery_brigade = { x = 2 y = 0 }
 		artillery_brigade = { x = 2 y = 1 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 } 
-		engineer = { x = 1 y = 0 } 
+		recon = { x = 0 y = 1 }
+		engineer = { x = 1 y = 0 }
 	}
 }
 division_template = {
-	name = "Huszár Dandár" 					
+	name = "Huszár Dandár"
 	division_names_group = HUN_MOT_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
-		armored_cars_battalion = { x = 0 y = 2 }   
+		armored_cars_battalion = { x = 0 y = 2 }
 		armored_cars_battalion = { x = 0 y = 3 }
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
-		artillery_brigade_mot = { x = 1 y = 2 }
-		
+		mot_artillery_brigade = { x = 1 y = 2 }
+
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 } 
+		engineer = { x = 0 y = 1 }
 	}
 }
 division_template = {
-	name = "Garrison"		
+	name = "Garrison"
 	division_names_group = HUN_GAR_01
 	regiments = {
 		garrison = { x = 0 y = 0 }
@@ -46,7 +46,7 @@ division_template = {
 		garrison = { x = 0 y = 2 }
 		garrison = { x = 1 y = 0 }
 		garrison = { x = 1 y = 1 }
-		
+
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -75,23 +75,23 @@ division_template = {
 units = {
 	##### Honvédelmi Fõparancsnokság #####
 
-	#division= {	
-	#	name = "Honvédelmi Fõparancsnokság" 
+	#division= {
+	#	name = "Honvédelmi Fõparancsnokság"
 	#	location = 9660
-	#	division_template = "HQ Command" 
+	#	division_template = "HQ Command"
 	#	start_experience_factor = 0.0
 	#	start_equipment_factor = 0.8
 	#}
 	# Gyorshadtest ('Rapid Corps', actual corps raised in 1940)
 
-	#division= {	
-	#	name = "Gyorshadtest" 
+	#division= {
+	#	name = "Gyorshadtest"
 	#	location = 9660
-	#	division_template = "HQ Command" 
+	#	division_template = "HQ Command"
 	#	start_experience_factor = 0.0
 	#	start_equipment_factor = 0.8
 	#}
-	division= {	
+	division= {
 		name = "1. Huszár Dandár"
 		location = 9660
 		division_template = "Huszár Dandár"
@@ -99,7 +99,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
+	division= {
 		name = "2. Huszár Dandár"
 		location = 9660
 		division_template = "Huszár Dandár"
@@ -109,56 +109,56 @@ units = {
 	}
 
 	# I Hadtest
-	#division= {	
-	#	name = "I Hadtest" 
+	#division= {
+	#	name = "I Hadtest"
 	#	location = 9660
-	#	division_template = "HQ Command" 
+	#	division_template = "HQ Command"
 	#	start_experience_factor = 0.0
 	#	start_equipment_factor = 0.8
 	#}
-	division= {	
+	division= {
 		name = "1. Gyalogdandár"
 		location = 9660
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	division= {	
+	division= {
 		name = "2. Gyalogdandár"
 		location = 9660
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	
-	division= {	
+
+	division= {
 		name = "M. Gyalogdandár"
 		location = 9660
 		division_template = "Cavalry"
 		start_experience_factor = 0.1
-		
+
 
 	}
 
 	# II Hadtest
-	#division= {	
-	#	name = "II Hadtest" 
+	#division= {
+	#	name = "II Hadtest"
 	#	location = 701
-	#	division_template = "HQ Command" 
+	#	division_template = "HQ Command"
 	#	start_experience_factor = 0.0
 	#	start_equipment_factor = 0.8
 	#}
-	division= {	
+	division= {
 		name = "3. Gyalogdandár"
 		location = 701
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	division= {	
+	division= {
 		name = "4. Gyalogdandár"
 		location = 701
 		division_template = "Gyalogdandár"
@@ -168,22 +168,22 @@ units = {
 	}
 
 	# III Hadtest
-	#division= {	
-	#	name = "III Hadtest" 
+	#division= {
+	#	name = "III Hadtest"
 	#	location = 11627
-	#	division_template = "HQ Command" 
+	#	division_template = "HQ Command"
 	#	start_experience_factor = 0.0
 	#	start_equipment_factor = 0.8
 	#}
-	division= {	
+	division= {
 		name = "5. Gyalogdandár"
 		location = 11627
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	division= {	
+	division= {
 		name = "6. Gyalogdandár"
 		location = 11627
 		division_template = "Gyalogdandár"
@@ -193,102 +193,102 @@ units = {
 	}
 
 	# IV Hadtest
-	#division= {	
-	#	name = "IV Hadtest" 
+	#division= {
+	#	name = "IV Hadtest"
 	#	location = 11610
-	#	division_template = "HQ Command" 
+	#	division_template = "HQ Command"
 	#	start_experience_factor = 0.0
 	#	start_equipment_factor = 0.8
 	#}
-	division= {	
+	division= {
 		name = "7. Gyalogdandár"
 		location = 11610
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	division= {	
+	division= {
 		name = "8. Gyalogdandár"
 		location = 11610
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
-		
+
 
 	}
 
 	# V Hadtest
-	#division= {	
-	#	name = "V Hadtest" 
+	#division= {
+	#	name = "V Hadtest"
 	#	location = 679
-	#	division_template = "HQ Command" 
+	#	division_template = "HQ Command"
 	#	start_experience_factor = 0.0
 	#	start_equipment_factor = 0.8
 	#}
-	division= {	
+	division= {
 		name = "9. Gyalogdandár"
 		location = 679
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	division= {	
+	division= {
 		name = "10. Gyalogdandár"
 		location = 679
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
-		
+
 
 	}
 
 	# VI Hadtest
-	#division= {	
-	#	name = "VI Hadtest" 
+	#division= {
+	#	name = "VI Hadtest"
 	#	location = 11659
-	#	division_template = "HQ Command" 
+	#	division_template = "HQ Command"
 	#	start_experience_factor = 0.0
 	#	start_equipment_factor = 0.8
 	#}
-	division= {	
+	division= {
 		name = "11. Gyalogdandár"
 		location = 11659
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	division= {	
+	division= {
 		name = "12. Gyalogdandár"
 		location = 11659
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
-		
+
 
 	}
 
 	# VII Hadtest
-	#division= {	
-	#	name = "VII Hadtest" 
+	#division= {
+	#	name = "VII Hadtest"
 	#	location = 6751
-	#	division_template = "HQ Command" 
+	#	division_template = "HQ Command"
 	#	start_experience_factor = 0.0
 	#	start_equipment_factor = 0.8
 	#}
-	division= {	
+	division= {
 		name = "13. Gyalogdandár"
 		location = 6751
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
-		
+
 
 	}
-	division= {	
+	division= {
 		name = "2. Cavalry"
 		location = 6751
 		division_template = "Cavalry"
 		start_experience_factor = 0.2
-		
+
 
 	}
 }
@@ -297,9 +297,9 @@ units = {
 air_wings = {
 	43 = {
 		# 1. Légi Ezred -- Fiat CR.32 fighters
-		
+
 		fighter_equipment_1934 = {
-			owner = "HUN" 
+			owner = "HUN"
 				amount = 100
 		}
 
@@ -307,7 +307,7 @@ air_wings = {
 	154 = {
 		# 3. Légi Ezred -- Caproni Ca.101, WM-16 Budapest light bombers
 		tac_bomber_equipment_1934 = {
-			owner = "HUN" 
+			owner = "HUN"
 			amount = 50
 		}
 	}
@@ -325,7 +325,7 @@ instant_effect = { #player
 		progress = 0.87
 		efficiency = 10
 	}
-	
+
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -338,7 +338,7 @@ instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
 			type = radio_equipment_1
-			creator = "HUN" 
+			creator = "HUN"
 		}
 		requested_factories = 1
 		progress = 0.4
@@ -362,11 +362,11 @@ instant_effect = { #player
 		progress = 0.24
 		efficiency = 10
 	}
-	
+
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
-			creator = "HUN" 
+			creator = "HUN"
 		}
 		requested_factories = 1
 		progress = 0.4
@@ -376,7 +376,7 @@ instant_effect = { #player
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_1934
-			creator = "HUN" 
+			creator = "HUN"
 		}
 		requested_factories = 15
 		progress = 0.4
@@ -389,5 +389,5 @@ instant_effect = { #player
 			amount = 1000
 			producer = HUN
 		}
-	
+
 }

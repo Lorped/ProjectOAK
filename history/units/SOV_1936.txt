@@ -131,10 +131,10 @@ division_template = {
 		motorized = { x = 2 y = 1 }
 		motorized = { x = 2 y = 2 }
 
-		artillery_brigade_mot = { x = 3 y = 0 }
-		artillery_brigade_mot = { x = 3 y = 1 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 1 }
 		artillery_medium_mot = { x = 3 y = 2 }
-		anti_tank_brigade_mot = { x = 3 y = 3 }
+		mot_anti_tank_brigade = { x = 3 y = 3 }
 
 		light_armor = { x = 4 y = 0 }
 		light_armor = { x = 4 y = 1 }
@@ -158,8 +158,8 @@ division_template = {
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
 
-		artillery_brigade_mot = { x = 2 y = 0 }
-		anti_tank_brigade_mot = { x = 2 y = 1 }
+		mot_artillery_brigade = { x = 2 y = 0 }
+		mot_anti_tank_brigade = { x = 2 y = 1 }
 
 		light_armor = { x = 3 y = 0 }
 		armored_cars_battalion = { x = 3 y = 1 } # Recon bn had 16x L tanks, 45 ACs
@@ -237,9 +237,9 @@ division_template = {
 		motorized = { x = 3 y = 1 }
 		armored_cars_battalion = { x = 3 y = 2 }
 
-		artillery_brigade_mot = { x = 4 y = 0 }
-		artillery_brigade_mot = { x = 4 y = 1 }
-		artillery_brigade_mot = { x = 4 y = 2 }
+		mot_artillery_brigade = { x = 4 y = 0 }
+		mot_artillery_brigade = { x = 4 y = 1 }
+		mot_artillery_brigade = { x = 4 y = 2 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }

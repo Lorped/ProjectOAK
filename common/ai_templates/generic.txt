@@ -42,8 +42,8 @@ motorized_generic = {
 				mechanized = 2
 				motorized = 4
 				armored_cars_battalion = 1
-				artillery_brigade_mot = 2
-				anti_tank_brigade_mot = 1
+				mot_artillery_brigade = 2
+				mot_anti_tank_brigade = 1
 			}
 			support = {
 				DIV_HQ = 1
@@ -120,8 +120,8 @@ armor_generic = {
 				light_armor = 3
 				motorized = 3
 				armored_cars_battalion = 1
-				artillery_brigade_mot = 2
-				anti_tank_brigade_mot = 1
+				mot_artillery_brigade = 2
+				mot_anti_tank_brigade = 1
 			}
 		}
 
@@ -159,8 +159,8 @@ armor_generic = {
 				heavy_armor = 3
 				motorized = 3
 				armored_cars_battalion = 1
-				artillery_brigade_mot = 2
-				anti_tank_brigade_mot = 1
+				mot_artillery_brigade = 2
+				mot_anti_tank_brigade = 1
 			}
 		}
 
@@ -198,8 +198,8 @@ armor_generic = {
 				medium_armor = 3
 				motorized = 3
 				armored_cars_battalion = 1
-				artillery_brigade_mot = 2
-				anti_tank_brigade_mot = 1
+				mot_artillery_brigade = 2
+				mot_anti_tank_brigade = 1
 			}
 		}
 		target_min_match = 0.5
@@ -235,7 +235,7 @@ armor_generic = {
 				heavy_armor = 3
 				motorized = 4
 				armored_cars_battalion = 1
-				artillery_brigade_mot = 2
+				mot_artillery_brigade = 2
 			}
 		}
 		target_min_match = 0.5

@@ -5,22 +5,22 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 1197
 		active = yes
-		
-		
+
+
 		type = {
 			infantry
 			anti_tank
 		}
-		
+
 		group = infantry
-		
+
 		categories = {
 			category_front_line
 			category_army
 			category_line_artillery
 			category_anti_tank
-		}		
-		
+		}
+
 		combat_width = 2
 
 		need = {
@@ -35,7 +35,7 @@ sub_units = {
 		weight = 0.5
 		transport = horse_equipment
 		supply_consumption = 0.1
-		
+
 
 		forest = {
 			attack = -0.25
@@ -48,7 +48,7 @@ sub_units = {
 		mountain = {
 			attack = -0.65
 			movement = -0.45
-		}		
+		}
 		jungle = {
 			attack = -0.35
 			movement = -0.3
@@ -58,53 +58,53 @@ sub_units = {
 			movement = -0.35
 		}
 		fort = {
-			attack = 0.1								  
+			attack = 0.1
 		}
 
 		river = {
 			attack = -0.2
-			movement = -0.2				  
+			movement = -0.2
 		}
 
 		amphibious = {
-			attack = -0.4							   
+			attack = -0.4
 		}
 		plains = {
-			attack = 0.05 
-			defence = 0.05 
+			attack = 0.05
+			defence = 0.05
 		}
 		desert = {
 			attack = 0.05
-			defence = 0.05 
+			defence = 0.05
 		}
 	}
 
-	anti_tank_brigade_mot = {
+	mot_anti_tank_brigade = {
 		sprite = anti_tank
 		map_icon_category = infantry
 		priority = 1197
 		active = yes
-		
-		
+
+
 		type = {
 		    motorized
 			anti_tank
 		}
-		
+
 		group = mobile
-		
+
 		categories = {
 			category_front_line
 			category_army
 			category_line_artillery
 			category_anti_tank
-		}		
-		
+		}
+
 		combat_width = 2
 
 		need = {
 			anti_tank_equipment = 18
-			motorized_equipment = 18 
+			motorized_equipment = 18
 		}
 		manpower = 500
 		max_organisation = 0
@@ -114,7 +114,7 @@ sub_units = {
 		weight = 0.5
 		transport = motorized_equipment
 		supply_consumption = 0.15
-	
+
 
 		forest = {
 			attack = -0.25
@@ -129,16 +129,16 @@ sub_units = {
 			movement = -0.35
 		}
 		fort = {
-			attack = 0.1				 				  
+			attack = 0.1
 		}
 
 		river = {
 			attack = -0.2
-			movement = -0.2				  
+			movement = -0.2
 		}
 
 		amphibious = {
-			attack = -0.4								   
+			attack = -0.4
 		}
 		jungle = {
 			attack = -0.5
@@ -151,12 +151,12 @@ sub_units = {
 			movement = -0.6
 		}
 		plains = {
-			attack = 0.05 
+			attack = 0.05
 			defence = 0.05
 		}
 		desert = {
 			attack = 0.05
 			defence = 0.05
 		}
-	}	
+	}
 }

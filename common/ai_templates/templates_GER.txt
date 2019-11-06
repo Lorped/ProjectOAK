@@ -3,13 +3,13 @@ armored_GER = {
 	available_for = {
 		GER
 	}
-	
+
 	roles = {
 		armor
 	}
-	
+
 	match_to_count = 0.50
-	
+
 	upgrade_prio = {
 		factor = 2.0
 
@@ -19,121 +19,121 @@ armored_GER = {
 				has_tech = ger_medium_tank_1936
 			}
 		}
-		
-	
+
+
 	}
 	light_armor_default_GER = {
-	
+
 		upgrade_prio = {
 			factor = 2
 		}
-		
+
 		target_width = 20.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
-		
+
 		target_template = {
 			weight = 0.2
 			match_value = 3000.0
-			
+
 			support = {
 				DIV_HQ = 1
 		       	recon = 1
 		       	engineer = 1
 				maintenance_company = 1
 				logistics_company = 1
-				signal_company = 1 
+				signal_company = 1
 			}
-			
+
 			regiments = {
 				light_armor = 6
 				motorized = 4
-				armored_cars_battalion = 2 
+				armored_cars_battalion = 2
 			}
 		}
-		
+
 		target_min_match = 0.5
 	}
 	medium_armor_default_GER = {
-	
+
 		upgrade_prio = {
 			factor = 2
 
 			modifier = {
 				factor = 10
 				has_tech = ger_medium_tank_1936
-		
+
 			}
 		}
-		
+
 		target_width = 20.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
-		
+
 		target_template = {
 			weight = 0.9
 			match_value = 6000.0
-			
+
 			support = {
 				DIV_HQ = 1
 		       	recon = 1
 		       	engineer = 1
 				maintenance_company = 1
 				logistics_company = 1
-				signal_company = 1 
+				signal_company = 1
 			}
-			
+
 			regiments = {
 				medium_armor = 8
 				motorized = 6
-				armored_cars_battalion = 2 
+				armored_cars_battalion = 2
 			}
 		}
-		
+
 		replace_at_match = 0.6
 		replace_with = medium_armor_2_GER
 		target_min_match = 0.5
 	}
 
 	medium_armor_2_GER = {
-	
+
 		upgrade_prio = {
 			factor = 2
 
 			modifier = {
 				factor = 10
 			}
-			
+
 			modifier = {
 				factor = 30
 				has_tech = ger_medium_tank_1938
 			}
 		}
-		
+
 		target_width = 30.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
-		
+
 		target_template = {
 			weight = 0.9
 			match_value = 6000.0
-			
+
 			support = {
 				DIV_HQ = 1
 		       	recon = 1
 		       	engineer = 1
 				maintenance_company = 1
 				logistics_company = 1
-				signal_company = 1 
+				signal_company = 1
 			}
-			
+
 			regiments = {
 				medium_armor = 8
 				motorized = 6
-				armored_cars_battalion = 2 
+				armored_cars_battalion = 2
 			}
 		}
-		
+
 		replace_at_match = 0.95
 		replace_with = modern_armor_default_GER
 		target_min_match = 0.5
@@ -146,35 +146,35 @@ armored_GER = {
 				factor = 1
 			}
 		}
-		
+
 		target_width = 20.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
-		
+
 
 		target_template = {
 			weight = 0.9
 			match_value = 6000.0
-			
+
 			support = {
 				engineer = 1
 				DIV_HQ = 1
 				logistics_company = 1
 				maintenance_company = 1
 			}
-			
+
 			regiments = {
 				heavy_armor = 3
 				motorized = 3
 			}
 		}
-		
-		
+
+
 		replace_at_match = 0.4
 		replace_with = modern_armor_default
 		target_min_match = 0.5
 	}
-	
+
 }
 
 garrison_GER = {
@@ -182,13 +182,13 @@ garrison_GER = {
 	available_for = {
 		GER
 	}
-	
+
 	roles = {
 		garrison
 	}
 
 	match_to_count = 0.5
-	
+
 	upgrade_prio = {
 		factor = 1
 
@@ -199,22 +199,22 @@ garrison_GER = {
 				    AUS = { country_exists = no }
 					NOT = { ai_has_role_template = garrison }
 				}
-				
+
 				AND = {
 					any_country = {
 						is_justifying_wargoal_against = ROOT
 					}
 					NOT = { ai_has_role_template = garrison }
 				}
-			}			
+			}
 		}
 	}
 
 	garrison_GER = {
-	
+
 		reinforce_prio = 0
 		custom_icon = 7
-	
+
 		upgrade_prio = {
 			factor = 2
 
@@ -222,47 +222,47 @@ garrison_GER = {
 				factor = 2
 			}
 		}
-		
+
 		target_width = 20.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
-				
+
 		target_template = {
 			weight = 0.9
 			match_value = 3000.0
-			
+
 			support = {
 				DIV_HQ = 1
         		recon = 1
 	 			engineer = 1
 				anti_tank =  1
 			}
-			
+
 			regiments = {
 				infantry = 8
-				artillery_brigade = 2 
+				artillery_brigade = 2
 			}
 		}
-		
+
 		allowed_types = {
 			infantry
 			engineer
 		}
 	}
 }
-	
+
 infantry_GER = {
 
 	available_for = {
 		GER
 	}
-	
+
 	roles = {
 		infantry
 	}
 
 	match_to_count = 0.5
-	
+
 	upgrade_prio = {
 		factor = 2
 
@@ -271,7 +271,7 @@ infantry_GER = {
 		}
 	}
 	motorized_GER = {
-	
+
 		upgrade_prio = {
 			factor = 2
 
@@ -279,19 +279,19 @@ infantry_GER = {
 				factor = 1
 			}
 		}
-		
+
 		target_width = 10.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
-		
+
 		target_template = {
 			weight = 0.9
 			match_value = 6000.0
-						
+
 			regiments = {
 				mechanized = 2
 				motorized = 4
-				artillery_brigade_mot = 2
+				mot_artillery_brigade = 2
 			}
 			support = {
 				DIV_HQ = 1
@@ -299,7 +299,7 @@ infantry_GER = {
 		}
 	}
 	infantry_default_GER = {
-	
+
 		upgrade_prio = {
 			factor = 2
 
@@ -307,15 +307,15 @@ infantry_GER = {
 				factor = 2
 			}
 		}
-		
+
 		target_width = 30.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
-				
+
 		target_template = {
 			weight = 0.9
 			match_value = 3000.0
-			
+
 			support = {
 				DIV_HQ = 1
 				engineer = 1
@@ -324,12 +324,12 @@ infantry_GER = {
 				logistics_company = 1
 				field_hospital = 1
 			}
-			
+
 			regiments = {
 				infantry = 9
 				artillery_brigade = 3
 				artillery_medium = 1
-				anti_tank_brigade = 1 
+				anti_tank_brigade = 1
 			}
 		}
 	}
@@ -340,11 +340,11 @@ mountaineers_GER = {
 	available_for = {
 		GER
 	}
-	
+
 	roles = {
 		mountaineers
 	}
-	
+
 	upgrade_prio = {
 		factor = 2
 
@@ -355,11 +355,11 @@ mountaineers_GER = {
 			}
 		}
 	}
-	
+
 	match_to_count = 0.45
-	
+
 	mountaineers_default_GER = {
-	
+
 		upgrade_prio = {
 			factor = 2
 
@@ -367,15 +367,15 @@ mountaineers_GER = {
 				factor = 1
 			}
 		}
-		
+
 		target_width = 22.0
 		width_weight = 3
 		column_swap_factor = 0.2
-	
+
 		target_template = {
 			weight = 0.5
 			match_value = 3000.0
-			
+
 			support = {
 				engineer = 1
 				artillery = 1
@@ -383,13 +383,13 @@ mountaineers_GER = {
 				logistics_company = 1
 				recon = 1
 			}
-			
+
 			regiments = {
 				mountaineers = 8
 				artillery_brigade = 2
 			}
 		}
-		
+
 		allowed_types = {
 			mountaineers
 			artillery
@@ -407,11 +407,11 @@ marines_GER = {
 	available_for = {
 		GER
 	}
-	
+
 	roles = {
 		marines
 	}
-	
+
 	upgrade_prio = {
 		factor = 2
 
@@ -422,11 +422,11 @@ marines_GER = {
 			}
 		}
 	}
-	
+
 	match_to_count = 0.45
 
 	marine_default_GER = {
-	
+
 		upgrade_prio = {
 			factor = 2
 
@@ -434,7 +434,7 @@ marines_GER = {
 				factor = 1
 			}
 		}
-		
+
 		target_width = 24.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
@@ -442,7 +442,7 @@ marines_GER = {
 		target_template = {
 			weight = 0.9
 			match_value = 2000.0
-			
+
 			support = {
 				engineer = 1
 				artillery = 1
@@ -450,15 +450,15 @@ marines_GER = {
 				logistics_company = 1
 				recon = 1
 			}
-			
+
 			regiments = {
 				marine = 9
 				artillery_brigade = 2
-				
+
 			}
 		}
 
-		
+
 		allowed_types = {
 			marine
 			engineer
@@ -472,11 +472,11 @@ paratroopers_GER = {
 	available_for = {
 		GER
 	}
-	
+
 	roles = {
 		paratrooper
 	}
-	
+
 	upgrade_prio = {
 		factor = 2
 
@@ -487,11 +487,11 @@ paratroopers_GER = {
 			}
 		}
 	}
-	
+
 	match_to_count = 0.45
 
 	paratrooper_default_GER = {
-	
+
 		upgrade_prio = {
 			factor = 2
 
@@ -499,7 +499,7 @@ paratroopers_GER = {
 				factor = 1
 			}
 		}
-		
+
 		target_width = 18.0
 		width_weight = 3.0
 		column_swap_factor = 0.5
@@ -507,19 +507,19 @@ paratroopers_GER = {
 		target_template = {
 			weight = 0.9
 			match_value = 2000.0
-			
+
 			support = {
 				engineer = 1
 				artillery = 1
 				anti_tank = 1
 				logistics_company = 1
 			}
-			
+
 			regiments = {
-				paratrooper= 9 
+				paratrooper= 9
 			}
 		}
-		
+
 		allowed_types = {
 			paratrooper
 			engineer
@@ -537,11 +537,11 @@ paratroopers_GER = {
 }
 
 suppression_GER = {
-	
+
 	roles = {
 		suppression
 	}
-	
+
 	upgrade_prio = {
 		factor = 1
 
@@ -550,14 +550,14 @@ suppression_GER = {
 			has_war = yes
 		}
 	}
-	
+
 	match_to_count = 0.60
 
 	suppression_generic = {
-	
+
 		reinforce_prio = 0
 		custom_icon = 13
-	
+
 		upgrade_prio = {
 			factor = 2
 
@@ -565,23 +565,22 @@ suppression_GER = {
 				factor = 1
 			}
 		}
-		
+
 		target_width = 10.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
-		
+
 		target_template = {
 			weight = 0.9
 			match_value = 3000.0
-			
-			support = { 
+
+			support = {
 				military_police = 1
 			}
-			
+
 			regiments = {
 				garrison = 5
 			}
 		}
 	}
 }
-

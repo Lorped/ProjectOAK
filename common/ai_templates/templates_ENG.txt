@@ -55,10 +55,10 @@ armor_ENG = {
 				heavy_armor = 3
 				motorized = 4
 				armored_cars_battalion = 2
-				artillery_brigade_mot = 1
+				mot_artillery_brigade = 1
 				artillery_medium_mot = 1
-				anti_tank_brigade_mot = 1
-				anti_air_brigade_mot = 1
+				mot_anti_tank_brigade = 1
+				mot_anti_air_brigade = 1
 			}
 		}
 
@@ -107,8 +107,8 @@ infantry_ENG = {
 			regiments = {
 				motorized = 9
 				armored_cars_battalion = 2
-				artillery_brigade_mot = 3
-				anti_tank_brigade_mot = 1
+				mot_artillery_brigade = 3
+				mot_anti_tank_brigade = 1
 			}
 			support = {
 				DIV_HQ = 1

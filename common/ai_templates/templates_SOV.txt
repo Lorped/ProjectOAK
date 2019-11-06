@@ -60,8 +60,8 @@ armored_SOV = {
 				light_armor = 3
 				motorized = 3
 				armored_cars_battalion = 1
-				artillery_brigade_mot = 2
-				anti_tank_brigade_mot = 1
+				mot_artillery_brigade = 2
+				mot_anti_tank_brigade = 1
 			}
 		}
 
@@ -99,7 +99,7 @@ armored_SOV = {
 				heavy_armor = 3
 				motorized = 4
 				armored_cars_battalion = 1
-				artillery_brigade_mot = 2
+				mot_artillery_brigade = 2
 			}
 		}
 
@@ -136,7 +136,7 @@ armored_SOV = {
 				medium_armor = 6
 				motorized = 5
 				armored_cars_battalion = 1
-				artillery_brigade_mot = 3
+				mot_artillery_brigade = 3
 			}
 		}
 		target_min_match = 0.5
