@@ -39,7 +39,7 @@ armored_SOV = {
 			}
 		}
 
-		target_width = 20.0
+		target_width = 24.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -57,8 +57,8 @@ armored_SOV = {
 			}
 
 			regiments = {
-				light_armor = 3
-				motorized = 3
+				light_armor = 4
+				motorized = 4
 				armored_cars_battalion = 1
 				mot_artillery_brigade = 2
 				mot_anti_tank_brigade = 1
@@ -78,7 +78,7 @@ armored_SOV = {
 			}
 		}
 
-		target_width = 20.0
+		target_width = 24.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 
@@ -96,8 +96,8 @@ armored_SOV = {
 			}
 
 			regiments = {
-				heavy_armor = 3
-				motorized = 4
+				heavy_armor = 4
+				motorized = 5
 				armored_cars_battalion = 1
 				mot_artillery_brigade = 2
 			}
@@ -116,7 +116,7 @@ armored_SOV = {
 			}
 		}
 
-		target_width = 20.0
+		target_width = 24.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 
@@ -133,10 +133,10 @@ armored_SOV = {
 			}
 
 			regiments = {
-				medium_armor = 6
-				motorized = 5
+				medium_armor = 5
+				motorized = 4
 				armored_cars_battalion = 1
-				mot_artillery_brigade = 3
+				mot_artillery_brigade = 2
 			}
 		}
 		target_min_match = 0.5
@@ -174,7 +174,7 @@ infantry_SOV = {
 			}
 		}
 
-		target_width = 27.0
+		target_width = 24.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -280,7 +280,7 @@ mountaineers_SOV = {
 			}
 		}
 
-		target_width = 19.9
+		target_width = 24.0
 		width_weight = 3
 		column_swap_factor = 0.2
 
@@ -327,8 +327,8 @@ mountaineers_SOV = {
 			}
 
 			regiments = {
-				mountaineers = 8
-				artillery_brigade = 2
+				mountaineers = 5
+				artillery_brigade = 1
 			}
 		}
 
@@ -377,7 +377,7 @@ marines_SOV = {
 			}
 		}
 
-		target_width = 20.0
+		target_width = 24.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 
@@ -422,7 +422,7 @@ marines_SOV = {
 			}
 
 			regiments = {
-				marine = 9
+				marine = 6
 			}
 		}
 
@@ -468,7 +468,7 @@ paratroopers_SOV = {
 			}
 		}
 
-		target_width = 9.9
+		target_width = 12.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 
@@ -514,7 +514,7 @@ paratroopers_SOV = {
 			}
 
 			regiments = {
-				paratrooper= 5
+				paratrooper= 6
 			}
 		}
 
@@ -570,7 +570,7 @@ garrison_SOV = {
 		reinforce_prio = 0
 		custom_icon = 7
 
-		target_width = 1.0
+		target_width = 6.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -614,7 +614,7 @@ garrison_SOV = {
 			}
 
 			regiments = {
-				cavalry = 4
+				cavalry = 3
 			}
 		}
 
@@ -721,7 +721,7 @@ anti_armor_SOV = {
 			}
 
 			regiments = {
-				infantry = 7
+				infantry = 9
 				artillery_brigade = 1
 				anti_tank_brigade = 2
 			}
@@ -767,7 +767,7 @@ anti_armor_SOV = {
 			}
 		}
 
-		target_width = 20.0
+		target_width = 12.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 
@@ -813,8 +813,8 @@ anti_armor_SOV = {
 			}
 
 			regiments = {
-				light_tank_destroyer_brigade = 4
-				motorized = 4
+				light_tank_destroyer_brigade = 3
+				motorized = 3
 			}
 		}
 
@@ -853,7 +853,7 @@ anti_armor_SOV = {
 			}
 		}
 
-		target_width = 19.9
+		target_width = 24.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 
@@ -901,8 +901,8 @@ anti_armor_SOV = {
 			}
 
 			regiments = {
-				medium_tank_destroyer_brigade = 7
-				mechanized = 3
+				medium_tank_destroyer_brigade = 8
+				mechanized = 4
 			}
 		}
 

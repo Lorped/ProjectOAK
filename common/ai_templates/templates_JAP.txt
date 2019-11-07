@@ -3,11 +3,11 @@ infantry_JAP = {
 	available_for = {
 		JAP
 	}
-	
+
 	roles = {
 		infantry
 	}
-	
+
 	upgrade_prio = {
 		factor = 2
 
@@ -17,15 +17,15 @@ infantry_JAP = {
 				NOT = {
 					JAP = { has_war_with = USA }
 				}
-				
+
 			}
 		}
 	}
-	
+
 	match_to_count = 0.60 #0.45 to 0.70 to 0.6
 
 	infantry_default_JAP = {
-	
+
 		upgrade_prio = {
 			factor = 5
 
@@ -37,11 +37,11 @@ infantry_JAP = {
 				}
 			}
 		}
-		
-		target_width = 21.0
+
+		target_width = 24.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
-		
+
 		stat_weights = {
 			0.00 #-- default_morale
 			0.00 #-- defense
@@ -72,24 +72,24 @@ infantry_JAP = {
 			0.00 #-- weight
 			0.00 #-- build_cost_ic
 		}
-		
+
 		target_template = {
 			weight = 0.9
 			match_value = 2500.0
-			
+
 			support = {
 				engineer = 1
 				artillery = 1
 			}
-			
+
 			regiments = {
 				infantry = 9
-				artillery_brigade = 1
+				artillery_brigade = 3
 			}
 		}
-		
+
 		allowed_types = {
-			infantry		
+			infantry
 			engineer
 			recon
 			signal_company
@@ -107,16 +107,16 @@ infantry_JAP = {
 		#replace_at_match = 0.6
 		#replace_with = infantry_JAP_2
 		#target_min_match = 0.5
-	}	
+	}
 
 	infantry_JAP_2 = {
-	
+
 		upgrade_prio = {
 			factor = 20
 
 			modifier = {
 				factor = 0
-				
+
 				date < 1940.1.1
 				CHI = {
 					is_ai = yes
@@ -126,7 +126,7 @@ infantry_JAP = {
 				}
 			}
 		}
-		
+
 		# more expensive infantry template. we save it for later
 		enabled = {
 			#date > 1940.1.1
@@ -140,10 +140,10 @@ infantry_JAP = {
 			}
 		}
 
-		target_width = 26.0
+		target_width = 32.0
 		width_weight = 5.0
 		column_swap_factor = 0.5
-		
+
 		stat_weights = {
 			0.00 #-- default_morale
 			0.00 #-- defense
@@ -174,26 +174,26 @@ infantry_JAP = {
 			0.00 #-- weight
 			0.00 #-- build_cost_ic
 		}
-		
+
 		target_template = {
 			weight = 0.9
 			match_value = 6000.0
-			
+
 			support = {
 				engineer = 1
 				recon = 1
 				artillery = 1
 				anti_tank = 1
 			}
-			
+
 			regiments = {
-				infantry = 10
-				artillery_brigade = 2
+				infantry = 12
+				artillery_brigade = 4
 			}
 		}
-		
+
 		allowed_types = {
-			infantry		
+			infantry
 			engineer
 			recon
 			signal_company
@@ -207,7 +207,7 @@ infantry_JAP = {
 			artillery_brigade
 			rocket_artillery_brigade
 		}
-	}	
+	}
 }
 
 mountaineers_JAP = {
@@ -215,11 +215,11 @@ mountaineers_JAP = {
 	available_for = {
 		JAP
 	}
-	
+
 	roles = {
 		mountaineers
 	}
-	
+
 	upgrade_prio = {
 		factor = 2
 
@@ -230,11 +230,11 @@ mountaineers_JAP = {
 			}
 		}
 	}
-	
+
 	match_to_count = 0.45
 
 	mountaineers_default_JAP = {
-	
+
 		upgrade_prio = {
 			factor = 2
 
@@ -242,11 +242,11 @@ mountaineers_JAP = {
 				factor = 1
 			}
 		}
-		
-		target_width = 19.9
+
+		target_width = 24.0
 		width_weight = 3
 		column_swap_factor = 0.2
-		
+
 		stat_weights = {
 			0 #-- default_morale
 			1 #-- defense
@@ -281,20 +281,20 @@ mountaineers_JAP = {
 		target_template = {
 			weight = 0.5
 			match_value = 3000.0
-			
+
 			support = {
 				engineer = 1
 				artillery = 1
 				anti_tank = 1
 				logistics_company = 1
 			}
-			
+
 			regiments = {
-				mountaineers = 8
-				artillery_brigade = 2
+				mountaineers = 9
+				artillery_brigade = 3
 			}
 		}
-		
+
 		allowed_types = {
 			mountaineers
 			artillery
@@ -312,11 +312,11 @@ marines_JAP = {
 	available_for = {
 		JAP
 	}
-	
+
 	roles = {
 		marines
 	}
-	
+
 	upgrade_prio = {
 		factor = 2
 
@@ -327,11 +327,11 @@ marines_JAP = {
 			}
 		}
 	}
-	
+
 	match_to_count = 0.45
 
 	marine_default_JAP = {
-	
+
 		upgrade_prio = {
 			factor = 2
 
@@ -339,24 +339,24 @@ marines_JAP = {
 				factor = 1
 			}
 		}
-	
-		target_width = 20.0
+
+		target_width = 24.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
-		
+
 
 		target_template = {
 			weight = 0.9
 			match_value = 2000.0
-			
+
 			support = {
 				DIV_HQ = 1
 				recon = 1
 				engineer = 1
 			}
-			
+
 			regiments = {
-				marine = 10
+				marine = 12
 			}
 		}
 
@@ -368,11 +368,11 @@ paratrooper_JAP = {
 	available_for = {
 		JAP
 	}
-	
+
 	roles = {
 		paratrooper
 	}
-	
+
 	upgrade_prio = {
 		factor = 2
 
@@ -383,11 +383,11 @@ paratrooper_JAP = {
 			}
 		}
 	}
-	
+
 	match_to_count = 0.45
 
 	paratrooper_default_JAP = {
-	
+
 		upgrade_prio = {
 			factor = 2
 
@@ -395,11 +395,11 @@ paratrooper_JAP = {
 				factor = 1
 			}
 		}
-	
-		target_width = 9.9
+
+		target_width = 12.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
-		
+
 		stat_weights = {
 			0.20 #-- default_morale
 			1.00 #-- defense
@@ -434,18 +434,18 @@ paratrooper_JAP = {
 		target_template = {
 			weight = 0.9
 			match_value = 2000.0
-			
+
 			support = {
 				engineer = 1
 				artillery = 1
 				anti_tank = 1
 			}
-			
+
 			regiments = {
-				paratrooper= 5 
+				paratrooper= 6
 			}
 		}
-		
+
 		allowed_types = {
 			paratrooper
 			engineer
@@ -468,11 +468,11 @@ garrison_JAP = {
 	available_for = {
 		JAP
 	}
-	
+
 	roles = {
 		garrison
 	}
-	
+
 	upgrade_prio = {
 		factor = 10
 
@@ -481,15 +481,15 @@ garrison_JAP = {
 			date < "1939.1.1"
 		}
 	}
-	
+
 	match_to_count = 0.6
 
 
 	garrison_JAP = {
-	
+
 		reinforce_prio = 0
 		custom_icon = 7
-	
+
 		upgrade_prio = {
 			factor = 2
 
@@ -497,11 +497,11 @@ garrison_JAP = {
 				factor = 1
 			}
 		}
-		
-		target_width = 10.0
+
+		target_width = 12.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
-		
+
 		stat_weights = {
 			0.00 #-- default_morale
 			0.00 #-- defense
@@ -532,22 +532,22 @@ garrison_JAP = {
 			0.00 #-- weight
 			0.00 #-- build_cost_ic
 		}
-		
+
 		target_template = {
 			weight = 0.9
 			match_value = 3000.0
-			
+
 			support = {
 				military_police = 1
 			}
-			
+
 			regiments = {
-				infantry = 5
+				infantry = 6
 			}
 		}
-		
+
 		allowed_types = {
-			infantry		
+			infantry
 			engineer
 			field_hospital
 			anti_tank

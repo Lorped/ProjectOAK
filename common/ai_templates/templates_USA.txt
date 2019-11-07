@@ -32,7 +32,7 @@ armored_USA= {
 			}
 		}
 
-		target_width = 19.9
+		target_width = 24.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 
@@ -51,12 +51,12 @@ armored_USA= {
 			}
 
 			regiments = {
-				medium_armor = 3
+				medium_armor = 2
 				light_armor = 2
 				motorized = 2
 				mechanized = 2
-				armored_cars_battalion = 2
-				mot_artillery_brigade = 3
+				armored_cars_battalion = 1
+				mot_artillery_brigade = 2
 				mot_anti_tank_brigade = 1
 			}
 		}
@@ -104,7 +104,7 @@ garrison_USA = {
 		reinforce_prio = 0
 		custom_icon = 7
 
-		target_width = 5.0
+		target_width = 6.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -148,7 +148,7 @@ garrison_USA = {
 			}
 
 			regiments = {
-				infantry = 4
+				infantry = 3
 			}
 		}
 
@@ -192,7 +192,7 @@ infantry_USA = {
 			}
 		}
 
-		target_width = 30.0
+		target_width = 24.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -252,7 +252,7 @@ mountaineers_USA = {
 			}
 		}
 
-		target_width = 19.9
+		target_width = 24.0
 		width_weight = 3
 		column_swap_factor = 0.2
 
@@ -299,8 +299,8 @@ mountaineers_USA = {
 			}
 
 			regiments = {
-				mountaineers = 8
-				artillery_brigade = 2
+				mountaineers = 5
+				artillery_brigade = 1
 			}
 		}
 
@@ -349,7 +349,7 @@ marines_USA = {
 			}
 		}
 
-		target_width = 20.0
+		target_width = 12.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 
@@ -367,7 +367,7 @@ marines_USA = {
 			}
 
 			regiments = {
-				marine = 10
+				marine = 6
 			}
 		}
 
@@ -407,7 +407,7 @@ paratroopers_USA = {
 			}
 		}
 
-		target_width = 9.9
+		target_width = 12
 		width_weight = 3.0
 		column_swap_factor = 0.1
 
@@ -422,7 +422,7 @@ paratroopers_USA = {
 			}
 
 			regiments = {
-				paratrooper= 10
+				paratrooper= 6
 			}
 		}
 
