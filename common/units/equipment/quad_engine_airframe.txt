@@ -35,7 +35,6 @@ equipments = {
 		
 		build_cost_ic = 68
 		resources = {
-			#oil = 2
 			aluminium = 4
 			rubber = 2
 		}
@@ -73,7 +72,6 @@ equipments = {
 		
 		build_cost_ic = 90
 		resources = {
-		    #oil = 2
 			aluminium = 3
 			tungsten = 3
 			rubber = 1
@@ -172,7 +170,6 @@ equipments = {
 		fuel_consumption = 0.84
 		build_cost_ic = 83
 		resources = {
-			#oil = 2
 			aluminium = 5
 			rubber = 2
 		}
@@ -195,7 +192,6 @@ equipments = {
 		naval_strike_attack = 11	
 		build_cost_ic = 84
 		resources = {
-			#oil = 2
 			aluminium = 5
 			rubber = 2
 		}
@@ -217,7 +213,6 @@ equipments = {
 		naval_strike_attack = 12
 		build_cost_ic = 85
 		resources = {
-			#oil = 2
 			aluminium = 5
 			rubber = 2
 		}
@@ -239,7 +234,6 @@ equipments = {
 		naval_strike_attack = 13	
 		build_cost_ic = 86
 		resources = {
-			#oil = 2
 			aluminium = 5
 			rubber = 2
 		}
@@ -261,7 +255,6 @@ equipments = {
 		naval_strike_attack = 14	
 		build_cost_ic = 87
 	    resources = {
-			#oil = 2
 			aluminium = 5
 			rubber = 2
 		}
@@ -283,7 +276,6 @@ equipments = {
 		naval_strike_attack = 15	
 		build_cost_ic = 88
 	    resources = {
-			#oil = 2
 			aluminium = 5
 			rubber = 2
 		}
@@ -306,7 +298,6 @@ equipments = {
 		build_cost_ic = 87
 		
 		resources = {
-			#oil = 2
 			aluminium = 5
 			tungsten = 2
 			rubber = 2
@@ -340,7 +331,6 @@ equipments = {
 		
 		build_cost_ic = 68
 		resources = {
-			#oil = 1
 			aluminium = 3
 			rubber = 1
 		}

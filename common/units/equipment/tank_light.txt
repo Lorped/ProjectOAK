@@ -38,7 +38,6 @@ equipments = {
 		
 		build_cost_ic = 21
 		resources = {
-			#oil = 1
 			steel = 3
 			tungsten = 1
 		}
@@ -80,7 +79,6 @@ equipments = {
 		
 		build_cost_ic = 21
 		resources = {
-			#oil = 1
 			steel = 2
 			tungsten = 1
 		}	
@@ -126,7 +124,6 @@ equipments = {
 		lend_lease_cost = 8
 		
 		resources = {
-			#oil = 1
 			steel = 2
 			tungsten = 1
 		}
@@ -173,7 +170,6 @@ equipments = {
 		lend_lease_cost = 8
 		
 		resources = {
-			#oil = 1
 			steel = 2
 			tungsten = 1
 		}

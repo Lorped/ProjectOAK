@@ -89,14 +89,6 @@ sub_units = {
 		categories = { category_all_air category_tac_bomber }
 	}
 	
-	light_bomber = {
-		sprite = medium_plane
-		priority = 1
-		active = yes
-		type = { tactical_bomber }
-		need = { light_bomber_equipment = 1 }
-	}
-	
 	jet_tac_bomber = {
 		sprite = medium_plane
 		priority = 1

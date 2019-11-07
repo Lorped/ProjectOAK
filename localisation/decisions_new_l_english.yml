@@ -122,7 +122,7 @@
  USA_semper_fi:0 "Semper Fi"
  USA_semper_fi_desc:0 "Expanding the Marine Corps"
  USA_fort_bragg:0 "Currahee"
- USA_fort_bragg:0 "The training center at Fort Bragg should give us some of the best paratrooper divisions in the world."
+ USA_fort_bragg_desc:0 "The training center at Fort Bragg should give us some of the best paratrooper divisions in the world."
  USA_convoys_for_england:0 "Convoys for the British"
  USA_convoys_for_england_desc:0 "Without convoys the British cannot import much of their needed supplies of tea from their empire"
  USA_unique_measures:0 "USA Wartime Measures Act"
@@ -161,6 +161,10 @@
  USA_day_of_infamy:0 "A Date Which Will Live In Infamy"
  USA_day_of_infamy_desc:0 "All Americans will unite to avenge Pearl harbour!"
  ###ITA###
+ ITA_army_plan:0 "Army rearmament plan"
+ ITA_army_plan_desc:0 "Only a strong army can assure us victory"
+ ITA_navy_plan:0 "Navy rearmament plan"
+ ITA_navy_plan_desc:0 "Only a strong navy can assure us victory"
  ITA_aid_spain:0 "Support Franco"
  ITA_guns_for_spain:0 "Guns for Spain"
  ITA_guns_for_spain_desc:0 "Even the bravest man cannot fight without a gun these days"
@@ -187,7 +191,7 @@
  CHI_reignite_war_desc:0 "We are now ready to launch an offensive and liberate our lands."
  JAP_reignite_war_desc:0 "We are now ready to stomp the Chinese once and for all."
  JAP_finish_china:0 "Finish Off China"
- JAP_reignite_war_desc:0 "We are now ready to stomp the Chinese once and for all. This time for real!"
+ JAP_finish_china_desc:0 "We are now ready to stomp the Chinese once and for all. This time for real!"
  jap_first_truce:0 "First ceasefire established"
  jap_second_truce:0 "Second ceasefire established"
  ITA_declarewar:0 "Declare war on the Allies"
@@ -273,8 +277,6 @@
  declare_war_POL_desc:0 ""Provided all of us form part of this community, sworn together, determined never to capitulate, then our will shall master all need!""
  GER_war_with_usa:0 "War with the USA"
 
-
- 
  ###Speeches###
  Increased_luxuries:0 "Massive Propaganda Investment"
  Increased_luxuries_desc:0 "Commit the fiscal resources we have available and convert it into a massive propaganda campaign that will rally the people behind our cause."

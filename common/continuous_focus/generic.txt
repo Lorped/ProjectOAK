@@ -19,7 +19,7 @@ continuous_focus_palette = {
 		available = {
 		}
 		
-		idea = idea_continuous_naval_production
+		idea = continuous_naval_production
 		
 		ai_will_do = {
 			factor = 1
@@ -40,7 +40,7 @@ continuous_focus_palette = {
 		available = {
 		}
 		
-		idea = idea_continuous_air_production
+		idea = continuous_air_production
 		
 		ai_will_do = {
 			factor = 1
@@ -63,17 +63,19 @@ continuous_focus_palette = {
 		
 		
 		modifier = {
-			production_speed_infrastructure_factor = 0.15
-			production_speed_air_base_factor = 0.15
-			production_speed_naval_base_factor = 0.15
-			production_speed_synthetic_refinery_factor = 0.15
-			production_speed_synthetic_rubber_refinery_factor = 0.15
-			production_speed_rocket_site_factor = 0.15
-			production_speed_nuclear_reactor_factor = 0.15
+			production_speed_infrastructure_factor = 0.1
+			production_speed_air_base_factor = 0.1
+			production_speed_naval_base_factor = 0.1
+			production_speed_synthetic_refinery_factor = 0.1
+			production_speed_synthetic_rubber_refinery_factor = 0.1
+			production_speed_fuel_silo_factor = 0.1	
+			production_speed_rocket_site_factor = 0.1
+			production_speed_nuclear_reactor_factor = 0.1
 			production_speed_bunker_factor = 0.15
 			production_speed_coastal_bunker_factor = 0.15
 			production_speed_anti_air_building_factor = 0.15
-			production_speed_radar_station_factor = 0.15		
+			production_speed_radar_station_factor = 0.15
+	
 		}
 		
 		ai_will_do = {
@@ -100,7 +102,7 @@ continuous_focus_palette = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 		
 		supports_ai_strategy = ai_focus_defense
@@ -158,11 +160,6 @@ continuous_focus_palette = {
 				
 				has_damaged_buildings = no
 			}
-			modifier = {
-				factor = 1
-				
-				has_war = yes
-			}
 		}
 		
 		supports_ai_strategy = ai_focus_military_advancements
@@ -182,7 +179,7 @@ continuous_focus_palette = {
 			
 		}
 
-		enabled = {
+		enable = {
 			is_in_faction = yes
 			num_faction_members > 1
 
@@ -251,7 +248,7 @@ continuous_focus_palette = {
 			hidden_trigger = { has_dlc = "Together for Victory" }
 		}
 
-		enabled = {
+		enable = {
 			num_subjects > 0
 		}
 
@@ -274,10 +271,6 @@ continuous_focus_palette = {
 		id = continuous_invest_research
 		
 		icon = GFX_focus_research
-		
-		available = {
-             hidden_trigger = { has_dlc = "Together for Victory" }
-		}
 
 		enabled = {
 			
@@ -295,7 +288,7 @@ continuous_focus_palette = {
 		
 		daily_cost = 1
 		
-		available_if_capitulated = no
+		available_if_capitulated = yes
 	}
 
 }

@@ -5,7 +5,7 @@
  quality_3_tt:0 "The £production_cost  of §YLand Equipment§! and §!Aircraft§! will §Rincrease by 10%§!\n" 
  quality_2_tt:0 "The £production_cost  of §YLand Equipment§! and §!Aircraft§! will §Rincrease by 7.5%§!\n"
  quality_1_tt:0 "§WThe £production_cost  of §YLand Equipment§! and §YAircraft§! will §Rincrease by 5%§!\n §RTHIS TECH CAN BE RESEARCHED ONLY AFTER GERMANY IS AT WAR WITH THE UK.\nONCE RESEARCHED IT WILL NOT BE POSSIBLE TO SWITCH TO QUANTITY"
- quantity_1_tt:0 "§W The £production_cost  of §YLand Equipment§! and §YAircraft§! will §Gdecrease by 5%§!\n §RTHIS TECH CAN BE RESEARCHED ONLY AFTER GERMANY IS AT WAR WITH THE UK.\nONCE RESEARCHED IT WILL NOT BE POSSIBLE TO SWItCH TO QUALITY"
+ quantity_1_tt:0 "§W The £production_cost  of §YLand Equipment§! and §YAircraft§! will §Gdecrease by 5%§!\n §RTHIS TECH CAN BE RESEARCHED ONLY AFTER GERMANY IS AT WAR WITH THE UK.\nONCE RESEARCHED IT WILL NOT BE POSSIBLE TO SWITCH TO QUALITY"
  quantity_2_tt:0 "The £production_cost  of §YLand Equipment§! and §!Aircraft§! will §Gdecrease by 7.5%§!\n"
  quantity_3_tt:0 "The £production_cost  of §YLand Equipment§! and §!Aircraft§! will §Gdecrease by 10%§!\n"
  welded_tt:0 "The £production_cost  production cost  of §YTanks§! and their §!Variants§! will §Rincrease by 5%§!\n"
