@@ -3,7 +3,7 @@ infantry_CHI = {
 
 	available_for = {
 		CHI
-		PRC 
+		PRC
 		GXC
 		YUN
 		SHX
@@ -16,7 +16,7 @@ infantry_CHI = {
 	roles = {
 		infantry
 	}
-	
+
 	upgrade_prio = {
 		factor = 2
 
@@ -26,9 +26,9 @@ infantry_CHI = {
 	}
 
 	match_to_count = 0.50
-	
+
 	infantry_default_CHI = {
-	
+
 		upgrade_prio = {
 			factor = 2
 
@@ -36,27 +36,27 @@ infantry_CHI = {
 				factor = 1
 			}
 		}
-		
-		target_width = 10.0
+
+		target_width = 12.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
-		
+
 		target_template = {
 			weight = 0.9
 			match_value = 6000.0
-						
+
 			regiments = {
-				light_infantry = 5
+				light_infantry = 6
 			}
 		}
-		
+
 		allowed_types = {
-			light_infantry		
+			light_infantry
 		}
 	}
 
 	infantry_2_CHI = {
-	
+
 		upgrade_prio = {
 			factor = 2
 
@@ -65,23 +65,23 @@ infantry_CHI = {
 				num_of_factories < 50
 			}
 		}
-		
+
 		target_width = 20.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
-		
+
 		target_template = {
 			weight = 0.9
 			match_value = 3000.0
-						
+
 			regiments = {
 				light_infantry = 10
 			}
 		}
-		
+
 		allowed_types = {
-			light_infantry		
+			light_infantry
 		}
 	}
-	
+
 }

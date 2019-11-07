@@ -8,7 +8,7 @@ infantry_FRA = {
 	roles = {
 		infantry
 	}
-	
+
 	upgrade_prio = {
 		factor = 2
 
@@ -18,9 +18,9 @@ infantry_FRA = {
 	}
 
 	match_to_count = 0.50
-	
+
 	infantry_default_FRA = {
-	
+
 		upgrade_prio = {
 			factor = 2
 
@@ -28,15 +28,15 @@ infantry_FRA = {
 				factor = 1
 			}
 		}
-		
-		target_width = 10.0
+
+		target_width = 24.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
-		
+
 		target_template = {
 			weight = 0.9
 			match_value = 6000.0
-						
+
 			support = {
 				DIV_HQ = 1
 				engineer = 1
@@ -45,12 +45,12 @@ infantry_FRA = {
 				logistics_company = 1
 				field_hospital = 1
 			}
-			
+
 			regiments = {
-				infantry = 9
-				artillery_brigade = 3
+				infantry = 8
+				artillery_brigade = 2
 				artillery_medium = 1
-				anti_tank_brigade = 1 
+				anti_tank_brigade = 1
 			}
 		}
 	}

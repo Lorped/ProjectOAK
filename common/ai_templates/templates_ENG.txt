@@ -33,7 +33,7 @@ armor_ENG = {
 			}
 		}
 
-		target_width = 30.0
+		target_width = 36.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 
@@ -51,8 +51,8 @@ armor_ENG = {
 			}
 
 			regiments = {
-				medium_armor = 3
-				heavy_armor = 3
+				medium_armor = 4
+				heavy_armor = 4
 				motorized = 4
 				armored_cars_battalion = 2
 				mot_artillery_brigade = 1
@@ -96,7 +96,7 @@ infantry_ENG = {
 			}
 		}
 
-		target_width = 20.0
+		target_width = 24.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -105,9 +105,9 @@ infantry_ENG = {
 			match_value = 6000.0
 
 			regiments = {
-				motorized = 9
-				armored_cars_battalion = 2
-				mot_artillery_brigade = 3
+				motorized = 8
+				armored_cars_battalion = 1
+				mot_artillery_brigade = 2
 				mot_anti_tank_brigade = 1
 			}
 			support = {
@@ -130,7 +130,7 @@ infantry_ENG = {
 			}
 		}
 
-		target_width = 20.0
+		target_width = 24.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -146,8 +146,8 @@ infantry_ENG = {
 			}
 
 			regiments = {
-				infantry = 7
-				artillery_brigade = 2
+				infantry = 9
+				artillery_brigade = 3
 			}
 		}
 
@@ -187,7 +187,7 @@ mountaineers_ENG = {
 			}
 		}
 
-		target_width = 19.9
+		target_width = 24.0
 		width_weight = 3
 		column_swap_factor = 0.2
 
@@ -234,7 +234,7 @@ mountaineers_ENG = {
 			}
 
 			regiments = {
-				mountaineers = 8
+				mountaineers = 10
 				artillery_brigade = 2
 			}
 		}
@@ -282,7 +282,7 @@ marines_ENG = {
 				factor = 1
 			}
 		}
-		target_width = 20.0
+		target_width = 24.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 
@@ -297,7 +297,7 @@ marines_ENG = {
 			}
 
 			regiments = {
-				marine = 8
+				marine = 10
 				pack_artillery_brigade = 2
 			}
 		}
@@ -338,7 +338,7 @@ paratrooper_ENG = {
 			}
 		}
 
-		target_width = 9.9
+		target_width = 12.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 
@@ -353,7 +353,7 @@ paratrooper_ENG = {
 			}
 
 			regiments = {
-				paratrooper= 5
+				paratrooper= 6
 			}
 		}
 
@@ -395,7 +395,7 @@ garrison_ENG = {
 		reinforce_prio = 0
 		custom_icon = 7
 
-		target_width = 5.0
+		target_width = 6.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -439,7 +439,7 @@ garrison_ENG = {
 			}
 
 			regiments = {
-				infantry = 4
+				infantry = 3
 			}
 		}
 

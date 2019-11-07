@@ -28,7 +28,7 @@ armored_GER = {
 			factor = 2
 		}
 
-		target_width = 20.0
+		target_width = 24.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 
@@ -66,7 +66,7 @@ armored_GER = {
 			}
 		}
 
-		target_width = 20.0
+		target_width = 24.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 
@@ -84,9 +84,9 @@ armored_GER = {
 			}
 
 			regiments = {
-				medium_armor = 8
-				motorized = 6
-				armored_cars_battalion = 2
+				medium_armor = 6
+				motorized = 5
+				armored_cars_battalion = 1
 			}
 		}
 
@@ -110,7 +110,7 @@ armored_GER = {
 			}
 		}
 
-		target_width = 30.0
+		target_width = 36.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 
@@ -128,8 +128,8 @@ armored_GER = {
 			}
 
 			regiments = {
-				medium_armor = 8
-				motorized = 6
+				medium_armor = 9
+				motorized = 7
 				armored_cars_battalion = 2
 			}
 		}
@@ -147,7 +147,7 @@ armored_GER = {
 			}
 		}
 
-		target_width = 20.0
+		target_width = 24.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 
@@ -164,8 +164,8 @@ armored_GER = {
 			}
 
 			regiments = {
-				heavy_armor = 3
-				motorized = 3
+				heavy_armor = 6
+				motorized = 6
 			}
 		}
 
@@ -223,7 +223,7 @@ garrison_GER = {
 			}
 		}
 
-		target_width = 20.0
+		target_width = 24.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -239,7 +239,7 @@ garrison_GER = {
 			}
 
 			regiments = {
-				infantry = 8
+				infantry = 10
 				artillery_brigade = 2
 			}
 		}
@@ -280,7 +280,7 @@ infantry_GER = {
 			}
 		}
 
-		target_width = 10.0
+		target_width = 12.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -290,8 +290,8 @@ infantry_GER = {
 
 			regiments = {
 				mechanized = 2
-				motorized = 4
-				mot_artillery_brigade = 2
+				motorized = 3
+				mot_artillery_brigade = 1
 			}
 			support = {
 				DIV_HQ = 1
@@ -308,7 +308,7 @@ infantry_GER = {
 			}
 		}
 
-		target_width = 30.0
+		target_width = 36.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -326,8 +326,8 @@ infantry_GER = {
 			}
 
 			regiments = {
-				infantry = 9
-				artillery_brigade = 3
+				infantry = 12
+				artillery_brigade = 4
 				artillery_medium = 1
 				anti_tank_brigade = 1
 			}
@@ -368,7 +368,7 @@ mountaineers_GER = {
 			}
 		}
 
-		target_width = 22.0
+		target_width = 24.0
 		width_weight = 3
 		column_swap_factor = 0.2
 
@@ -385,7 +385,7 @@ mountaineers_GER = {
 			}
 
 			regiments = {
-				mountaineers = 8
+				mountaineers = 10
 				artillery_brigade = 2
 			}
 		}
@@ -453,7 +453,7 @@ marines_GER = {
 
 			regiments = {
 				marine = 9
-				artillery_brigade = 2
+				artillery_brigade = 3
 
 			}
 		}
@@ -500,7 +500,7 @@ paratroopers_GER = {
 			}
 		}
 
-		target_width = 18.0
+		target_width = 12.0
 		width_weight = 3.0
 		column_swap_factor = 0.5
 
@@ -516,7 +516,7 @@ paratroopers_GER = {
 			}
 
 			regiments = {
-				paratrooper= 9
+				paratrooper= 6
 			}
 		}
 
@@ -566,7 +566,7 @@ suppression_GER = {
 			}
 		}
 
-		target_width = 10.0
+		target_width = 6.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -579,7 +579,7 @@ suppression_GER = {
 			}
 
 			regiments = {
-				garrison = 5
+				garrison = 3
 			}
 		}
 	}

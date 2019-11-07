@@ -8,7 +8,7 @@ infantry_CAN = {
 	roles = {
 		infantry
 	}
-	
+
 	upgrade_prio = {
 		factor = 2
 
@@ -18,9 +18,9 @@ infantry_CAN = {
 	}
 
 	match_to_count = 0.50
-	
+
 	infantry_default_CAN = {
-	
+
 		upgrade_prio = {
 			factor = 2
 
@@ -28,17 +28,17 @@ infantry_CAN = {
 				factor = 1
 			}
 		}
-		
-		target_width = 10.0
+
+		target_width = 12.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
-		
+
 		target_template = {
 			weight = 0.9
 			match_value = 6000.0
-						
+
 			regiments = {
-				light_infantry = 10
+				light_infantry = 9
 			}
 			support = {
 				DIV_HQ = 1
