@@ -30,8 +30,6 @@ Hearts of Oak includes unique tech trees, focus trees, designers, and advisors f
 [h1]Authors' Note:[/h1]
 [list]
 [*]It is advised not to use any other mods, most files have been changed and compability is rather low
-[*]This mod is the result of 6 months of playtesting and fixing by a small group pf players, as a result all statistics have been tested and exploits removed. Extra effort has been in put in making everything as polished as possible.
-[*]Several Man the Guns issues have been fixed (wrong modules for starting ships, etc.) 
 [*]Play with historical focus on for the intended experience
 [/list]
 
@@ -41,10 +39,6 @@ https://discord.gg/QvbBCap
 We play multiplayer games with a historical ruleset at friday and/or during weekends.
 We are always open to suggestions and critiques.
 Bug reporting is always appreciated!
-
-[h1]WANT TO JOIN US?[/h1]
-
-All help is welcome. Feel free to message any of us on steam or - better yet - discord.
 
 [h1]Credits (mods included partially/entirely):    [/h1]
 [list]

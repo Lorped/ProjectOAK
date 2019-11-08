@@ -161,9 +161,10 @@
  USA_day_of_infamy:0 "A Date Which Will Live In Infamy"
  USA_day_of_infamy_desc:0 "All Americans will unite to avenge Pearl harbour!"
  ###ITA###
- ITA_army_plan:0 "Army rearmament plan"
+ ITA_buildup_decisions:0 "Rearmament Program"
+ ITA_army_plan:0 "Army Rearmament Plan"
  ITA_army_plan_desc:0 "Only a strong army can assure us victory"
- ITA_navy_plan:0 "Navy rearmament plan"
+ ITA_navy_plan:0 "Navy Rearmament Plan"
  ITA_navy_plan_desc:0 "Only a strong navy can assure us victory"
  ITA_aid_spain:0 "Support Franco"
  ITA_guns_for_spain:0 "Guns for Spain"

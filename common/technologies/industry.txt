@@ -1071,7 +1071,7 @@ technologies = {
 		}
         on_research_complete = {
 			custom_effect_tooltip = quantity_2_tt
-			hidden_effect = {remove_ideas = quantity1 add_ideas = quantity2 }
+			hidden_effect = {add_ideas = quantity2 }
 		}
 		path = {
 			leads_to_tech = massed3 
@@ -1111,7 +1111,7 @@ technologies = {
 		}
         on_research_complete = {
 			custom_effect_tooltip = quantity_3_tt
-			hidden_effect = {remove_ideas = quantity2 add_ideas = quantity3}
+			hidden_effect = {add_ideas = quantity3}
 		}
 		research_cost = 2.5
 		
@@ -1211,7 +1211,7 @@ technologies = {
 		}
 		on_research_complete = {
 			custom_effect_tooltip = quality_2_tt
-			hidden_effect = {remove_ideas = quality1 add_ideas = quality2}
+			hidden_effect = {add_ideas = quality2}
 		}
 		path = {
 			leads_to_tech = quality3 
@@ -1254,7 +1254,7 @@ technologies = {
 
 		on_research_complete = {
 			custom_effect_tooltip = quality_3_tt
-			hidden_effect = {remove_ideas = quality2 add_ideas = quality3}
+			hidden_effect = {add_ideas = quality3}
 		}
 		
 		research_cost = 2.5

@@ -1,4 +1,4 @@
-economy_decisions = {
+ITA_buildup_decisions = {
 	ITA_army_plan = {  
 
 		icon = ger_military_buildup
@@ -11,19 +11,19 @@ economy_decisions = {
 			    type = infantry
 			}
 			has_deployed_air_force_size = {
-			    size > 1000
+			    size > 999
 			    type = fighter
 			}
 			has_deployed_air_force_size = {
-			    size > 400
+			    size > 399
 			    type = cas
 			}
 			has_deployed_air_force_size = {
-			    size > 600
+			    size > 599
 			    type = tactical_bomber
 			}
 			has_deployed_air_force_size = {
-			    size > 600
+			    size > 599
 			    type = naval_bomber
 			}
 		}
@@ -31,12 +31,6 @@ economy_decisions = {
 		days_mission_timeout = 900
 		fire_only_once = yes
 		is_good = no
-
-		cancel_trigger = {
-			hidden_trigger = {
-				has_war = yes
-			}
-		}
 
 		activation = {
 			has_completed_focus = ITA_Increase_factory_output

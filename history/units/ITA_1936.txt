@@ -575,12 +575,12 @@ instant_effect = { #player
 
 		add_equipment_production = {
 			equipment = {
-				type = infantry_equipment_0
+				type = infantry_equipment_1
 				creator = "ITA"
 			}
 			requested_factories = 12
 			progress = 0.1
-			efficiency = 20
+			efficiency = 15
 		}
 
 		add_equipment_production = {
