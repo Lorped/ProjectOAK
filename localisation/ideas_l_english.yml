@@ -1,5 +1,11 @@
 ﻿l_english:
 
+ quantity1:0 "Mass Production I"
+ quantity2:0 "Mass Production II"
+ quantity3:0 "Mass Production III"
+ quality1:0 "Quality Production I"
+ quality2:0 "Quality Production II"
+ quality3:0 "Quality Production III"
  cheater_idea:0 "Cheater"
  cheater_idea_desc:0 "Rehost time"
  terronia:0 "Of Polentone and Terrone"
