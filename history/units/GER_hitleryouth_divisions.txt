@@ -1,28 +1,29 @@
 ﻿division_template = {
-	name = "SS-Panzergrenadier-Division" 
-	
-	
-	division_names_group = GER_SS_01	
-    
-	
+	name = "SS-Panzergrenadier-Division"
+
+
+	division_names_group = GER_SS_01
+
+
 	regiments = {
 		ss_mechanized = { x = 0 y = 0 }
-	    ss_mechanized = { x = 0 y = 1 }
+	  ss_mechanized = { x = 0 y = 1 }
 		ss_mechanized = { x = 0 y = 2 }
 		ss_mechanized = { x = 0 y = 3 }
-		
+
 		ss_motorized = { x = 1 y = 0 }
-	    ss_motorized = { x = 1 y = 1 }
+	  ss_motorized = { x = 1 y = 1 }
 		ss_motorized = { x = 1 y = 2 }
-		
+		ss_motorized = { x = 1 y = 3 }
+
 		ss_heavy_panzer = { x = 2 y = 0 }
 		ss_medium_panzer = { x = 2 y = 1 }
 		ss_medium_panzer = { x = 2 y = 2 }
-		
+
 		ss_heavy_panzer = { x = 3 y = 0 }
-	    ss_medium_panzer = { x = 3 y = 1 }
+	  ss_medium_panzer = { x = 3 y = 1 }
 		ss_medium_panzer = { x = 3 y = 2 }
-		
+
 		ss_medium_panzer_art = { x = 4 y = 0 }
 		ss_medium_panzer_art = { x = 4 y = 1 }
 		ss_medium_panzer_art = { x = 4 y = 2 }
@@ -31,8 +32,8 @@
 	support = {
         DIV_HQ = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
-	 	engineer = { x = 0 y = 2 }	
-		logistics_company = { x = 0 y = 3 }	
+	 	engineer = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
 		maintenance_company = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
         signal_company = { x = 1 y = 2 }
@@ -43,7 +44,7 @@
 
 units = {
 
-	division= {			
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 12

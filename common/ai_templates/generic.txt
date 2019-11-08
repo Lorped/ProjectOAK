@@ -30,7 +30,7 @@ motorized_generic = {
 			}
 		}
 
-		target_width = 10.0
+		target_width = 24.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -39,7 +39,7 @@ motorized_generic = {
 			match_value = 6000.0
 
 			regiments = {
-				mechanized = 2
+				mechanized = 4
 				motorized = 4
 				armored_cars_battalion = 1
 				mot_artillery_brigade = 2

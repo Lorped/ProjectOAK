@@ -7,9 +7,11 @@ division_template = {
 	regiments = {
 		red_med_armor = { x = 0 y = 0 }
 		red_med_armor = { x = 0 y = 1 }
+		red_med_armor = { x = 0 y = 2 }
 
 		red_med_armor = { x = 1 y = 0 }
 		red_med_armor = { x = 1 y = 1 }
+		red_med_armor = { x = 1 y = 2 }
 
 		red_motorized = { x = 2 y = 0 }
 		red_motorized = { x = 2 y = 1 }
@@ -18,7 +20,8 @@ division_template = {
 
 		red_motorized = { x = 3 y = 0 }
 		red_motorized = { x = 3 y = 1 }
-		armored_cars_battalion = { x = 3 y = 2 }
+		red_motorized = { x = 3 y = 2 }
+		armored_cars_battalion = { x = 3 y = 3 }
 
 		mot_artillery_brigade = { x = 4 y = 0 }
 		artillery_medium_mot  = { x = 4 y = 1 }

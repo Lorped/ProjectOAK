@@ -1,12 +1,12 @@
 ﻿air_wings = {
-	
+
 	219 = {
-		tac_bomber_equipment_1940 =  {		
-				owner = "SOV" 
-				amount = 100
+		tac_bomber_equipment_1940 =  {
+				owner = "SOV"
+				amount = 200
 			}
 			name = "588. Night Bomber Regiment"
-		ace={ 
+		ace={
 			modifier="support_unique"
 			name="Yevdokia"
 			surname="Bershanskaya"

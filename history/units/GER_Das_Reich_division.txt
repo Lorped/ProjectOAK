@@ -1,28 +1,27 @@
 ﻿####### Using existing division_template "SS Infanterie(mot)" #######
 division_template = {
-	name = "SS-Infanterie(mot)" 
+	name = "SS-Infanterie(mot)"
 
-	division_names_group = GER_SS_01	
-   	
-	
+	division_names_group = GER_SS_01
+
+
 	regiments = {
 		ss_motorized = { x = 0 y = 0 }
-	    ss_motorized = { x = 0 y = 1 }
+	  ss_motorized = { x = 0 y = 1 }
 		ss_motorized = { x = 0 y = 2 }
-		ss_motorized = { x = 0 y = 3 }
-		
+
 		ss_motorized = { x = 1 y = 0 }
 		ss_motorized = { x = 1 y = 1 }
 		ss_motorized = { x = 1 y = 2 }
-		
+
 		ss_motorized = { x = 2 y = 0 }
-	    ss_motorized = { x = 2 y = 1 }
+	  ss_motorized = { x = 2 y = 1 }
 		ss_motorized = { x = 2 y = 2 }
-		
+
 		ss_artillery_brigade_mot = { x = 3 y = 0 }
 		ss_artillery_brigade_mot = { x = 3 y = 1 }
-		ss_artillery_brigade_mot = { x = 3 y = 2 }
-		ss_anti_tank_brigade_mot = { x = 3 y = 3 }
+		ss_anti_tank_brigade_mot = { x = 3 y = 2 }
+
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -33,15 +32,15 @@ division_template = {
 		logistics_company = { x = 1 y = 1 }
 		field_hospital = { x = 1 y = 2 }
 		military_police = { x = 1 y = 3 }
-		
+
 	}
 	priority = 2
 }
 units = {
-	
-	
-	
-	division= {			
+
+
+
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
