@@ -2021,42 +2021,6 @@ political_actions = {
 
 foreign_politics = {
 
-	GER_berlin_rome_axis = {
-
-		fire_only_once = yes 
-
-		icon = generic_operation 
-
-		ai_will_do = {
-			factor = 15
-		}
-		
-		allowed = {
-		   tag = ITA
-		}
-
-		visible = {
-			NOT = {
-				has_idea = GER_iron_alliance
-			}
-		}
-
-		available = {
-			ITA = {
-				has_completed_focus = ITA_Hitler_visits_Rome
-			}
-		}
-		
-		complete_effect = {
-			ITA = {
-				add_ideas = ITA_iron_alliance
-			}
-			GER = {
-				add_ideas = GER_iron_alliance
-			}
-		}
-	}
-
 	GER_rhineland = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes

@@ -734,10 +734,6 @@ technologies = {
 		dependencies = {
 			improved_machine_tools = 1
 		}
-		path = {
-			leads_to_tech = axis_medium_assault_gun_1939
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 1.8
 		start_year = 1939
@@ -849,7 +845,7 @@ technologies = {
 		
 		enable_subunits = {
 			medium_assault_gun_brigade
-			heavy_assaut_gun_company
+			medium_assault_gun_company
 		}
 		path = {
 			leads_to_tech = axis_medium_assault_gun_1941
@@ -1233,9 +1229,6 @@ technologies = {
 		medium_assault_gun_brigade = {
 			fuel_consumption_factor = -0.05
 		}
-		heavy_assaut_gun_brigade = {
-			fuel_consumption_factor = -0.05
-		}
 		light_tank_destroyer_brigade = {
 			fuel_consumption_factor = -0.05
 		}
@@ -1316,9 +1309,6 @@ technologies = {
 			fuel_consumption_factor = 0.05
 		}
 		medium_assault_gun_brigade = {
-			fuel_consumption_factor = 0.05
-		}
-		heavy_assaut_gun_brigade = {
 			fuel_consumption_factor = 0.05
 		}
 		light_tank_destroyer_brigade = {
