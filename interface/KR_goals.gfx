@@ -60,8 +60,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/CommonwealthAirTrainingPlan.tga"
 	}
 	spriteType = {
+		name = "GFX_ITA_strike_france"
+		texturefile = "gfx/interface/goals/ita/strike_france.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_baionette"
+		texturefile = "gfx/interface/goals/ita/baionette.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_ariete_focus"
+		texturefile = "gfx/interface/goals/ita/ariete.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_ITA_Generic_Ultranat_Eagle"
-		texturefile = "gfx/interface/goals/ita/Generic_Ultranat_Eagle.tga"
+		texturefile = "gfx/interface/goals/ita/Generic_Ultranat_Eagle.dds"
 	}
 	spriteType = {
 		name = "GFX_ITA_Ultranationalism_2"

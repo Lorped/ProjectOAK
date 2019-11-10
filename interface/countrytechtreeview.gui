@@ -1418,7 +1418,7 @@ guiTypes = {
 				origo = center_up
 				instantTextBoxType = {
 					name = "armour_subtitle_inftank"
-					position = { x = 20 y = 570 }
+					position = { x = -100 y = 570 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -1520,6 +1520,13 @@ guiTypes = {
 			}
 			gridboxtype = { 
 				name = "axis_medium_tank_1937_tree"
+				position = { x = 10% y = 115 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			gridboxtype = { 
+				name = "axis_medium_assault_gun_1939_tree"
 				position = { x = 10% y = 115 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }

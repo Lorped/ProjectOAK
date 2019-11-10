@@ -141,7 +141,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_victoryinETH
-		icon = GFX_focus_eng_imperial_federation
+		icon = GFX_ITA_Ultranationalism_2
 		prerequisite = { focus = ITA_victory_by_any_means focus = ITA_learn_from_the_ethiopian_war }
 		available = {
 			OR = {
@@ -2345,7 +2345,12 @@ focus_tree = {
 							instant_build = yes
 						}
 			}
-			unlock_decision_tooltip = { decision = GER_berlin_rome_axis show_effect_tooltip = yes }
+			ITA = {
+				add_ideas = ITA_iron_alliance
+			}
+			GER = {
+				add_ideas = GER_iron_alliance
+			}
 		}
 	}
 	focus = {
@@ -2530,7 +2535,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_yugoslavia_war_goal
-		icon = GFX_focus_generic_italy_first
+		icon = GFX_idea_ROM_balkans_dominance
 		prerequisite = { focus = ITA_greece_war_goal }
 		prerequisite = { focus = ITA_italian_occupation }
 		available = {
@@ -2587,7 +2592,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_italian_occupation
-		icon = GFX_idea_ROM_balkans_dominance
+		icon = GFX_ITA_strike_france
 		prerequisite = { focus = ITA_police }
 		x = 30
 		y = 8

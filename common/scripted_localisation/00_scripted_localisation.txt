@@ -635,19 +635,83 @@ defined_text = { #
 	text = {
 		trigger = {
 			original_tag = SOV
-			check_variable = { var = 5_year_plan_progress value = 90 compare = greater_than_or_equals }			
-			check_variable = { var = 5_year_plan_progress value = 95 compare = less_than }			
+			check_variable = { var = 5_year_plan_progress value = 89 compare = greater_than }			
+			check_variable = { var = 5_year_plan_progress value = 91 compare = less_than }			
 		}
 		localization_key = SOV_5_year_plan_90
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 90 compare = greater_than }			
+			check_variable = { var = 5_year_plan_progress value = 92 compare = less_than }			
+		}
+		localization_key = SOV_5_year_plan_91
 	}	
 	text = {
 		trigger = {
 			original_tag = SOV
-			check_variable = { var = 5_year_plan_progress value = 95 compare = greater_than_or_equals }			
-			check_variable = { var = 5_year_plan_progress value = 100 compare = less_than }			
+			check_variable = { var = 5_year_plan_progress value = 91 compare = greater_than }			
+			check_variable = { var = 5_year_plan_progress value = 93 compare = less_than }			
+		}
+		localization_key = SOV_5_year_plan_92
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 92 compare = greater_than }			
+			check_variable = { var = 5_year_plan_progress value = 94 compare = less_than }			
+		}
+		localization_key = SOV_5_year_plan_93
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 93 compare = greater_than }			
+			check_variable = { var = 5_year_plan_progress value = 95 compare = less_than }			
+		}
+		localization_key = SOV_5_year_plan_94
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 94 compare = greater_than }			
+			check_variable = { var = 5_year_plan_progress value = 96 compare = less_than }			
 		}
 		localization_key = SOV_5_year_plan_95
-	}		
+	}	
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 95 compare = greater_than }			
+			check_variable = { var = 5_year_plan_progress value = 97 compare = less_than }			
+		}
+		localization_key = SOV_5_year_plan_96
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 96 compare = greater_than }			
+			check_variable = { var = 5_year_plan_progress value = 98 compare = less_than }			
+		}
+		localization_key = SOV_5_year_plan_97
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 97 compare = greater_than }			
+			check_variable = { var = 5_year_plan_progress value = 99 compare = less_than }			
+		}
+		localization_key = SOV_5_year_plan_98
+	}	
+	text = {
+		trigger = {
+			original_tag = SOV
+			check_variable = { var = 5_year_plan_progress value = 98 compare = greater_than }			
+			check_variable = { var = 5_year_plan_progress value = 100 compare = less_than }			
+		}
+		localization_key = SOV_5_year_plan_99
+	}
 	text = {
 		trigger = {
 			original_tag = SOV

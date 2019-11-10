@@ -1121,7 +1121,7 @@ ideas = {
 				has_government = communism
 			}
 
-			picture = generic_production_bonus
+			picture = eng_spirit_of_the_industrial_revolution
 			
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.15

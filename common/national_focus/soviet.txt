@@ -158,6 +158,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		bypass = {
+			AND = {
+				NOT = {
+					any_owned_state = {
+						has_state_flag = SOV_5_year_plan_IC
+					}
+				}
+				NOT = {
+					has_idea = SOV_idea_2_5_year_plan
+				}
+			}
+		}
 
 		available = {
 			has_tech = construction1
@@ -165,13 +177,6 @@ focus_tree = {
 
 			any_owned_state = {
 				has_state_flag = SOV_5_year_plan_IC
-			}
-		}
-
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_2_5_year_plan
 			}
 		}
 
@@ -199,7 +204,11 @@ focus_tree = {
 				}
 			}
  			custom_effect_tooltip = SOV_5_year_plan_tt
- 			add_to_variable = { var = 5_year_plan_progress value = 2 }
+ 			if	= {
+				limit = {has_idea = SOV_idea_2_5_year_plan }
+
+				add_to_variable = { var = 5_year_plan_progress value = 2 }
+			}
 
 			hidden_effect = {
 				every_owned_state = {
@@ -218,25 +227,24 @@ focus_tree = {
 
 		relative_position_id = SOV_arms_kommissariats
 		cost = 10.00
-
+		bypass = {
+			AND = {
+				NOT = {
+					any_owned_state = {
+						has_state_flag = SOV_5_year_plan_IC
+					}
+				}
+				NOT = {
+					has_idea = SOV_idea_2_5_year_plan
+				}
+			}
+		}
 		available = {
 			has_tech = construction2
 			has_idea = SOV_idea_2_5_year_plan
 
 			any_owned_state = {
 				has_state_flag = SOV_5_year_plan_IC
-			}
-		}
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_2_5_year_plan
-			}
-		}
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_2_5_year_plan
 			}
 		}
 
@@ -266,7 +274,11 @@ focus_tree = {
 				}
 			}
  			custom_effect_tooltip = SOV_5_year_plan_tt
- 			add_to_variable = { var = 5_year_plan_progress value = 2 }
+ 			if	= {
+				limit = {has_idea = SOV_idea_2_5_year_plan }
+
+				add_to_variable = { var = 5_year_plan_progress value = 2 }
+			}
 
 			hidden_effect = {
 				every_owned_state = {
@@ -401,19 +413,20 @@ focus_tree = {
 			}
 		}
 
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_2_5_year_plan
-			}
-		}
-
 		ai_will_do = {
 			factor = 8
 		}
 
 		bypass = {
-			NOT = {
-				has_idea = SOV_idea_2_5_year_plan
+			AND = {
+				NOT = {
+					any_owned_state = {
+						has_state_flag = SOV_5_year_plan_IC
+					}
+				}
+				NOT = {
+					has_idea = SOV_idea_2_5_year_plan
+				}
 			}
 		}
 
@@ -434,7 +447,10 @@ focus_tree = {
 				}
 			}
  			custom_effect_tooltip = SOV_5_year_plan_tt
- 			add_to_variable = { var = 5_year_plan_progress value = 2 }
+ 			if	= {
+				limit = {has_idea = SOV_idea_2_5_year_plan }
+				add_to_variable = { var = 5_year_plan_progress value = 2 }
+			}
 			hidden_effect = {
 				every_owned_state = {
 					clr_state_flag = SOV_5_year_plan_IC
@@ -453,25 +469,24 @@ focus_tree = {
 		y = 1
 		relative_position_id = SOV_heavy_industry
 		cost = 10.00
-
 		bypass = {
-			NOT = {
-				has_idea = SOV_idea_2_5_year_plan
+			AND = {
+				NOT = {
+					any_owned_state = {
+						has_state_flag = SOV_5_year_plan_IC
+					}
+				}
+				NOT = {
+					has_idea = SOV_idea_2_5_year_plan
+				}
 			}
 		}
-
 		available = {
 			has_tech = construction2
 			has_idea = SOV_idea_2_5_year_plan
 
 			any_owned_state = {
 				has_state_flag = SOV_5_year_plan_IC
-			}
-		}
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_2_5_year_plan
 			}
 		}
 
@@ -496,7 +511,10 @@ focus_tree = {
 				}
 			}
  			custom_effect_tooltip = SOV_5_year_plan_tt
- 			add_to_variable = { var = 5_year_plan_progress value = 2 }
+			if	= {
+				limit = {has_idea = SOV_idea_2_5_year_plan }
+				add_to_variable = { var = 5_year_plan_progress value = 2 }
+			}
 			hidden_effect = {
 				every_owned_state = {
 					clr_state_flag = SOV_5_year_plan_IC
