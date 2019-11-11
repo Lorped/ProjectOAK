@@ -3391,11 +3391,7 @@ focus_tree = {
 			focus = SOV_establish_a_new_officer_training_center
 		}
 		ai_will_do = {
-			factor = 1.5
-			modifier = {
-				factor = 10
-				has_war = yes
-			}
+			factor = 100			
 		}
 
 		available = {
@@ -3422,11 +3418,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		ai_will_do = {
-			factor = 1.5
-			modifier = {
-				factor = 2
-				has_war = yes
-			}
+			factor = 100
 		}
 		relative_position_id = SOV_the_great_patriotic_war
 
