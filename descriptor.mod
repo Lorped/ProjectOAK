@@ -5,4 +5,4 @@ tags={
 	"National Focuses"
 	"Technologies"
 }
-name="- Hearts of Oak - LOC"
+name="- Hearts of Oak - Man the Guns"
