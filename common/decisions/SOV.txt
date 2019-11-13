@@ -2888,9 +2888,9 @@ SOV_great_patriotic_war = {
 		}
 
 		visible = {
-		        has_war_with = GER
+		    has_war_with = GER
 			or = { AND = { date > 1940.9.29 date < 1941.01.20 } AND = { date > 1941.9.29 date < 1942.01.20} AND = { date > 1942.9.29 date < 1943.01.20} AND = { date > 1943.9.29 date < 1944.01.20 } AND = { date > 1944.9.29 date < 1945.01.20} }
-		tag = SOV
+			tag = SOV
 		}
 		icon = decision_generic_SOV
 
@@ -2927,21 +2927,14 @@ SOV_great_patriotic_war = {
 			SOV = { controls_state = 219 } # controls moscow 
 			NOT = { SOV = { has_full_control_of_state = 202 }}
 			NOT = { SOV = { has_full_control_of_state = 206 }}
-			
-
-						#check_variable = {
-						#	var = ostfront_year
-						#	value = 2
-						#	compare = equal
-						#}
 		}
 
 		visible = {
-		tag = SOV
+				tag = SOV
 		        NOT = { has_idea = winter_offensive }
 				has_country_flag = SOVwintercounteroffense
 		        has_war_with = GER
-			or = { AND = { date > 1940.9.29 date < 1941.01.20 } AND = { date > 1941.9.29 date < 1942.01.20} AND = { date > 1942.9.29 date < 1943.01.20} AND = { date > 1943.9.29 date < 1944.01.20 } AND = { date > 1944.9.29 date < 1945.01.20} }
+				or = { AND = { date > 1940.9.29 date < 1941.01.20 } AND = { date > 1941.9.29 date < 1942.01.20} AND = { date > 1942.9.29 date < 1943.01.20} AND = { date > 1943.9.29 date < 1944.01.20 } AND = { date > 1944.9.29 date < 1945.01.20} }
 		}
 		
 		
