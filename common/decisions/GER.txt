@@ -2708,12 +2708,37 @@ foreign_politics = {
 		ai_will_do = {
 			factor = 10
 		}
-
+		cost = 10
 		complete_effect = {
 			SWE = { 
 			country_event = { id = germany.322 }
 			custom_effect_tooltip = needs_approval
 			}
+		}
+	}
+	GER_finland_access = {
+		icon = ger_reichskommissariats
+		fire_only_once = yes
+
+		allowed = {
+		   tag = GER
+		}
+		visible = {
+			FIN = { has_completed_focus	 = FIN_abandoned }		
+		}
+
+		available = {
+			FIN = { has_completed_focus	 = FIN_abandoned }
+			date > 1941.1.1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		complete_effect = {
+			SWE = { give_military_access = GER }
+			FIN = { give_military_access = GER }
 		}
 	}
 
