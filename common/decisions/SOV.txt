@@ -91,7 +91,9 @@ SOV_stalins_paranoia = {
 
 		days_remove = 50 
 
-		days_re_enable = 40 	
+		days_re_enable = 40 
+
+		fixed_random_seed = no		
 
 		cost = 20 	
 
@@ -102,28 +104,28 @@ SOV_stalins_paranoia = {
 
 		remove_effect = {
 			random_list = {
-				2 = {
+				3 = {
 					country_event = soviet.106
 				}
-				2 = {
+				3 = {
 					country_event = soviet.107
 				}
-				2 = {
+				3 = {
 					country_event = soviet.108
 				}
-				2 = {
+				3 = {
 					country_event = soviet.109
 				}
-				2 = {
+				3 = {
 					country_event = soviet.110
 				}
-				2 = {
+				3 = {
 					country_event = soviet.111
 				}				
-				2 = {
+				3 = {
 					country_event = soviet.112
 				}				
-				80 = {
+				79 = {
 					country_event = soviet.113
 				}				
 			}
@@ -196,7 +198,7 @@ SOV_stalins_paranoia = {
 		}
 
 		modifier = {
-			stability_weekly = 0.002	
+			stability_weekly = 0.001
 		}
 
 		remove_effect = {
@@ -267,7 +269,7 @@ SOV_stalins_paranoia = {
 		}
 
 		modifier = {
-			stability_weekly = 0.002		
+			stability_weekly = 0.004	
 			industrial_capacity_factory = -0.05
 			industrial_capacity_dockyard = -0.05
 			production_factory_efficiency_gain_factor = -0.15
