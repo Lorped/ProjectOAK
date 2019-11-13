@@ -377,7 +377,7 @@ focus_tree = {
 		} 
 		
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 
 		bypass = {
@@ -1838,6 +1838,15 @@ focus_tree = {
 			any_owned_state = {
 				has_state_flag = SOV_5_year_plan_IC
 			}		
+			ROOT = {
+				controls_state = 200
+				controls_state = 227
+				controls_state = 221
+				controls_state = 228
+				controls_state = 218
+				controls_state = 219
+				controls_state = 195
+			}
 		}
 
 		continue_if_invalid = no
@@ -1850,7 +1859,15 @@ focus_tree = {
 		}
 
 		bypass = {
-		}
+			NOT = {
+				AND = {
+					has_idea = SOV_idea_3_5_year_plan
+					any_owned_state = {
+						has_state_flag = SOV_5_year_plan_IC
+					}
+				}
+			}
+		}	
 
 		available_if_capitulated = yes
 
@@ -1888,6 +1905,15 @@ focus_tree = {
 			any_owned_state = {
 				has_state_flag = SOV_5_year_plan_IC
 			}
+			ROOT = {
+				controls_state = 200
+				controls_state = 227
+				controls_state = 221
+				controls_state = 228
+				controls_state = 218
+				controls_state = 219
+				controls_state = 195
+			}
 		}
 
 		continue_if_invalid = no
@@ -1900,6 +1926,14 @@ focus_tree = {
 		}
 
 		bypass = {
+			NOT = {
+				AND = {
+					has_idea = SOV_idea_3_5_year_plan
+					any_owned_state = {
+						has_state_flag = SOV_5_year_plan_IC
+					}
+				}
+			}
 		}
 
 		available_if_capitulated = yes
@@ -1974,7 +2008,16 @@ focus_tree = {
 		available = {
 			any_owned_state = {
 				has_state_flag = SOV_5_year_plan_IC
-			}			
+			}		
+			ROOT = {
+				controls_state = 200
+				controls_state = 227
+				controls_state = 221
+				controls_state = 228
+				controls_state = 218
+				controls_state = 219
+				controls_state = 195
+			}		
 		}
 
 		continue_if_invalid = no
@@ -1987,6 +2030,14 @@ focus_tree = {
 		}
 
 		bypass = {
+			NOT = {
+				AND = {
+					has_idea = SOV_idea_3_5_year_plan
+					any_owned_state = {
+						has_state_flag = SOV_5_year_plan_IC
+					}
+				}
+			}
 		}
 
 		available_if_capitulated = yes
@@ -2029,6 +2080,15 @@ focus_tree = {
 		available = {
 			any_owned_state = {
 				has_state_flag = SOV_5_year_plan_IC
+			}	
+			ROOT = {
+				controls_state = 200
+				controls_state = 227
+				controls_state = 221
+				controls_state = 228
+				controls_state = 218
+				controls_state = 219
+				controls_state = 195
 			}		
 		}
 
@@ -2042,6 +2102,14 @@ focus_tree = {
 		}
 
 		bypass = {
+			NOT = {
+				AND = {
+					has_idea = SOV_idea_3_5_year_plan
+					any_owned_state = {
+						has_state_flag = SOV_5_year_plan_IC
+					}
+				}
+			}
 		}
 
 		available_if_capitulated = yes
@@ -2090,14 +2158,17 @@ focus_tree = {
 					flag = SOV_magnitogorsk_development
 					value = 5					
 				}
-			}		
-		}
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
 			}
-		}		
+			ROOT = {
+				controls_state = 200
+				controls_state = 227
+				controls_state = 221
+				controls_state = 228
+				controls_state = 218
+				controls_state = 219
+				controls_state = 195
+			}		
+		}	
 
 		continue_if_invalid = no
 		
@@ -2124,13 +2195,29 @@ focus_tree = {
 		
 		bypass = {
 			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
+				AND = {
+					has_idea = SOV_idea_3_5_year_plan
+					any_owned_state = {
+						has_state_flag = SOV_5_year_plan_IC
+					}
+				}
 			}
 		}
 
 		available = {
-			has_idea = SOV_idea_3_5_year_plan
-
+			OR = {
+				has_idea = SOV_idea_3_5_year_plan
+				date > 1942.1.1		
+			}
+			ROOT = {
+				controls_state = 200
+				controls_state = 227
+				controls_state = 221
+				controls_state = 228
+				controls_state = 218
+				controls_state = 219
+				controls_state = 195
+			}
 			any_owned_state = {
 				has_state_flag = SOV_5_year_plan_IC
 			}
@@ -2189,13 +2276,29 @@ focus_tree = {
 
 		bypass = {
 			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
+				AND = {
+					has_idea = SOV_idea_3_5_year_plan
+					any_owned_state = {
+						has_state_flag = SOV_5_year_plan_IC
+					}
+				}
 			}
 		}
 
 		available = {
-			has_idea = SOV_idea_3_5_year_plan
-
+			OR = {
+				has_idea = SOV_idea_3_5_year_plan
+				date > 1942.1.1		
+			}
+			ROOT = {
+				controls_state = 200
+				controls_state = 227
+				controls_state = 221
+				controls_state = 228
+				controls_state = 218
+				controls_state = 219
+				controls_state = 195
+			}
 			any_owned_state = {
 				has_state_flag = SOV_5_year_plan_IC
 			}
@@ -2253,11 +2356,14 @@ focus_tree = {
 		y = 1
 		cost = 7.16	
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		available = {
-			has_idea = SOV_idea_3_5_year_plan
+			OR = {
+				has_idea = SOV_idea_3_5_year_plan
+				has_war_with = GER
+			}
 		}
 
 		completion_reward = {
@@ -2274,12 +2380,6 @@ focus_tree = {
 
 		prerequisite = {
 			focus = SOV_peoples_commissariat
-		}
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
 		}
 
 		available = {
@@ -2319,12 +2419,6 @@ focus_tree = {
 
 		prerequisite = {
 			focus = SOV_soviet_german_technological_agreement
-		}
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
 		}
 
 		available = {
@@ -2417,12 +2511,6 @@ focus_tree = {
 			focus = SOV_modernize_cavalry_tactics
 		}
 
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
-		}
-
 		x = 0
 		y = 2
 		ai_will_do = {
@@ -2464,13 +2552,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_increase_military_production
 		}
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
-		}
-
+		
 		x = -1
 		y = 1
 		ai_will_do = {
@@ -2496,12 +2578,6 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
-		}
 
 		ai_will_do = {
 			factor = 1.5
@@ -2535,12 +2611,6 @@ focus_tree = {
 			}
 		}
 
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
-		}
-
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -2566,12 +2636,6 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_peoples_commissariat
 		}		
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
-		}
 
 		available = {
 			always = NO
@@ -2612,12 +2676,6 @@ focus_tree = {
 			focus = SOV_artillery_development
 		}
 
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
-		}
-
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -2646,12 +2704,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
-		}
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
 		}
 	
 		relative_position_id = SOV_revision_of_artillery_doctrine
@@ -2690,12 +2742,6 @@ focus_tree = {
 			factor = 10
 		}
 
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
-		}
-
 		relative_position_id = SOV_efficient_production_program
 		completion_reward = {
 			add_ideas = grabin_design_bureau_hammer		
@@ -2718,12 +2764,6 @@ focus_tree = {
 		cost = 7.16	
 		prerequisite = {
 			focus = SOV_efficient_production_program
-		}
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
 		}
 
 		x = 1
@@ -2749,11 +2789,6 @@ focus_tree = {
 			focus = SOV_stalins_hammer focus = SOV_production_priority
 		}
 
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
-		}
 		x = 0
 		y = 2
 		ai_will_do = {
@@ -2787,12 +2822,6 @@ focus_tree = {
 		cost = 7.16	
 		prerequisite = {
 			focus = SOV_peoples_commissariat
-
-		}
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
 		}
 
 		available = {
@@ -2833,12 +2862,6 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
-		}
-
 		ai_will_do = {
 			factor = 1.5
 			modifier = {
@@ -2866,12 +2889,6 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
-		}
-
 		ai_will_do = {
 			factor = 10
 		}
@@ -2896,12 +2913,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
-		}
-
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
 		}
 
 		relative_position_id = SOV_a_gun_for_every_hand
@@ -2935,12 +2946,6 @@ focus_tree = {
 			factor = 10
 		}
 
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
-		}
-
 		relative_position_id = SOV_a_gun_for_every_hand
 		completion_reward = {
 			add_tech_bonus = {
@@ -2958,11 +2963,6 @@ focus_tree = {
 		x = 0
 		y = 4
 		prerequisite = { focus = SOV_logistical_corps_expansion focus = SOV_signal_corps_expansion }
-		bypass = {
-			NOT = {
-				has_idea = SOV_idea_3_5_year_plan
-			}
-		}
 
 		available = {
 			has_army_experience > 50 
@@ -3380,15 +3380,36 @@ focus_tree = {
 			}
 		}
 	}	
-
 	focus = {
-		id = SOV_the_great_patriotic_war
+		id = SOV_german_invasion
 		icon = GFX_SOV_red_army
 		cost = 7.16	
 		prerequisite = {
 			focus = SOV_armored_cavalry
 			focus = SOV_shock_and_awe
 			focus = SOV_establish_a_new_officer_training_center
+		}
+		ai_will_do = {
+			factor = 100			
+		}
+		bypass = {
+			has_war_with = GER 
+		}
+		available = {
+			has_war_with = GER 
+		}
+
+		x = 0
+		y = 1
+
+		relative_position_id = SOV_shock_and_awe
+	}
+	focus = {
+		id = SOV_the_great_patriotic_war
+		icon = GFX_SOV_red_army
+		cost = 7.16	
+		prerequisite = {
+			focus = SOV_german_invasion
 		}
 		ai_will_do = {
 			factor = 100			

@@ -4311,12 +4311,12 @@ SOV_global_revolution = {
 		days_re_enable = 180
 
 		complete_effect = {
-		army_experience = 30
+		army_experience = 20
 			ROOT = {
 				send_equipment = {
 					target = PRC
 					type = infantry_equipment
-					amount = 1000
+					amount = 2000
 					old_prioritised = yes
 				}
 				
@@ -4418,7 +4418,7 @@ SOV_global_revolution = {
 		days_re_enable = 180
 
 		complete_effect = {		
-		army_experience = 40
+		army_experience = 20
 			send_equipment = {
 				target = D01 
 				type = infantry_equipment

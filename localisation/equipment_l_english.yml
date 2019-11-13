@@ -2250,7 +2250,7 @@ GER_mechanized_equipment_3_desc:0 "The Kätzchen was a German armoured personnel
 SOV_mechanized_equipment:0 "Mechanized"
 SOV_mechanized_equipment_short:0 "Mechanized"
 SOV_mechanized_equipment_desc:0 "Mechanized infantry is infantry equipped with armored personnel carriers (APCs) or infantry fighting vehicles (IFVs) for transport and combat. Mechanized infantry is distinguished from motorized infantry in that its vehicles provide a degree of protection from hostile fire, as opposed to soft-skinned wheeled vehicles (trucks or jeeps) for motorized infantry."
-SOV_mechanized_equipment_1:0 "ZIS-22"
+SOV_mechanized_equipment_1:0 "ZIS-22 Halftrack"
 SOV_mechanized_equipment_1_short:0 "ZIS-22"
 SOV_mechanized_equipment_1_desc:0 "Mechanized infantry is infantry equipped with armored personnel carriers (APCs) or infantry fighting vehicles (IFVs) for transport and combat. Mechanized infantry is distinguished from motorized infantry in that its vehicles provide a degree of protection from hostile fire, as opposed to soft-skinned wheeled vehicles (trucks or jeeps) for motorized infantry."
 SOV_mechanized_equipment_2:0 "ZIS-42"
