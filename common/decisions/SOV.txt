@@ -1786,56 +1786,84 @@ SOV_great_patriotic_war = {
 
 		available = {
 			tag = SOV
+			SOV = { 
+				controls_state = 213 
+				controls_state = 214 
+				controls_state = 215
+			}			
 		}
-
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					SOV = { 
+						controls_state = 213 
+					}
+				}	
+				NOT = {
+					SOV = { 
+						controls_state = 214 
+					}
+				}
+				NOT = {
+					SOV = { 
+						controls_state = 215 
+					}
+				}
+			}
+		}	
 		activation = {
 			has_completed_focus = SOV_murmansk_lend_lease
+			SOV = { 
+				controls_state = 213 
+				controls_state = 214 
+				controls_state = 215
+			}
 		}
 
 		selectable_mission = no
-		days_mission_timeout = 180
-		days_remove = 180
+		days_mission_timeout = 100
+		days_remove = 150
 		is_good = no
 		fire_only_once = no
 
 		remove_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
-					amount = 10000
+					amount = 5000
 					producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = radio_equipment_1
-					amount = 5000
+					amount = 750
 					producer = USA
 			}
 			
 			add_equipment_to_stockpile = {
 				type = support_equipment_1
-					amount = 8000
+					amount = 1250
 					producer = USA
 			}
 			
 			add_equipment_to_stockpile = {
 				type = motorized_equipment_1
-					amount = 10000
+					amount = 2500
 					producer = USA
 			}
 				
 			add_equipment_to_stockpile = {
 				type = anti_tank_equipment_1
-					amount = 600
+					amount = 200
 					producer = USA
 			}
 			
 			add_equipment_to_stockpile = {
 				type = artillery_equipment_1
-					amount = 800
+					amount = 500
 					producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = medartillery_equipment_1
-					amount = 400
+					amount = 200
 					producer = USA
 			}			
 		}			
@@ -1862,56 +1890,62 @@ SOV_great_patriotic_war = {
 
 		available = {
 			tag = SOV
+			SOV = { controls_state = 408 }
 		}
-
+		cancel_trigger = {
+			NOT = {
+				SOV = { controls_state = 408 }
+			}	
+		}	
 		activation = {
 			has_completed_focus = SOV_arctic_lend_lease
+			SOV = { controls_state = 408 }
 		}
 
 		selectable_mission = no
-		days_mission_timeout = 180
-		days_remove = 180
+		days_mission_timeout = 100
+		days_remove = 150
 		is_good = no
 		fire_only_once = no
 
 		remove_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
-					amount = 10000
+					amount = 5000
 					producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = radio_equipment_1
-					amount = 5000
+					amount = 750
 					producer = USA
 			}
 			
 			add_equipment_to_stockpile = {
 				type = support_equipment_1
-					amount = 8000
+					amount = 1250
 					producer = USA
 			}
 			
 			add_equipment_to_stockpile = {
 				type = motorized_equipment_1
-					amount = 10000
+					amount = 2500
 					producer = USA
 			}
 				
 			add_equipment_to_stockpile = {
 				type = anti_tank_equipment_1
-					amount = 600
+					amount = 200
 					producer = USA
 			}
 			
 			add_equipment_to_stockpile = {
 				type = artillery_equipment_1
-					amount = 800
+					amount = 500
 					producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = medartillery_equipment_1
-					amount = 400
+					amount = 200
 					producer = USA
 			}			
 		}			
@@ -1938,58 +1972,62 @@ SOV_great_patriotic_war = {
 
 		available = {
 			tag = SOV
+			PER = { has_capitulated = no }
 		}
-
+		cancel_trigger = {
+			PER = { has_capitulated = yes }	
+		}
 		activation = {
 			has_completed_focus = SOV_persian_lend_lease
+			PER = { has_capitulated = no }
 		}
 
 		selectable_mission = no
-		days_mission_timeout = 180
-		days_remove = 180
+		days_mission_timeout = 100
+		days_remove = 150
 		is_good = no
 		fire_only_once = no
 
 		remove_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
-					amount = 10000
+					amount = 5000
 					producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = radio_equipment_1
-					amount = 5000
+					amount = 750
 					producer = USA
 			}
 			
 			add_equipment_to_stockpile = {
 				type = support_equipment_1
-					amount = 8000
+					amount = 1250
 					producer = USA
 			}
 			
 			add_equipment_to_stockpile = {
 				type = motorized_equipment_1
-					amount = 10000
+					amount = 2500
 					producer = USA
 			}
 				
 			add_equipment_to_stockpile = {
 				type = anti_tank_equipment_1
-					amount = 600
+					amount = 200
 					producer = USA
 			}
 			
 			add_equipment_to_stockpile = {
 				type = artillery_equipment_1
-					amount = 800
+					amount = 500
 					producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = medartillery_equipment_1
-					amount = 400
+					amount = 200
 					producer = USA
-			}					
+			}			
 		}			
 	
 		complete_effect = {

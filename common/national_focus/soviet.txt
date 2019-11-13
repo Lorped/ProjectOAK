@@ -3388,9 +3388,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100			
 		}
-		bypass = {
-			has_war_with = GER 
-		}
+		
 		available = {
 			has_war_with = GER 
 		}
@@ -4211,12 +4209,7 @@ focus_tree = {
 		}
 
 		available = {
-			surrender_progress > 0.30
-		}
-
-		bypass = {
-			NOT = { has_idea = SOV_surprise_strike }
-			NOT = { has_idea = SOV_surprise_strike_extra_for_ai }
+			surrender_progress > 0.25
 		}
 
 		relative_position_id = SOV_american_lend_lease
@@ -4244,7 +4237,7 @@ focus_tree = {
 		}
 
 		available = {
-			surrender_progress > 0.4 
+			surrender_progress > 0.35 
 		}
 
 		relative_position_id = SOV_american_lend_lease
@@ -4278,7 +4271,7 @@ focus_tree = {
 		}
 
 		available = {
-			surrender_progress > 0.45
+			surrender_progress > 0.4
 			ENG = {
 				has_completed_focus = SOV_operation_countenance
 			}
