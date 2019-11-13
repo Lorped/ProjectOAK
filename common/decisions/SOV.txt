@@ -352,40 +352,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-					AND = {
-						owns_state = 242
-						NOT = { controls_state = 242 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 223
-						NOT = { controls_state = 223 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 224
-						NOT = { controls_state = 224 }
-					}
-					AND = {
-						owns_state = 222
-						NOT = { controls_state = 224 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -458,36 +425,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 208
-						NOT = { controls_state = 208 }
-					}
-					AND = {
-						owns_state = 209
-						NOT = { controls_state = 209 }
-					}
-					AND = {
-						owns_state = 244
-						NOT = { controls_state = 244 }
-					}
-					AND = {
-						owns_state = 263
-						NOT = { controls_state = 263 }
-					}
-					AND = {
-						owns_state = 191
-						NOT = { controls_state = 191 }
-					}
-					AND = {
-						owns_state = 146
-						NOT = { controls_state = 146 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -558,40 +496,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -652,40 +557,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100		
 		}
 
 		visible = {
@@ -755,40 +627,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100			
 		}
 
 		visible = {
@@ -858,40 +697,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100		
 		}
 
 		visible = {
@@ -961,40 +767,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100			
 		}
 
 		visible = {
@@ -1055,40 +828,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100		
 		}
 
 		visible = {
@@ -1150,40 +890,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100			
 		}
 
 		visible = {
@@ -1246,40 +953,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100		
 		}
 
 		visible = {
@@ -1349,40 +1023,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100		
 		}
 
 		visible = {
@@ -1452,40 +1093,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100			
 		}
 
 		visible = {
@@ -1555,40 +1163,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100			
 		}
 
 		visible = {
@@ -1658,40 +1233,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100		
 		}
 
 		visible = {
@@ -1761,40 +1303,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100			
 		}
 
 		visible = {
@@ -1864,40 +1373,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100		
 		}
 
 		visible = {
@@ -1957,40 +1433,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100		
 		}
 
 		visible = {
@@ -2051,40 +1494,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100		
 		}
 
 		visible = {
@@ -2154,40 +1564,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100		
 		}
 
 		visible = {
@@ -2257,40 +1634,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -2369,36 +1713,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 208
-						NOT = { controls_state = 208 }
-					}
-					AND = {
-						owns_state = 209
-						NOT = { controls_state = 209 }
-					}
-					AND = {
-						owns_state = 244
-						NOT = { controls_state = 244 }
-					}
-					AND = {
-						owns_state = 263
-						NOT = { controls_state = 263 }
-					}
-					AND = {
-						owns_state = 191
-						NOT = { controls_state = 191 }
-					}
-					AND = {
-						owns_state = 146
-						NOT = { controls_state = 146 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		remove_effect = {
