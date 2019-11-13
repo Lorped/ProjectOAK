@@ -1773,7 +1773,7 @@ SOV_great_patriotic_war = {
 			factor = 1
 			modifier = {
 				surrender_progress > 0.25
-				factor = 10
+				factor = 100
 			}
 		}
 	}
