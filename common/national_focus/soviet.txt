@@ -2625,7 +2625,6 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
-			country_event = { id = soviet.117 days = 5 }
 		}
 	}
 
@@ -2811,8 +2810,7 @@ focus_tree = {
 				bonus = 2
 				category = rocketry
 				name = SOV_shock_and_awe
-			}
-			country_event = { id = soviet.117 days = 5 }			
+			}		
 		}
 	}
 
@@ -2982,9 +2980,7 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = SOV_STAVKA2
 				add_idea = SOV_STAVKA3
-			}
-			
-			country_event = { id = soviet.117 days = 5 }			
+			}			
 		}
 	}
 

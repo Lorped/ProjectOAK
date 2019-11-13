@@ -2437,9 +2437,7 @@ country_event = { ##Nkvd ASS dispatched
 		add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = -100 }
 
-		add_command_power = -20 
-		
-		fixed_random_seed = no
+		add_command_power = -20 		
 		
 		random_country = {
 			limit = {
