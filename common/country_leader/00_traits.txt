@@ -855,14 +855,6 @@ leader_traits = {
 		}
 	}
 	
-	religously_lost {
-		random = no
-		political_power_factor = -0.4
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
 	ineffective_politician = {
 		random = yes
 		political_power_factor = -0.1
