@@ -3876,6 +3876,16 @@ SOV_5_year_plan_decisions = {
 			random_owned_state = {
 				limit = {
 					NOT = { has_state_flag = SOV_5_year_plan_IC }
+					free_building_slots = {
+						building = arms_factory
+						size > 4
+						included_locked = yes
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 4
+						included_locked = yes
+					}
 				}
 				custom_effect_tooltip = SOV_marked_for_5_year_plan_tt
 				set_state_flag = SOV_5_year_plan_IC
@@ -3883,6 +3893,16 @@ SOV_5_year_plan_decisions = {
 			random_owned_state = {
 				limit = {
 					NOT = { has_state_flag = SOV_5_year_plan_IC }
+					free_building_slots = {
+						building = arms_factory
+						size > 4
+						included_locked = yes
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 4
+						included_locked = yes
+					}
 				}
 				custom_effect_tooltip = SOV_marked_for_5_year_plan_tt
 				set_state_flag = SOV_5_year_plan_IC
