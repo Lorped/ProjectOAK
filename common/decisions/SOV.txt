@@ -93,6 +93,8 @@ SOV_stalins_paranoia = {
 
 		days_re_enable = 40
 
+		fixed_random_seed = no
+
 		cost = 20
 
 		complete_effect = {
@@ -102,28 +104,28 @@ SOV_stalins_paranoia = {
 
 		remove_effect = {
 			random_list = {
-				2 = {
+				3 = {
 					country_event = soviet.106
 				}
-				2 = {
+				3 = {
 					country_event = soviet.107
 				}
-				2 = {
+				3 = {
 					country_event = soviet.108
 				}
-				2 = {
+				3 = {
 					country_event = soviet.109
 				}
-				2 = {
+				3 = {
 					country_event = soviet.110
 				}
-				2 = {
+				3 = {
 					country_event = soviet.111
 				}
-				2 = {
+				3 = {
 					country_event = soviet.112
 				}
-				80 = {
+				79 = {
 					country_event = soviet.113
 				}
 			}
@@ -196,7 +198,7 @@ SOV_stalins_paranoia = {
 		}
 
 		modifier = {
-			stability_weekly = 0.002
+			stability_weekly = 0.001
 		}
 
 		remove_effect = {
@@ -267,7 +269,7 @@ SOV_stalins_paranoia = {
 		}
 
 		modifier = {
-			stability_weekly = 0.002
+			stability_weekly = 0.004
 			industrial_capacity_factory = -0.05
 			industrial_capacity_dockyard = -0.05
 			production_factory_efficiency_gain_factor = -0.15
@@ -350,40 +352,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-					AND = {
-						owns_state = 242
-						NOT = { controls_state = 242 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 223
-						NOT = { controls_state = 223 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 224
-						NOT = { controls_state = 224 }
-					}
-					AND = {
-						owns_state = 222
-						NOT = { controls_state = 224 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -456,36 +425,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 208
-						NOT = { controls_state = 208 }
-					}
-					AND = {
-						owns_state = 209
-						NOT = { controls_state = 209 }
-					}
-					AND = {
-						owns_state = 244
-						NOT = { controls_state = 244 }
-					}
-					AND = {
-						owns_state = 263
-						NOT = { controls_state = 263 }
-					}
-					AND = {
-						owns_state = 191
-						NOT = { controls_state = 191 }
-					}
-					AND = {
-						owns_state = 146
-						NOT = { controls_state = 146 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -556,40 +496,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -650,40 +557,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -753,40 +627,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -856,40 +697,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -959,40 +767,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -1053,40 +828,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -1148,40 +890,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -1244,40 +953,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -1347,40 +1023,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -1450,40 +1093,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -1553,40 +1163,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -1656,40 +1233,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -1759,40 +1303,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -1862,40 +1373,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -1955,40 +1433,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -2049,40 +1494,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -2152,40 +1564,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -2255,40 +1634,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 210
-						NOT = { controls_state = 210 }
-					}
-					AND = {
-						owns_state = 207
-						NOT = { controls_state = 207 }
-					}
-					AND = {
-						owns_state = 206
-						NOT = { controls_state = 206 }
-					}
-					AND = {
-						owns_state = 241
-						NOT = { controls_state = 241 }
-					}
-					AND = {
-						owns_state = 243
-						NOT = { controls_state = 243 }
-					}
-					AND = {
-						owns_state = 205
-						NOT = { controls_state = 205 }
-					}
-					AND = {
-						owns_state = 246
-						NOT = { controls_state = 246 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		visible = {
@@ -2367,36 +1713,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 200 # oh shit they are getting close!
-				OR = {
-					AND = {
-						owns_state = 208
-						NOT = { controls_state = 208 }
-					}
-					AND = {
-						owns_state = 209
-						NOT = { controls_state = 209 }
-					}
-					AND = {
-						owns_state = 244
-						NOT = { controls_state = 244 }
-					}
-					AND = {
-						owns_state = 263
-						NOT = { controls_state = 263 }
-					}
-					AND = {
-						owns_state = 191
-						NOT = { controls_state = 191 }
-					}
-					AND = {
-						owns_state = 146
-						NOT = { controls_state = 146 }
-					}
-				}
-			}
+			factor = 100
 		}
 
 		remove_effect = {
@@ -2434,7 +1751,6 @@ SOV_great_patriotic_war = {
 			any_enemy_country = {
 				is_major = yes
 			}
-			has_civil_war = no
 			surrender_progress > 0.3
 		}
 
@@ -2445,10 +1761,9 @@ SOV_great_patriotic_war = {
 			any_enemy_country = {
 				is_major = yes
 			}
-			#surrender_progress > 0
 		}
 
-		days_remove = 720
+		days_remove = 365
 
 		modifier = {
 			army_core_defence_factor = 0.25
@@ -2458,7 +1773,7 @@ SOV_great_patriotic_war = {
 			factor = 1
 			modifier = {
 				surrender_progress > 0.25
-				factor = 10
+				factor = 100
 			}
 		}
 	}
@@ -2471,56 +1786,84 @@ SOV_great_patriotic_war = {
 
 		available = {
 			tag = SOV
+			SOV = {
+				controls_state = 213
+				controls_state = 214
+				controls_state = 215
+			}
 		}
-
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					SOV = {
+						controls_state = 213
+					}
+				}
+				NOT = {
+					SOV = {
+						controls_state = 214
+					}
+				}
+				NOT = {
+					SOV = {
+						controls_state = 215
+					}
+				}
+			}
+		}
 		activation = {
 			has_completed_focus = SOV_murmansk_lend_lease
+			SOV = {
+				controls_state = 213
+				controls_state = 214
+				controls_state = 215
+			}
 		}
 
 		selectable_mission = no
-		days_mission_timeout = 180
-		days_remove = 180
+		days_mission_timeout = 100
+		days_remove = 150
 		is_good = no
 		fire_only_once = no
 
 		remove_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
-					amount = 10000
+					amount = 5000
 					producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = radio_equipment_1
-					amount = 5000
+					amount = 750
 					producer = USA
 			}
 
 			add_equipment_to_stockpile = {
 				type = support_equipment_1
-					amount = 8000
+					amount = 1250
 					producer = USA
 			}
 
 			add_equipment_to_stockpile = {
 				type = motorized_equipment_1
-					amount = 10000
+					amount = 2500
 					producer = USA
 			}
 
 			add_equipment_to_stockpile = {
 				type = anti_tank_equipment_1
-					amount = 600
+					amount = 200
 					producer = USA
 			}
 
 			add_equipment_to_stockpile = {
 				type = artillery_equipment_1
-					amount = 800
+					amount = 500
 					producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = medartillery_equipment_1
-					amount = 400
+					amount = 200
 					producer = USA
 			}
 		}
@@ -2547,56 +1890,62 @@ SOV_great_patriotic_war = {
 
 		available = {
 			tag = SOV
+			SOV = { controls_state = 408 }
 		}
-
+		cancel_trigger = {
+			NOT = {
+				SOV = { controls_state = 408 }
+			}
+		}
 		activation = {
 			has_completed_focus = SOV_arctic_lend_lease
+			SOV = { controls_state = 408 }
 		}
 
 		selectable_mission = no
-		days_mission_timeout = 180
-		days_remove = 180
+		days_mission_timeout = 100
+		days_remove = 150
 		is_good = no
 		fire_only_once = no
 
 		remove_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
-					amount = 10000
+					amount = 5000
 					producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = radio_equipment_1
-					amount = 5000
+					amount = 750
 					producer = USA
 			}
 
 			add_equipment_to_stockpile = {
 				type = support_equipment_1
-					amount = 8000
+					amount = 1250
 					producer = USA
 			}
 
 			add_equipment_to_stockpile = {
 				type = motorized_equipment_1
-					amount = 10000
+					amount = 2500
 					producer = USA
 			}
 
 			add_equipment_to_stockpile = {
 				type = anti_tank_equipment_1
-					amount = 600
+					amount = 200
 					producer = USA
 			}
 
 			add_equipment_to_stockpile = {
 				type = artillery_equipment_1
-					amount = 800
+					amount = 500
 					producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = medartillery_equipment_1
-					amount = 400
+					amount = 200
 					producer = USA
 			}
 		}
@@ -2623,56 +1972,60 @@ SOV_great_patriotic_war = {
 
 		available = {
 			tag = SOV
+			PER = { has_capitulated = no }
 		}
-
+		cancel_trigger = {
+			PER = { has_capitulated = yes }
+		}
 		activation = {
 			has_completed_focus = SOV_persian_lend_lease
+			PER = { has_capitulated = no }
 		}
 
 		selectable_mission = no
-		days_mission_timeout = 180
-		days_remove = 180
+		days_mission_timeout = 100
+		days_remove = 150
 		is_good = no
 		fire_only_once = no
 
 		remove_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
-					amount = 10000
+					amount = 5000
 					producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = radio_equipment_1
-					amount = 5000
+					amount = 750
 					producer = USA
 			}
 
 			add_equipment_to_stockpile = {
 				type = support_equipment_1
-					amount = 8000
+					amount = 1250
 					producer = USA
 			}
 
 			add_equipment_to_stockpile = {
 				type = motorized_equipment_1
-					amount = 10000
+					amount = 2500
 					producer = USA
 			}
 
 			add_equipment_to_stockpile = {
 				type = anti_tank_equipment_1
-					amount = 600
+					amount = 200
 					producer = USA
 			}
 
 			add_equipment_to_stockpile = {
 				type = artillery_equipment_1
-					amount = 800
+					amount = 500
 					producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = medartillery_equipment_1
-					amount = 400
+					amount = 200
 					producer = USA
 			}
 		}
@@ -3573,9 +2926,9 @@ SOV_great_patriotic_war = {
 		}
 
 		visible = {
-		        has_war_with = GER
+		    has_war_with = GER
 			or = { AND = { date > 1940.9.29 date < 1941.01.20 } AND = { date > 1941.9.29 date < 1942.01.20} AND = { date > 1942.9.29 date < 1943.01.20} AND = { date > 1943.9.29 date < 1944.01.20 } AND = { date > 1944.9.29 date < 1945.01.20} }
-		tag = SOV
+			tag = SOV
 		}
 		icon = decision_generic_SOV
 
@@ -3612,21 +2965,14 @@ SOV_great_patriotic_war = {
 			SOV = { controls_state = 219 } # controls moscow
 			NOT = { SOV = { has_full_control_of_state = 202 }}
 			NOT = { SOV = { has_full_control_of_state = 206 }}
-
-
-						#check_variable = {
-						#	var = ostfront_year
-						#	value = 2
-						#	compare = equal
-						#}
 		}
 
 		visible = {
-		tag = SOV
+				tag = SOV
 		        NOT = { has_idea = winter_offensive }
 				has_country_flag = SOVwintercounteroffense
 		        has_war_with = GER
-			or = { AND = { date > 1940.9.29 date < 1941.01.20 } AND = { date > 1941.9.29 date < 1942.01.20} AND = { date > 1942.9.29 date < 1943.01.20} AND = { date > 1943.9.29 date < 1944.01.20 } AND = { date > 1944.9.29 date < 1945.01.20} }
+				or = { AND = { date > 1940.9.29 date < 1941.01.20 } AND = { date > 1941.9.29 date < 1942.01.20} AND = { date > 1942.9.29 date < 1943.01.20} AND = { date > 1943.9.29 date < 1944.01.20 } AND = { date > 1944.9.29 date < 1945.01.20} }
 		}
 
 
@@ -4311,12 +3657,12 @@ SOV_global_revolution = {
 		days_re_enable = 180
 
 		complete_effect = {
-		army_experience = 30
+		army_experience = 20
 			ROOT = {
 				send_equipment = {
 					target = PRC
 					type = infantry_equipment
-					amount = 1000
+					amount = 2000
 					old_prioritised = yes
 				}
 
@@ -4418,7 +3764,7 @@ SOV_global_revolution = {
 		days_re_enable = 180
 
 		complete_effect = {
-		army_experience = 40
+		army_experience = 20
 			send_equipment = {
 				target = D01
 				type = infantry_equipment

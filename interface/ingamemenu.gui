@@ -92,6 +92,19 @@ guiTypes = {
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
+		ButtonType = {
+			name = "homepage_button"
+			position = { x = 59 y = 349 }
+			quadTextureSprite ="homepage"
+			clicksound = click_default
+			pdx_tooltip = "MENU_HOMEPAGE"
+		}
+		ButtonType = {
+			name = "achievements_button"
+			position = { x = 259 y = 349 }
+			quadTextureSprite ="achievements"
+			pdx_tooltip = "MENU_ACHIEVEMENTS"
+		}		  
 	}
 	
 	containerWindowType = {

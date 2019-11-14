@@ -626,6 +626,13 @@ on_actions = {
 			}	
 			if = {
 				limit = {
+					tag = SOV	
+					has_war_with = GER 
+				}
+				complete_national_focus = SOV_german_invasion		
+			}
+			if = {
+				limit = {
 					tag = GER	
 					has_war_with = YUG 
 				}

@@ -4444,6 +4444,7 @@ FIN_further_artillery_support_desc:0 "Artillery support has proven invaluable to
  ##### SOVIET #####
  soviet_focus:0 "Soviet National Focus"
  
+ SOV_german_invasion:0 "The German Invasion Has Started"
  SOV_stakhonovite_desc:0 "The term Stakhanovite (стахановское) originated in the Soviet Union and referred to workers who modelled themselves after Alexey Stakhanov. These workers took pride in their ability to produce more than was required, by working harder and more efficiently, thus strengthening the Communist state. The Stakhanovite Movement was encouraged due to the idea of socialist emulation."
  SOV_state_defense_committee:0 "State Defence Committee"
  SOV_state_defense_committee_desc:0 "The State Defense Committee (Russian: Государственный комитет обороны, ГКО, romanized: Gosudarstvennyj komitet oborony, GKO) was an extraordinary organ of state power in the USSR during the German-Soviet War (Great Patriotic War) which held complete state power in the country."

@@ -221,8 +221,9 @@ ability = {
 
 ability = {
 	SOV_last_stand = {
-		name = ABILITY_LAST_STAND
-		desc = ABILITY_LAST_STAND_DESC
+		name = ABILITY_SOV_LAST_STAND
+		desc = ABILITY_SOV_LAST_STAND_DESC
+		icon = GFX_SOV_last_stand
 		
 		sound_effect = command_power_ability_offensive
 		
@@ -236,7 +237,7 @@ ability = {
 			}
 		}
 		
-		cost = 0.16
+		cost = 0.2
 		duration = 168
 		
 		one_time_effect = {
@@ -245,7 +246,7 @@ ability = {
 				combat_defense = 0.2
 				combat_entrenchment = 0.25
 				org_damage_multiplier = -1.0
-				str_damage_multiplier = 0.15
+				str_damage_multiplier = 0.3
 				cannot_retreat_while_defending = 1.0
 				
 				days = 7

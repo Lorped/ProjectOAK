@@ -180,6 +180,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+			activate_mission_tooltip = ITA_navy_plan
 			navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {
@@ -743,6 +744,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			activate_mission_tooltip = ITA_army_plan
 			random_owned_controlled_state = {
 				prioritize = { 161 }
 					add_extra_state_shared_building_slots = 3
@@ -1557,8 +1559,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			activate_mission_tooltip = ITA_navy_plan
-
 			random_owned_controlled_state = {
 				prioritize = { 2 }
 					add_extra_state_shared_building_slots = 2
@@ -1730,7 +1730,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			activate_mission_tooltip = ITA_army_plan
 			random_owned_controlled_state = {
 				prioritize = { 157 }
 					add_extra_state_shared_building_slots = 3

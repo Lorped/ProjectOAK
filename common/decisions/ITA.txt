@@ -5,7 +5,7 @@ ITA_buildup_decisions = {
 
 		available = {
 			arms_factory > 99
-			synthetic_refinery > 11
+			synthetic_refinery > 9
 			has_army_size = {
 			    size > 99
 			    type = infantry
@@ -28,12 +28,12 @@ ITA_buildup_decisions = {
 			}
 		}
 
-		days_mission_timeout = 900
+		days_mission_timeout = 1200
 		fire_only_once = yes
 		is_good = no
 
 		activation = {
-			has_completed_focus = ITA_Increase_factory_output
+			has_completed_focus = ITA_Regio_Esercito
 		}
 
 		timeout_effect = {
@@ -92,7 +92,7 @@ ITA_buildup_decisions = {
 		fire_only_once = yes
 
 		activation = {
-			has_completed_focus = ITA_Dockyards_effort
+			has_completed_focus = ITA_regia_marina
 		}
 		
 		timeout_effect = {

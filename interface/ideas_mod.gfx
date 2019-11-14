@@ -23,12 +23,12 @@ spriteTypes = {
 	}		
     
 	SpriteType = { 
-		name = "GFX_idea_uralmash"
+		name = "GFX_idea_ordzhonikidze_ural_heavy_machine_building_plant_UZTM"
 		texturefile = "gfx/interface/ideas/idea_uralmash.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_idea_uralvagonazavod"
+		name = "GFX_idea_uralvagonzavod"
 		texturefile = "gfx/interface/ideas/idea_uralvagonazavod.dds"
 	}
 

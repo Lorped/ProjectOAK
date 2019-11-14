@@ -98,6 +98,11 @@ spriteTypes = {
 		name = "GFX_ability_last_stand"
 		texturefile = "gfx/interface/abilitylist/ability_last_stand.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_SOV_last_stand"
+		texturefile = "gfx/interface/abilitylist/ability_last_stand.dds"
+	}
 
 	spriteType = {
 		name = "GFX_ability_jap_last_stand"
