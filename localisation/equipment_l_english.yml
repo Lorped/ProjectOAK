@@ -43,13 +43,8 @@ pack_artillery3:0 "Pack Artillery Carriage Gun Barrel Upgrade"
 pack_artillery3_desc:0 "Improved alloys and materials allow the use of more advanced ammunition types in our small artillery pieces."
 
 ############### Generic Trucks
-motorized_equipment:0 "Transport Vehicles (Trucks and Mechanized)"
-motorized_equipment_short:0 "Transport Vehicles"
+motorized_equipment:0 "Transport Vehicles"
 motorized_equipment_desc:0 "Trucks and other cars used for Infantry and equipment transport in the field."
-motorized_equipment_0:0 "Transport Vehicles (Trucks)"
-motorized_equipment_0_short:0 "Transport Vehicles"
-motorized_equipment_0_desc:0 "Trucks and other cars used for Infantry and equipment transport in the field."
-
 ############### Generic Armoured Cars
 armored_cars_equipment:0 "Armored Car Vehicles"
 armored_cars_equipment_short:0 "Armored Car Units"
@@ -192,8 +187,8 @@ FRA_armored_cars_equipment_5_short:0 "Panhard 178B"
 
 ############### Generic Infantry Trucks
 motorized_equipment_1:0 "Infantry Trucks"
-motorized_equipment_1_short:0 "2 1/2 ton Truck"
-motorized_equipment_1_desc:0 "Motorizing infantry is the second stage towards the mechanization of an army. Civilian trucks are readily adaptable to military uses of transporting soldiers, towing guns, and carrying equipment and supplies. This greatly increases the strategic mobility of infantry units, which would otherwise rely on marching."
+motorized_equipment_1_short:0 "Infantry Trucks"
+motorized_equipment_1_desc:0 "Motorizing infantry is the first stage towards the mechanization of an army. Civilian trucks are readily adaptable to military uses of transporting soldiers, towing guns, and carrying equipment and supplies. This greatly increases the strategic mobility of infantry units, which would otherwise rely on marching."
 
 ############### SOV Infantry Trucks
 SOV_motorized_equipment_1_short:0 "ZIS-5"

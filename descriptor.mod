@@ -1,5 +1,5 @@
 name="- Hearts of Oak - Man the Guns"
-path="C:/Users/samue/OneDrive/Documenti/Paradox Interactive/Hearts of Iron IV/mod/ProjectOAK"
+path="C:/Users/samue/Documents/Paradox Interactive/Hearts of Iron IV/mod/ProjectOAK"
 tags={
 	"Gameplay"
 	"Historical"

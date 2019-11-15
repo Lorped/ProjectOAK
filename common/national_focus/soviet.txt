@@ -4010,6 +4010,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_research_slot = 1
+			country_event = { id = soviet.117 days = 5 }
 		}
 	}
 
